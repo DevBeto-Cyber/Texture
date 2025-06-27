@@ -1,0 +1,317 @@
+{
+  "namespace": "advance_section",
+  "advance_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "advance_toggle",
+    "$glyph_texture": "textures/ui/settings_advance_hover",
+    "$glyph_color_texture": "textures/ui/settings_advance",
+    "$glyph_size": [15, 11],
+    "$button_text": "advanced.button",
+    "$toggle_property_bag": {
+      "#panel_title": "advanced.panel"
+    }
+  },
+  "advance_section": {
+    "type": "stack_panel",
+    "size": ["100%", "100%c"],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "advance_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "padding_0@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 0.4
+        }
+      },
+      {
+        "title@settings_common.selector_group_label": {
+          "text": "advanced.title",
+          "font_type": "MinecraftTen",
+          "color": "$d_color_format",
+          "font_scale_factor": 1.5
+        }
+      },
+      {
+        "padding_1@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 0.4
+        }
+      },
+      {
+        "option_content_file_log@settings_common.option_toggle": {
+          "$option_label": "options.copyCoordinateUI",
+          "$option_binding_name": "#copy_coordinate_ui",
+          "$toggle_name": "copy_coordinate_ui"
+        }
+      },
+      {
+        "auto_update_mode_dropdown@settings_common.option_dropdown": {
+          "ignored": "($is_console or $is_settopbox or $win10_edition or $osx_edition or $education_edition)",
+          "$option_label": "options.autoUpdateMode",
+          "$dropdown_content": "general_section.auto_update_mode_dropdown_content",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "auto_update_mode_dropdown",
+          "$options_dropdown_toggle_label_binding": "#auto_update_mode_dropdown_toggle_label",
+          "$dropdown_scroll_content_size": ["100%", "200%"]
+        }
+      },
+      {
+        "auto_update_enabled_toggle@settings_common.option_toggle": {
+          "ignored": "((not $is_console and not $is_settopbox and not $win10_edition and not $osx_edition) or $nx_os)",
+          "$option_label": "options.autoUpdateEnabled",
+          "$option_binding_name": "#auto_update_enabled",
+          "$toggle_name": "auto_update_enabled"
+        }
+      },
+      {
+        "mobile_data_option_toggle@settings_common.option_toggle": {
+          "ignored": "($is_console or $is_settopbox or $win10_edition or $osx_edition or $education_edition_china)",
+          "$option_label": "options.allowCellularData",
+          "$option_binding_name": "#allow_cellular_data",
+          "$option_enabled_binding_name": "#allow_cellular_data_enabled",
+          "$toggle_name": "allow_cellular_data",
+          "$has_option_description": true,
+          "$option_description": "options.allowCellularData.message"
+        }
+      },
+      {
+        "player_names_toggle@settings_common.option_toggle": {
+          "$option_label": "options.ingamePlayerNames",
+          "$option_binding_name": "#ingame_player_names",
+          "$option_enabled_binding_name": "#ingame_player_names_enabled",
+          "$toggle_name": "ingame_player_names"
+        }
+      },
+      {
+        "splitscreen_player_names_toggle@settings_common.option_toggle": {
+          "ignored": "(not $can_splitscreen)",
+          "$option_label": "options.splitscreenIngamePlayerNames",
+          "$option_binding_name": "#splitscreen_ingame_player_names",
+          "$option_enabled_binding_name": "#splitscreen_ingame_player_names_enabled",
+          "$toggle_name": "splitscreen_ingame_player_names"
+        }
+      },
+      {
+        "only_allow_trusted_skins_toggle@settings_common.option_toggle": {
+          "$option_label": "options.onlyTrustedSkinsAllowed",
+          "$option_binding_name": "#only_trusted_skins_allowed",
+          "$option_enabled_binding_name": "#only_trusted_skins_allowed_enabled",
+          "$toggle_name": "only_trusted_skins_allowed"
+        }
+      },
+      {
+        "camera_shake_toggle@settings_common.option_toggle": {
+          "ignored": "($is_holographic and $is_reality_mode and not $is_pregame)",
+          "$option_label": "options.screenShake",
+          "$option_binding_name": "#camera_shake",
+          "$option_enabled_binding_name": "#camera_shake_enabled",
+          "$toggle_name": "camera_shake"
+        }
+      },
+      {
+        "input_hint_toggle@settings_common.option_toggle": {
+          "ignored": "(not $education_edition)",
+          "$option_label": "options.showInputHints",
+          "$option_binding_name": "#show_input_hints",
+          "$option_enabled_binding_name": "#show_input_hints_enabled",
+          "$toggle_name": "show_input_hints"
+        }
+      },
+      {
+        "option_toggle_1@settings_common.option_toggle": {
+          "ignored": "(not $supports_flite_tts)",
+          "$option_label": "options.enableOpenChatMessage",
+          "$option_binding_name": "#enable_open_chat_message",
+          "$option_enabled_binding_name": "#enable_open_chat_message_enabled",
+          "$toggle_name": "enable_open_chat_message"
+        }
+      },
+      {
+        "auto_save_icon_toggle@settings_common.option_toggle": {
+          "$option_label": "options.showautosaveicon",
+          "$option_binding_name": "#show_auto_save_icon",
+          "$option_enabled_binding_name": "#show_auto_save_icon_enabled",
+          "$toggle_name": "show_auto_save_icon"
+        }
+      },
+      {
+        "option_toggle_3@settings_common.option_toggle": {
+          "ignored": "(not $supports_flite_tts or not $platform_tts_exists)",
+          "$option_label": "options.enableAutoPlatformTextToSpeech",
+          "$option_binding_name": "#enable_auto_text_to_speech",
+          "$option_enabled_binding_name": "#enable_auto_text_to_speech_enabled",
+          "$toggle_name": "enable_auto_text_to_speech"
+        }
+      },
+      {
+        "option_toggle_4@settings_common.option_toggle": {
+          "ignored": "(not $supports_flite_tts)",
+          "$option_label": "options.enableUITextToSpeech",
+          "$option_binding_name": "#enable_ui_text_to_speech",
+          "$option_enabled_binding_name": "#enable_ui_text_to_speech_enabled",
+          "$toggle_name": "enable_ui_text_to_speech"
+        }
+      },
+      {
+        "option_toggle_5@settings_common.option_toggle": {
+          "ignored": "(not $supports_flite_tts)",
+          "$option_label": "options.enableChatTextToSpeech",
+          "$option_binding_name": "#enable_chat_text_to_speech",
+          "$option_enabled_binding_name": "#enable_chat_text_to_speech_enabled",
+          "$toggle_name": "enable_chat_text_to_speech",
+          "bindings": [
+            {
+              "binding_name": "#not_hide_chat",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      },
+      {
+        "actionbar_text_background_opacity_slider@settings_common.option_slider": {
+          "$option_label": "#actionbar_text_background_opacity_slider_label",
+          "$slider_name": "actionbar_text_background_opacity",
+          "$slider_value_binding_name": "#actionbar_text_background_opacity",
+          "$slider_tts_text_value": "#actionbar_text_background_opacity_text_value",
+          "$option_enabled_binding_name": "#actionbar_text_background_opacity_enabled",
+          "$label_bindings": [
+            {
+              "binding_name": "$option_label"
+            }
+          ]
+        }
+      },
+      {
+        "glint_strength_slider@settings_common.option_slider": {
+          "$option_label": "#glint_strength_slider_label",
+          "$slider_name": "glint_strength",
+          "$slider_value_binding_name": "#glint_strength",
+          "$slider_tts_text_value": "#glint_strength_text_value",
+          "$option_enabled_binding_name": "#glint_strength_enabled",
+          "$label_bindings": [
+            {
+              "binding_name": "$option_label"
+            }
+          ]
+        }
+      },
+      {
+        "glint_speed_slider@settings_common.option_slider": {
+          "$option_label": "#glint_speed_slider_label",
+          "$slider_name": "glint_speed",
+          "$slider_value_binding_name": "#glint_speed",
+          "$slider_tts_text_value": "#glint_speed_text_value",
+          "$option_enabled_binding_name": "#glint_speed_enabled",
+          "$label_bindings": [
+            {
+              "binding_name": "$option_label"
+            }
+          ]
+        }
+      },
+      {
+        "darkness_slider@settings_common.option_slider": {
+          "$option_label": "#darkness_slider_label",
+          "$slider_name": "darkness",
+          "$slider_value_binding_name": "#darkness",
+          "$slider_tts_text_value": "#darkness_text_value",
+          "$option_enabled_binding_name": "#darkness_enabled",
+          "$label_bindings": [
+            {
+              "binding_name": "$option_label"
+            }
+          ]
+        }
+      },
+      {
+        "text_background_opacity_slider@settings_common.option_slider": {
+          "$option_label": "#text_background_opacity_slider_label",
+          "$slider_name": "text_background_opacity",
+          "$slider_value_binding_name": "#text_background_opacity",
+          "$slider_tts_text_value": "#text_background_opacity_text_value",
+          "$option_enabled_binding_name": "#text_background_opacity_enabled",
+          "$label_bindings": [
+            {
+              "binding_name": "$option_label"
+            }
+          ]
+        }
+      },
+      {
+        "toast_notification_duration_options_panel": {
+          "type": "stack_panel",
+          "size": ["100%", "100%c"],
+          "orientation": "vertical",
+          "controls": [
+            {
+              "toast_notification_duration_label_wrapper@common.tts_label_focus_wrapper": {
+                "$tts_label_panel": "general_section.toast_notification_duration_label"
+              }
+            },
+            {
+              "toast_notification_duration_dropdown_spacer_pre": {
+                "type": "panel",
+                "size": ["100%", -8]
+              }
+            },
+            {
+              "toast_notification_duration_dropdown@settings_common.option_dropdown": {
+                "ignored": "($is_holographic and $is_reality_mode)",
+                "$dropdown_content": "general_section.toast_notification_duration_dropdown_content",
+                "$dropdown_area": "content_area",
+                "$dropdown_name": "toast_notification_duration_dropdown",
+                "$option_enabled_binding_name": "#toast_notification_duration_dropdown_enabled",
+                "$options_dropdown_toggle_label_binding": "#toast_notification_duration_dropdown_toggle_label",
+                "$dropdown_scroll_content_size": ["100%", "200%"]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "chat_message_duration_options_panel": {
+          "type": "stack_panel",
+          "size": ["100%", "100%c"],
+          "orientation": "vertical",
+          "controls": [
+            {
+              "chat_message_duration_label_wrapper@common.tts_label_focus_wrapper": {
+                "$tts_label_panel": "general_section.chat_message_duration_label"
+              }
+            },
+            {
+              "chat_message_duration_dropdown_spacer_pre": {
+                "type": "panel",
+                "size": ["100%", -8]
+              }
+            },
+            {
+              "chat_message_duration_dropdown@settings_common.option_dropdown": {
+                "ignored": "($is_holographic and $is_reality_mode)",
+                "$dropdown_content": "general_section.chat_message_duration_dropdown_content",
+                "$dropdown_area": "content_area",
+                "$dropdown_name": "chat_message_duration_dropdown",
+                "$option_enabled_binding_name": "#chat_message_duration_dropdown_enabled",
+                "$options_dropdown_toggle_label_binding": "#chat_message_duration_dropdown_toggle_label",
+                "$dropdown_scroll_content_size": ["100%", "200%"]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_3@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 3
+        }
+      }
+    ]
+  }
+}

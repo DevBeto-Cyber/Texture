@@ -1,0 +1,29 @@
+{
+  "smithing_table_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "durability_renderer@durability.durability_renderer": {}
+          },
+          {
+            "status_bar@chest.status_bar": {}
+          },
+          {
+            "player_renderer@chest.player_renderer": {}
+          }
+        ]
+      }
+    ]
+  },
+  "toolbar_panel/toolbar_background/toolbar_stack_panel/help_button_panel": {
+    "modifications": [
+      {
+        "control_name": "help_button",
+        "operation": "remove"
+      }
+    ]
+  }
+}

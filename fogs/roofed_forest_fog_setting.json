@@ -1,0 +1,40 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "nic:fog_roofed_forest"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 0.05,
+        "fog_end": 0.92,
+        "fog_color": "#82eab0",
+        "render_distance_type": "render"
+      },
+      "water": {
+        "fog_start": 1,
+        "fog_end": 128,
+        "fog_color": "#44AFF5",
+        "render_distance_type": "fixed"
+      },
+      "weather": {
+        "fog_start": 0.1,
+        "fog_end": 0.75,
+        "fog_color": "#666666",
+        "render_distance_type": "render"
+      },
+      "lava": {
+        "fog_start": 1,
+        "fog_end": 128,
+        "fog_color": "#991A00",
+        "render_distance_type": "fixed"
+      },
+      "lava_resistance": {
+        "fog_start": 1,
+        "fog_end": 128,
+        "fog_color": "#991A00",
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

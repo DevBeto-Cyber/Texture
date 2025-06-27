@@ -1,0 +1,403 @@
+{
+  "namespace": "tabbed_upsell",
+  "warning_icon": {
+    "type": "image",
+    "texture": "textures/ui/ErrorGlyph",
+    "layer": 3,
+    "size": [13, 20]
+  },
+  "index_panel": {
+    "type": "stack_panel",
+    "size": ["100%", "100%c"]
+  },
+  "index_toggle_button_content": {
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "$button_label|default": "",
+    "$button_icon|default": "textures/blocks/stone",
+    "controls": [
+      {
+        "labels": {
+          "type": "stack_panel",
+          "size": ["100%", 20],
+          "offset": [1, 0],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "image": {
+                "type": "image",
+                "texture": "$button_icon",
+                "size": [20, 20]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [3, 0]
+              }
+            },
+            {
+              "label_panel": {
+                "type": "panel",
+                "size": ["default", 20],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "size": ["default", 10],
+                      "anchor_from": "left_middle",
+                      "anchor_to": "left_middle",
+                      "text": "$button_label",
+                      "color": "$text_color"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "tab_selector@common_toggles.light_content_toggle": {
+    "size": ["100%", 30],
+    "$toggle_name": "navigation_tab",
+    "$radio_toggle_group": true,
+    "$button_content": "tabbed_upsell.index_toggle_button_content"
+  },
+  "left_panel": {
+    "type": "stack_panel",
+    "size": ["100% - 6px", "100%c"],
+    "offset": [3, 0],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "header_padding": {
+          "type": "panel",
+          "size": [0, 4]
+        }
+      },
+      {
+        "info_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_info",
+          "$toggle_group_forced_index": 0,
+          "$button_label": "info.button_label",
+          "$button_icon": "textures/ui/settings_pack"
+        }
+      },
+      {
+        "developer_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_developer",
+          "$toggle_group_forced_index": 1,
+          "$button_label": "developer.button_label",
+          "$button_icon": "textures/ui/dev"
+        }
+      },
+      {
+        "credit_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_credit",
+          "$toggle_group_forced_index": 2,
+          "$button_label": "credit.button_label",
+          "$button_icon": "textures/ui/credit"
+        }
+      },
+      {
+        "features_buton@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_features",
+          "$toggle_group_forced_index": 3,
+          "$button_label": "features.button_label",
+          "$button_icon": "textures/ui/features"
+        }
+      },
+      {
+        "changelog_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_changelog",
+          "$toggle_group_forced_index": 4,
+          "$button_label": "changelog.button_label",
+          "$button_icon": "textures/ui/changelog"
+        }
+      },
+      {
+        "faq_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_faq",
+          "$toggle_group_forced_index": 5,
+          "$button_label": "faq.button_label",
+          "$button_icon": "textures/ui/faq"
+        }
+      }
+    ]
+  },
+  "right_panel": {
+    "type": "stack_panel",
+    "size": ["100% - 6px", "100%c"],
+    "offset": [3, 0],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "header": {
+          "type": "input_panel",
+          "focus_enabled": true,
+          "size": ["100%", 2]
+        }
+      },
+      {
+        "info_page@tabbed_upsell.index_panel": {
+          "controls": [
+            {
+              "info@info_section.info_section": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_info",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "developer_page@tabbed_upsell.index_panel": {
+          "controls": [
+            {
+              "developer@developer_section.developer_section": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_developer",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "credit_page@tabbed_upsell.index_panel": {
+          "controls": [
+            {
+              "credit@credit_section.credit_section": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_credit",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "features_page@tabbed_upsell.index_panel": {
+          "controls": [
+            {
+              "features@features_section.features_section": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_features",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "changelogs@tabbed_upsell.index_panel": {
+          "controls": [
+            {
+              "changelog@changelog_section.changelog_section": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_changelog",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "faq_page@tabbed_upsell.index_panel": {
+          "controls": [
+            {
+              "faq@faq_section.faq_section": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_faq",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "footer": {
+          "type": "input_panel",
+          "focus_enabled": true,
+          "size": ["100%", 20]
+        }
+      }
+    ]
+  },
+  "main_panel": {
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "controls": [
+      {
+        "selector_and_main_content": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": ["100% - 4px", "100% + 1px"],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "controls": [
+            {
+              "tab_selector_panel": {
+                "type": "panel",
+                "size": [135, "100%"],
+                "controls": [
+                  {
+                    "tab_selector@common.scrolling_panel": {
+                      "$show_background": false,
+                      "size": ["100%", "100% - 2px"],
+                      "$scrolling_content": "tabbed_upsell.left_panel",
+                      "$scroll_size": ["4px", "100% - 2px"],
+                      "$scrolling_panel_size": ["100% - 2px", "100%"],
+                      "$always_handle_scrolling": false
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "padding1": {
+                "type": "panel",
+                "size": [1, 0]
+              }
+            },
+            {
+              "divider": {
+                "type": "image",
+                "size": [3, "100%"],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "layer": 10,
+                "offset": [0, 0],
+                "texture": "textures/ui/HowToPlayDivider"
+              }
+            },
+            {
+              "padding2": {
+                "type": "panel",
+                "size": [1, 0]
+              }
+            },
+            {
+              "main_content_panel": {
+                "type": "panel",
+                "size": ["fill", "100%"],
+                "controls": [
+                  {
+                    "main_content@common.scrolling_panel": {
+                      "$show_background": false,
+                      "size": ["100%", "100% - 2px"],
+                      "$scrolling_content": "tabbed_upsell.right_panel",
+                      "$scroll_size": ["4px", "100% - 2px"],
+                      "$scrolling_panel_size": ["100% - 2px", "100%"],
+                      "$always_handle_scrolling": false
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "root_panel": {
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "controls": [
+      {
+        "root_panel@common.fullscreen_header": {
+          "$back_button_has_title": true,
+          "$button_text": "ultramarine.title",
+          "font_type": "MinecraftTen",
+          "$child_control": "tabbed_upsell.main_panel",
+          "layer": 10
+        }
+      },
+      {
+        "font_property_panel": {
+          "type": "panel",
+          "size": [0, 0],
+          "property_bag": {
+            "font_type": "MinecraftTen"
+          }
+        }
+      }
+    ]
+  },
+  "tabbed_upsell_screen": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_exit",
+        "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_tab_left",
+        "to_button_id": "button.menu_tab_left",
+        "mapping_type": "global",
+        "scope": "view"
+      },
+      {
+        "from_button_id": "button.menu_tab_right",
+        "to_button_id": "button.menu_tab_right",
+        "mapping_type": "global",
+        "scope": "view"
+      }
+    ],
+    "$screen_animations": [
+      "@common.screen_exit_animation_push_offset",
+      "@common.screen_exit_animation_pop_offset",
+      "@common.screen_entrance_animation_push_offset",
+      "@common.screen_entrance_animation_pop_offset",
+      "@common.screen_exit_animation_push_fade",
+      "@common.screen_exit_animation_pop_fade",
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
+    "$background_animations": [
+      "@common.screen_exit_animation_push_alpha",
+      "@common.screen_exit_animation_pop_alpha",
+      "@common.screen_entrance_animation_push_alpha",
+      "@common.screen_entrance_animation_pop_alpha"
+    ],
+    "force_render_below": false,
+    "$screen_content": "tabbed_upsell.root_panel",
+    "$screen_bg_content": "tabbed_upsell.black"
+  },
+  "black": {
+    "type": "image",
+    "size": ["100%", "100%"],
+    "texture": "textures/ui/alpha",
+    "alpha": 0.4,
+    "fill": true
+  }
+}

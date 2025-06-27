@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "deep_frozen_ocean"
+    },
+    "components": {
+      "minecraft:sky_color": {
+        "sky_color": "#6E79EB"
+      },
+      "minecraft:fog_appearance": {
+        "fog_identifier": "nic:fog_deep_frozen_ocean"
+      },
+      "minecraft:water_appearance": {
+        "surface_color": "#2570B5"
+      }
+    }
+  }
+}

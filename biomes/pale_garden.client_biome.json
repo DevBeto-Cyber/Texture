@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "pale_garden"
+    },
+    "components": {
+      "minecraft:sky_color": {
+        "sky_color": "#969685"
+      },
+      "minecraft:fog_appearance": {
+        "fog_identifier": "nic:fog_pale_garden"
+      },
+      "minecraft:grass_appearance": {
+        "color": "#778272"
+      },
+      "minecraft:water_appearance": {
+        "surface_color": "#4d98b2"
+      }
+    }
+  }
+}

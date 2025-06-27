@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.crossbow.wield": {
+      "loop": true,
+      "bones": {
+        "rightitem": {
+          "rotation": [
+            "c.is_first_person && query.item_is_charged == 1 && query.is_item_name_any('slot.weapon.offhand','minecraft:shield') == 0 ? 0.0 : c.is_first_person ? -9.0 :0.0",
+            "c.is_first_person && query.item_is_charged == 1 && query.is_item_name_any('slot.weapon.offhand','minecraft:shield') == 0 ? 61.0 : c.is_first_person ? 60.0 :-3.0",
+            "c.is_first_person && query.item_is_charged == 1 && query.is_item_name_any('slot.weapon.offhand','minecraft:shield') == 0 ? -42.0 : c.is_first_person ? -47.0 :3.25"
+          ],
+          "position": [
+            "c.is_first_person && query.item_is_charged == 1 && query.is_item_name_any('slot.weapon.offhand','minecraft:shield') == 0? 18.0 : c.is_first_person ? 13.0 :0.5",
+            "c.is_first_person && query.item_is_charged == 1 && query.is_item_name_any('slot.weapon.offhand','minecraft:shield') == 0? 15.5 : c.is_first_person ? 7.0 :-0.5",
+            "c.is_first_person && query.item_is_charged == 1 && query.is_item_name_any('slot.weapon.offhand','minecraft:shield') == 0? -10.0 : c.is_first_person ? 2.0 :-1.5"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "namespace": "world_section",
+  "multiplayer_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "multiplayer_button_toggle",
+    "$glyph_texture": "textures/ui/multiplayer_hover",
+    "$glyph_color_texture": "textures/ui/multiplayer",
+    "$glyph_size": [16, 16],
+    "$button_text": "options.group.multiplayer",
+    "$toggle_property_bag": {
+      "#panel_title": "createWorldScreen.multiplayer.settings"
+    }
+  },
+  "game_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "game_button_toggle",
+    "$glyph_texture": "textures/ui/game_hover",
+    "$glyph_color_texture": "textures/ui/game",
+    "$glyph_size": [18, 18],
+    "$button_text": "options.category.game",
+    "$toggle_property_bag": {
+      "#panel_title": "createWorldScreen.game.settings"
+    }
+  },
+  "game_section/world_settings_label": {
+    "$main_header_text_color": "$a_color_format",
+    "ignored": false
+  },
+  "game_section/world_preferences_label": {
+    "$font_type": "MinecraftTen",
+    "$main_header_text_color": "$6_color_format",
+    "$font_scale_factor": 1.2
+  },
+  "game_section/world_options_label": {
+    "$font_type": "MinecraftTen",
+    "$main_header_text_color": "$6_color_format",
+    "$font_scale_factor": 1.2
+  },
+  "game_section/experimental_toggles_label": {
+    "$font_type": "MinecraftTen",
+    "$main_header_text_color": "$c_color_format",
+    "$font_scale_factor": 1.2
+  },
+  "game_section/world_cheats_label": {
+    "$font_type": "MinecraftTen",
+    "$main_header_text_color": "$c_color_format",
+    "$font_scale_factor": 1.2
+  },
+  "game_section/world_management_label": {
+    "$main_header_text_color": "$d_color_format",
+    "ignored": false
+  },
+  "game_section/export_template_panel": {
+    "ignored": false
+  },
+  "game_section/export_template_panel/template_version": {
+    "ignored": false
+  },
+  "game_section/export_template_panel/template_buttons": {
+    "ignored": false
+  },
+  "edit_world_manipulation_buttons/padding": {
+    "ignored": false
+  },
+  "export_world_button@settings_common.action_button": {
+    "ignored": false
+  },
+  "selector_pane_content/selector_group_label_1": {
+    "$main_header_text_color": "$a_color_format"
+  },
+  "selector_pane_content": {
+    "modifications": [
+      {
+        "control_name": "selector_group_label_1",
+        "operation": "insert_after",
+        "value": [
+          {
+            "text_padding@settings_common.selector_group_label": {
+              "font_scale_factor": 0.2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "addons_selector_panel": {
+    "type": "stack_panel",
+    "$tts_section_header": "options.category.addons",
+    "controls": [
+      {
+        "spacer": {
+          "type": "panel",
+          "size": [0, 8]
+        }
+      },
+      {
+        "selector_group_label_2@common.green_label": {
+          "text": "$tts_section_header"
+        }
+      },
+      {
+        "text_padding@settings_common.selector_group_label": {
+          "font_scale_factor": 0.2
+        }
+      },
+      {
+        "level_texture_pack_button@world_section.level_texture_pack_button": {
+          "$toggle_group_forced_index": "$level_texture_pack_toggle_index"
+        }
+      },
+      {
+        "addon_button@world_section.addon_button": {
+          "$toggle_group_forced_index": "$addon_toggle_index"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "namespace": "nic_enchanting_icons",
+  "single_item_cell": {
+    "type": "panel",
+    "layer": 5,
+    "$item_texture|default": "textures/misc/missing_texture",
+    "$image_size|default": [16, 16],
+    "size": [18, 18],
+    "controls": [
+      {
+        "background": {
+          "type": "image",
+          "layer": 6,
+          "texture": "textures/ui/cell_image_lock",
+          "size": [18, 18],
+          "offset": [0, 0],
+          "anchor_from": "center",
+          "anchor_to": "center"
+        }
+      },
+      {
+        "item@item_icon": {}
+      },
+      {
+        "hover_button@hover_button": {}
+      }
+    ]
+  },
+  "multi_item_cell": {
+    "type": "panel",
+    "layer": 5,
+    "size": [18, 126],
+    "$background_size|default": [18, 126],
+    "controls": [
+      {
+        "background": {
+          "type": "image",
+          "layer": 6,
+          "texture": "textures/ui/cell_image_lock",
+          "size": "$background_size",
+          "offset": [0, 0],
+          "anchor_from": "center",
+          "anchor_to": "center"
+        }
+      }
+    ]
+  },
+  "item_icon": {
+    "type": "image",
+    "layer": 10,
+    "texture": "$item_texture",
+    "size": "$image_size",
+    "offset": [0, 0],
+    "anchor_from": "center",
+    "anchor_to": "center"
+  },
+  "multi_item_panel": {
+    "type": "panel",
+    "layer": 5,
+    "$item_texture|default": "textures/misc/missing_texture",
+    "$image_size|default": [16, 16],
+    "size": [18, 18],
+    "controls": [
+      {
+        "item@item_icon": {}
+      },
+      {
+        "hover_button@hover_button": {}
+      }
+    ]
+  },
+  "hover_button@common.button": {
+    "layer": 15,
+    "$pressed_button_name": "by notnicto",
+    "size": [18, 18],
+    "sound_volume": 0,
+    "default_control": "",
+    "pressed_control": "",
+    "controls": [
+      {
+        "hover@common.empty_panel": {
+          "size": [18, 18],
+          "controls": [
+            {
+              "hover_text_image@nic_enchanting_icons.hover_text_image": {}
+            },
+            {
+              "white_border@common.white_border_slot": {
+                "layer": 2,
+                "size": [18, 18]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "hover_text_image": {
+    "type": "image",
+    "allow_clipping": false,
+    "alpha": 1,
+    "texture": "textures/ui/purpleBorder",
+    "size": ["100%c+8px", "100%c+8px"],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "offset": [18, 0],
+    "layer": 25,
+    "controls": [
+      {
+        "hover_text_panel": {
+          "type": "panel",
+          "size": ["100%cm - 1px", "100%c+1px"],
+          "controls": [
+            {
+              "hover_text@hover_text": {
+                "text": "$hover_text",
+                "color": "$color"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "hover_text": {
+    "type": "label",
+    "offset": [0, 0],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "layer": 2,
+    "$color|default": "$f_color_format",
+    "$hover_text|default": "Unset",
+    "shadow": false
+  },
+  "etable@single_item_cell": {
+    "$item_texture": "textures/ui/book",
+    "$hover_text": "enchantment_guide.etable",
+    "$color": "$d_color_format"
+  },
+  "ebook@single_item_cell": {
+    "$item_texture": "textures/ui/xp",
+    "$hover_text": "%enchantment_guide.ebook\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "book@multi_item_panel": {
+    "$item_texture": "textures/items/book_enchanted",
+    "$hover_text": "%enchantment_guide.ebook\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "helmet@multi_item_panel": {
+    "$item_texture": "textures/items/diamond_helmet",
+    "$hover_text": "%enchantment.waterWorker\n%enchantment.oxygen %enchantment.level.3\n%enchantment.protect.all %enchantment.level.4\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "chestplate@multi_item_panel": {
+    "$item_texture": "textures/items/diamond_chestplate",
+    "$hover_text": "%enchantment.protect.all %enchantment.level.4\n%enchantment.thorns %enchantment.level.3\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "leggings@multi_item_panel": {
+    "$item_texture": "textures/items/diamond_leggings",
+    "$hover_text": "%enchantment.protect.all %enchantment.level.4\n%enchantment.swift_sneak %enchantment.level.3\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "boots@multi_item_panel": {
+    "$item_texture": "textures/items/diamond_boots",
+    "$hover_text": "%enchantment.protect.all %enchantment.level.4\n%enchantment.protect.fall %enchantment.level.4\n%enchantment.soul_speed %enchantment.level.3\n%enchantment.waterWalker %enchantment.level.3\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "mace@multi_item_panel": {
+    "$item_texture": "textures/items/mace",
+    "$hover_text": "%enchantment.heavy_weapon.density %enchantment.level.5\n%enchantment.heavy_weapon.windburst %enchantment.level.3\n%enchantment.fire %enchantment.level.2\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "trident@multi_item_panel": {
+    "$item_texture": "textures/items/trident",
+    "$hover_text": "%enchantment.tridentRiptide %enchantment.level.3\n%enchantment.tridentImpaling %enchantment.level.5\n%enchantment.durability %enchantment.level.3\n%enchantment.mending\n------------------\n%enchantment.tridentChanneling\n%enchantment.tridentLoyalty %enchantment.level.3\n%enchantment.tridentImpaling %enchantment.level.5\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "fishing_rod@multi_item_panel": {
+    "$item_texture": "textures/items/fishing_rod_uncast",
+    "$hover_text": "%enchantment.lootBonusFishing %enchantment.level.3\n%enchantment.fishingSpeed %enchantment.level.3\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "sword@multi_item_panel": {
+    "$item_texture": "textures/items/diamond_sword",
+    "$hover_text": "%enchantment.damage.all %enchantment.level.5\n%enchantment.fire %enchantment.level.2\n%enchantment.knockback %enchantment.level.2\n%enchantment.lootBonus %enchantment.level.3\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "axe@multi_item_panel": {
+    "$item_texture": "textures/items/diamond_axe",
+    "$hover_text": "%enchantment.untouching\n%enchantment.digging %enchantment.level.5\n%enchantment.damage.all %enchantment.level.5\n%enchantment.durability %enchantment.level.3\n%enchantment.mending\n-------------\n%enchantment.lootBonusDigger %enchantment.level.3\n%enchantment.digging %enchantment.level.5\n%enchantment.damage.all %enchantment.level.5\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "pickaxe@multi_item_panel": {
+    "$item_texture": "textures/items/diamond_pickaxe",
+    "$hover_text": "%enchantment.untouching\n%enchantment.digging %enchantment.level.5\n%enchantment.durability %enchantment.level.3\n%enchantment.mending\n-------------\n%enchantment.lootBonusDigger %enchantment.level.3\n%enchantment.digging %enchantment.level.5\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "shovel@multi_item_panel": {
+    "$item_texture": "textures/items/diamond_shovel",
+    "$hover_text": "%enchantment.untouching\n%enchantment.digging %enchantment.level.5\n%enchantment.durability %enchantment.level.3\n%enchantment.mending\n-------------\n%enchantment.lootBonusDigger %enchantment.level.3\n%enchantment.digging %enchantment.level.5\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "hoe@multi_item_panel": {
+    "$item_texture": "textures/items/diamond_hoe",
+    "$hover_text": "%enchantment.lootBonusDigger %enchantment.level.3\n%enchantment.digging %enchantment.level.5\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  },
+  "bow@multi_item_panel": {
+    "$item_texture": "textures/items/bow_standby",
+    "$hover_text": "%enchantment.arrowInfinite\n%enchantment.arrowDamage %enchantment.level.5\n%enchantment.arrowFire\n%enchantment.arrowKnockback %enchantment.level.2\n%enchantment.durability %enchantment.level.3"
+  },
+  "crossbow@multi_item_panel": {
+    "$item_texture": "textures/items/crossbow_standby",
+    "$hover_text": "%enchantment.crossbowMultishot\n%enchantment.crossbowQuickCharge %enchantment.level.3\n%enchantment.durability %enchantment.level.3\n%enchantment.mending"
+  }
+}

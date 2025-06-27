@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.armor_stand": {
+      "geometry": "query.is_name_any('Alex', 'Old alex', 'Slim 1',  'Slim 2', 'Slim 3', 'Slim 4', 'Slim 5',  'Amr9445', 'Nx703') ? Geometry.default2 : query.is_name_any('Camel') ? Geometry.plushie_camel : query.is_name_any('Creeper') ? Geometry.plushie_creeper :  query.is_name_any('Drowned') ? Geometry.plushie_drowned : query.is_name_any('Dragon') ? Geometry.plushie_ender_dragon : query.is_name_any('Enderman') ? Geometry.plushie_enderman : query.is_name_any('Ghast') ? Geometry.plushie_ghast : query.is_name_any('Fox','Snow fox') ? Geometry.plushie_fox : query.is_name_any('Nic plushie') ? Geometry.plushie : query.is_name_any('Villager', 'Farmer') ? Geometry.plushie_villager : query.is_name_any('Zombie') ? Geometry.plushie_zombie : query.is_name_any('Iron golem') ? Geometry.plushie_iron_golem : query.is_name_any('Snow golem') ? Geometry.plushie_snow_golem : query.is_name_any('Pillager') ? Geometry.plushie_pillager : query.is_name_any('Witch') ? Geometry.plushie_witch : Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "arrays": {
+        "textures": {
+          "Array.Uskins": [
+            "Texture.wood_acacia",
+            "Texture.wood_bamboo",
+            "Texture.wood_birch",
+            "Texture.wood_cherry",
+            "Texture.wood_crimson",
+            "Texture.wood_dark_oak",
+            "Texture.wood_jungle",
+            "Texture.wood_mangrove",
+            "Texture.wood_oak",
+            "Texture.wood_pale_oak",
+            "Texture.wood_spruce",
+            "Texture.wood_warped"
+          ]
+        }
+      },
+      "textures": [
+        "query.is_name_any('Gojo') ? Texture.anime_gojo : query.is_name_any('Goku') ? Texture.anime_goku : query.is_name_any('Luffy') ? Texture.anime_luffy : query.is_name_any('Madara') ? Texture.anime_madara : query.is_name_any('Tanjiro') ? Texture.anime_tanjiro : query.is_name_any('Sukuna') ? Texture.anime_sukuna : query.is_name_any('Yuji') ? Texture.anime_yuji : query.is_name_any('Naruto') ? Texture.anime_naruto : query.is_name_any('Custom 1') ? Texture.custom_1 : query.is_name_any('Custom 2') ? Texture.custom_2 : query.is_name_any('Custom 3') ? Texture.custom_3 : query.is_name_any('Custom 4') ? Texture.custom_4 : query.is_name_any('Custom 5') ? Texture.custom_5 : query.is_name_any('Slim 1') ? Texture.custom_slim_1 : query.is_name_any('Slim 2') ? Texture.custom_slim_2 : query.is_name_any('Slim 3') ? Texture.custom_slim_3 : query.is_name_any('Slim 4') ? Texture.custom_slim_4 : query.is_name_any('Slim 5') ? Texture.custom_slim_5 : query.is_name_any('Dummy') ? Texture.extra_dummy : query.is_name_any('Halloween') ? Texture.extra_halloween : query.is_name_any('Invis') ? Texture.extra_showcase : query.is_name_any('Chad') ? Texture.extra_chad : query.is_name_any('Alex') ? Texture.minecraft_alex : query.is_name_any('Herobrine') ? Texture.minecraft_herobrine : query.is_name_any('Notch') ? Texture.minecraft_notch : query.is_name_any('Old alex') ? Texture.minecraft_old_alex : query.is_name_any('Old steve') ? Texture.minecraft_old_steve : query.is_name_any('Steve') ? Texture.minecraft_steve : query.is_name_any('Alexxander') ? Texture.special_alexxander : query.is_name_any('Amr9445') ? Texture.special_amr9445 : query.is_name_any('Dark') ? Texture.special_darkshadow : query.is_name_any('Keshew') ? Texture.special_keshew : query.is_name_any('Legend') ? Texture.special_legend : query.is_name_any('Lostliano') ? Texture.special_lostliano : query.is_name_any('Nic') ? Texture.special_nic : query.is_name_any('Saif') ? Texture.special_saif : query.is_name_any('Sed') ? Texture.special_sed : query.is_name_any('SuperMario') ? Texture.special_supermario : query.is_name_any('New vietnam') ? Texture.special_newvietnam : query.is_name_any('Nx703') ? Texture.special_nx703 : query.is_name_any('Clownpierce') ? Texture.youtuber_clownpierce : query.is_name_any('Dream') ? Texture.youtuber_dream : query.is_name_any('Mr Beast') ? Texture.youtuber_mr_beast : query.is_name_any('Technoblade') ? Texture.youtuber_technoblade : query.is_name_any('Camel') ? Texture.plushie_camel : query.is_name_any('Creeper') ? Texture.plushie_creeper : query.is_name_any('Drowned') ? Texture.plushie_drowned : query.is_name_any('Dragon') ? Texture.plushie_ender_dragon : query.is_name_any('Enderman') ? Texture.plushie_enderman : query.is_name_any('Farmer') ? Texture.plushie_farmer : query.is_name_any('Ghast') ? Texture.plushie_ghast : query.is_name_any('Villager') ? Texture.plushie_villager : query.is_name_any('Nic plushie') ? Texture.plushie_nic : query.is_name_any('Zombie') ? Texture.plushie_zombie : query.is_name_any('Fox') ? Texture.plushie_fox : query.is_name_any('Snow fox') ? Texture.plushie_snow_fox : query.is_name_any('Iron golem') ? Texture.plushie_iron_golem : query.is_name_any('Snow golem') ? Texture.plushie_snow_golem : query.is_name_any('Pillager') ? Texture.plushie_pillager : query.is_name_any('Witch') ? Texture.plushie_witch : query.is_name_any('Acacia') ? Texture.wood_acacia : query.is_name_any('Bamboo') ? Texture.wood_bamboo : query.is_name_any('Birch') ? Texture.wood_birch : query.is_name_any('Cherry') ? Texture.wood_cherry : query.is_name_any('Crimson') ? Texture.wood_crimson : query.is_name_any('Dark oak') ? Texture.wood_dark_oak : query.is_name_any('Jungle') ? Texture.wood_jungle : query.is_name_any('Mangrove') ? Texture.wood_mangrove : query.is_name_any('Oak') ? Texture.wood_oak : query.is_name_any('Pale oak') ? Texture.wood_pale_oak : query.is_name_any('Spruce') ? Texture.wood_spruce : query.is_name_any('Warped') ? Texture.wood_warped : Array.Uskins[variable.Uvar]"
+      ]
+    },
+    "controller.render.armor_stand_glowing": {
+      "geometry": "query.is_name_any('Drowned') ? Geometry.plushie_drowned : query.is_name_any('Dragon') ? Geometry.plushie_ender_dragon : query.is_name_any('Enderman') ? Geometry.plushie_enderman : query.is_name_any('Nic plushie') ? Geometry.plushie : Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "query.is_name_any('Drowned') ? Texture.plushie_drowned_glowing : query.is_name_any('Dragon') ? Texture.plushie_ender_dragon_glowing : query.is_name_any('Enderman') ? Texture.plushie_enderman_glowing : query.is_name_any('Nic plushie') ? Texture.plushie_nic_glowing : query.is_name_any('Halloween') ? Texture.extra_halloween_glowing : query.is_name_any('Herobrine') ? Texture.minecraft_herobrine_glowing : query.is_name_any('Amr9445') ? Texture.special_amr9445_glowing : query.is_name_any('Dark') ? Texture.special_darkshadow_glowing : query.is_name_any('Keshew') ? Texture.special_keshew_glowing : query.is_name_any('Legend') ? Texture.special_legend_glowing : query.is_name_any('Nic') ? Texture.special_nic_glowing : query.is_name_any('New vietnam') ? Texture.special_newvietnam_glowing : query.is_name_any('Saif') ? Texture.special_saif_glowing : Texture.none"
+      ],
+      "light_color_multiplier": 1.5,
+      "ignore_lighting": true
+    }
+  }
+}

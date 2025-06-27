@@ -1,0 +1,7 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "amr9445_glowing",
+		"metalness_emissive_roughness": "amr9445_glowing_mer"
+	}
+}

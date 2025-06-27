@@ -1,0 +1,463 @@
+⭐Ultramarine⭐
+ultramarine.title= Ultramarine Nightfall
+ultramarine.version= Nightfall X 
+--------------------------------
+info.button_label=   Thông tin
+developer.button_label=   Nhà phát triển
+credit.button_label=   Ghi công
+features.button_label=   Tính năng
+changelog.button_label=   Nhật ký cập nhật
+faq.button_label=   Câu hỏi thường gặp
+
+⭐settings⭐
+menu.settings=Cài đặt
+settings.quick_settings=Cài đặt nhanh
+settings.common_settings=Cài đặt chung
+settings.control_settings=Cài đặt điều khiển
+settings.other_settings=Cài đặt khác
+
+⭐recommended screen⭐
+recommended.buttontext=Đề xuất
+recommended.paneltitle=Cài đặt đề xuất
+recommended.recommended=Cài đặt đề xuất:
+recommended.settings1=1. Bật những tùy chọn này.
+recommended.settings2=2. Đặt giao diện người dùng (UI) về kiểu cổ điển.
+recommended.settings3=3. Đặt tỉ lệ giao diện (GUI scale) là -1 hoặc 0.
+recommended.settings4=4. Điều chỉnh vùng an toàn màn hình cho phù hợp với màn hình của bạn.
+
+⭐advanced section⭐
+advanced.button=Nâng cao
+advanced.panel=Cài đặt nâng cao
+advanced.title=Cài đặt nâng cao:
+
+⭐fps section⭐
+fps.buttontext=Fps++
+fps.paneltitle=FPS Tốt Hơn
+fps.title=Làm theo các bước sau để cải thiện FPS:
+fps.vsync=1. Tắt Vsync.
+fps.fancy=2. Tắt hết các tùy chọn này.
+fps.graphics=3. Chọn chế độ Đồ họa đơn giản.
+fps.fps=4. Đặt FPS bằng với tần số làm tươi màn hình của bạn.
+fps.aa=5. Đặt mức chống răng cưa thấp nhất.
+fps.distance=6. Đặt khoảng cách hiển thị từ 8-14 khối.
+fps.important= Nếu game của bạn nhìn xấu, bạn có thể bật lại đổ bóng mượt, bầu trời đẹp và đồ họa nâng cao. Hãy điều chỉnh theo thiết bị của bạn để có kết quả tốt nhất.
+
+⭐sound section⭐
+sound.button=Âm thanh
+sound.panel=Cài đặt âm thanh
+sound.music=Nhạc và Âm thanh :
+
+⭐video section⭐
+video.title.hud=Cài đặt HUD :
+video.title.graphics=Cài đặt đồ họa :
+
+⭐Info Section⭐
+info.title=ULTRAMARINE
+info.edition=NIGHTFALL
+--------------------------------
+info.creator=Được tạo bởi §dnotnicto
+info.about1=Chào bạn! Gói tài nguyên tuyệt vời này thêm một số chức năng và hình ảnh mới cho Minecraft.
+info.about2=Nếu bạn phát hiện bất kỳ lỗi nào, vui lòng báo cáo trong máy chủ Discord của mình.
+info.thanks=Cảm ơn bạn đã tải gói này...
+
+
+⭐developer section⭐
+developer.name=notNicto
+developer.discord= discord.com/mYxjckhRNH
+developer.youtube= youtube.com/@notnicto
+developer.mcpedl= mcpedl.com/user/notnicto
+developer.creation1= Ultramarine Overhaul
+developer.creation2= Neo Texture Pack
+developer.creation3= Minecraft Akinator [Bedrock]
+developer.creation4= Food Expansion
+developer.creation5= Craft Everything
+developer.creation6= Achievement World
+--------------------------------
+developer.about=Xin chào, mình là Nic  đến từ Ấn Độ. Mình yêu thích việc tạo ra các bản mod, bản đồ và gói texture cho Minecraft như một sở thích. Ngoài ra, mình cũng thích làm nội dung liên quan đến Minecraft trên YouTube.
+developer.creation_title=Các sáng tạo khác của notnicto:
+
+⭐credit section⭐
+credit.title=Ghi công
+credit.translators=Người dịch
+credit.thanks=Đặc biệt cảm ơn §cSaif.15§r vì đã giúp làm cho gói này tương thích với thiết bị di động.
+--------------------------------
+credit.author1=DrAv0011
+credit.content11=Quick Craft & Trade Unlocker.
+credit.content12=Bedrock Tweaks : §abedrocktweaks.net
+credit.author2=HyperF3GamerINDO
+credit.content21=Totem doll animation
+credit.content22=Femboy Totem : §amcpedl.com/femboy-totem
+credit.author3=Chainsketch
+credit.content31=FPS Counter
+credit.content32=FPS Counter : §amcpedl.com/fps-counter-pack
+credit.translators1= vietnamese_9000main §7[Vietnamese]
+credit.translators2= lostliano §7[Deutsch]
+credit.translators3= nx703 §7[Español]
+credit.translators4= SuperMario2.0 §7[Indonesia]
+
+⭐features section⭐
+feature.title=Tính năng
+feature.1= Chế độ tối với kết cấu bão hòa màu.
+feature.2= Thiết kế giao diện người dùng (UI) và giao diện đồ họa (GUI) độc đáo.
+feature.3= Cài đặt nhanh và gọn nhẹ.
+feature.4= Ba gói phụ: bình thường, tái tưởng tượng và không giới hạn.
+feature.5= Sương mù và bộ lọc theo quần xã sinh vật.
+feature.6= Nhặt đồ nhanh, trợ lý trò chuyện & mở khóa giao dịch.
+feature.7= Hướng dẫn pha chế & chế tạo nhanh.
+feature.8= Trình xem độ bền vật phẩm.
+feature.9= Đồng hồ số và la bàn hiển thị trên HUD.
+feature.10= Tin nhắn chết hài hước.
+feature.11= Hoạt ảnh búp bê Totem.
+feature.12= Giá đỡ giáp tùy chỉnh.
+feature.13= Xem trước độ đói & điểm giáp.
+feature.14= Kết cấu giáp và công cụ mới với viền phát sáng.
+feature.15= Hạt hiệu ứng được thiết kế lại.
+feature.16= Và mình quên mất tiêu rồi lol... 
+
+⭐changelog section⭐
+changelog.title=Nhật ký cập nhật
+--------------------------------
+changelog.v4=Phiên bản 4.0 :
+changelog.v41= Hỗ trợ hình ảnh sống động.
+changelog.v42= Giao diện người dùng mới.
+changelog.v43= Tọa độ được cải thiện.
+changelog.v44= Màn hình trò chuyện tốt hơn.
+changelog.v45= Cải thiện bầu không khí trong game.
+changelog.v46= Bộ xem độ bền được cải tiến.
+changelog.v47= Biểu tượng phù phép.
+changelog.v48= Bộ xem độ hiếm vật phẩm.
+changelog.v49= Hướng dẫn phù phép được nâng cấp.
+changelog.v410= Sửa nhiều lỗi khác nhau.
+--------------------------------
+changelog.v3=Phiên bản 3.0:
+changelog.v31= Giao diện rương đầy màu sắc.
+changelog.v32= Tăng FPS.
+changelog.v33= Thêm nút f1 và bộ đếm FPS.
+changelog.v34= Viền phát sáng và hiệu ứng phù phép rực rỡ.
+changelog.v35= Tinh chỉnh redstone.
+changelog.v36= Cập nhật bộ xem độ bền.
+changelog.v37= Các loại dân làng.
+changelog.v38= Hiệu ứng trò chuyện mới.
+changelog.v39= Trình xem độ hiếm vật phẩm.
+changelog.v310= Và nhiều thứ khác nữa...
+--------------------------------
+changelog.v2=Phiên bản 2.0 :
+changelog.v21= Hỗ trợ phiên bản 1.21+.
+changelog.v22= Cập nhật ngôn ngữ: Tiếng Tây Ban Nha, Indonesia và Bồ Đào Nha.
+changelog.v23= Hướng dẫn nung chảy.
+changelog.v24= Giá đỡ giáp tùy chỉnh.
+changelog.v25= Hiệu ứng totem mới.
+changelog.v26= Thêm kết cấu giáp và công cụ.
+changelog.v27= Phông chữ mới.
+changelog.v28= Thêm xem trước điểm giáp.
+changelog.v29= Sửa nhiều lỗi khác nhau.
+changelog.v210= Đã thêm Herobrine.
+--------------------------------
+changelog.v1=Phiên bản 1.0 :
+changelog.v11= Chế độ tối với kết cấu rực rỡ.
+changelog.v12= Menu khởi động hoàn toàn mới.
+changelog.v13= Cài đặt nhanh và gọn gàng.
+changelog.v14= Ba chế độ phụ: bình thường, tái tưởng tượng và tự do.
+changelog.v15= Sương mù và bộ lọc theo quần xã sinh vật.
+changelog.v16= Loot nhanh, trợ lý chat & mở khóa giao dịch.
+changelog.v17= Tin nhắn chết hài hước. [Chỉ tiếng Anh]
+changelog.v18= Đồng hồ số và la bàn trên HUD.
+changelog.v19= Hiển thị phần trăm độ bền vật phẩm.
+changelog.v110= Hướng dẫn chế tạo thuốc và chế tạo nhanh.
+
+⭐faq section⭐
+faq.title=Các câu hỏi thường gặp
+faq.q1= Gói này có thể áp dụng cho gói tài nguyên của thế giới không?
+faq.a1=Chắc chắn rồi! Bạn có thể thoải mái áp dụng gói này cho bất kỳ gói tài nguyên của thế giới hoặc máy chủ nào!
+faq.q2= Tôi có thể phân phối bất kỳ tính năng nào của gói này trong gói của mình không?
+faq.a2=Có! Mình sẽ rất vui nếu mã của mình có thể giúp bạn phát triển gói của bạn! Tuy nhiên, khi phân phối, đừng quên ghi nguồn nhé!
+faq.q3= Tôi muốn đánh giá gói này trên Youtube hoặc nền tảng tương tự!
+faq.a3=Hoàn toàn được chào đón! Hãy để lại liên kết đến trang MCPEDL/CURSEFORGE của gói này trong phần mô tả video nhé!
+faq.q4= Tôi vào một máy chủ nào đó thì Ultramarine tự tắt...
+faq.a4=Một số máy chủ không cho phép sử dụng tài nguyên toàn cục. Ultramarine không thể hoạt động trên các máy chủ như vậy.
+faq.q5= Tôi đã phát hiện lỗi! Báo cáo ở đâu?
+faq.a5=Nếu bạn phát hiện lỗi, vui lòng báo cáo trong máy chủ Discord -  §bhttps://discord.gg/mYxjckhRNH§r
+faq.q6= Làm sao để tải skin của tôi lên làm totem?
+faq.a6=Tham gia máy chủ Discord của mình. Hướng dẫn chi tiết đã được đăng ở đó.
+faq.q7= Tôi có thể dùng skin của mình làm mô hình giáp (armor stand) tùy chỉnh không?
+faq.a7=Chắc chắn rồi. Có 10 ô trống thêm. Hãy tham gia máy chủ Discord của mình. Hướng dẫn chi tiết đã được đăng ở đó.
+
+
+⭐progress screen⭐
+progress.overworld=Đang vào §aThế giới Bề mặt
+progress.nether=Đang vào §cĐịa ngục
+progress.end=Đang vào §dTận cùng
+
+⭐better cords⭐
+map.position=Position: %s, %s, %s
+map.chunk=Mảnh
+map.sub_chunk=Phân mảnh
+map.chunk_border=Ranh giới
+map.chunk_corner=Góc
+map.chunk_center=Trung tâm
+hudScreen.daysPlayed=§dSố ngày đã chơi:§r %s
+
+⭐death massages⭐
+death.attack.anvil=%1$s đã bị kẹp bởi một chiếc đe đang rơi
+death.attack.arrow=%1$s đã bị đâm bởi %2$s sử dụng cung tên
+death.attack.arrow.item=%1$s đâm bởi %2$s sử dụng %3$s
+death.attack.bullet=%1$s đã bị sniper bởi %2$s
+death.attack.cactus=%1$s đã bị đâm tới chết
+death.attack.cactus.player=%1$s đã đi vào cây xương rồng khi đang cố thoát khỏi %2$s
+death.attack.drown=%1$s đã trở thành đồ ăn cho cá
+death.attack.drown.player=%1$s đã bị đuối nước khi đang cố thoát %2$s
+death.attack.explosion=%1$s là một thằng noob
+death.attack.explosion.player=%1$s đã bị nổ bởi %2$s
+death.attack.fall=%1$s đã đi vào vực thẳm
+death.attack.fallingBlock=%1$s đã bị đâm từ trên cao bởi một block rơi
+death.attack.fireball=%1$s đax bị nướng %2$s
+death.attack.fireball.item=%1$s đã bị nướng %2$s sử dụng %3$s
+death.attack.fireworks=%1$s đã đăng xuất sau một tiếng nổ
+death.attack.flyIntoWall=%1$s đã trải nghiệm năng lượng động học
+death.attack.generic=%1$s đã chết
+death.attack.indirectMagic=%1$s đã bị giết bởi %2$s sử dụng ma thuật đen
+death.attack.indirectMagic.item=%1$s đã bị giết bởi %2$s sử dụng %3$s
+death.attack.inFire=%1$s đã bị lửa thiêu
+death.attack.inFire.player=%1$s đã đi vào lửa khi đang cố thoát %2$s
+death.attack.inWall=%1$s đã bị ngạt thở trong một bức tường
+death.attack.lava=%1$s đã cố bơi trong dung nham
+death.attack.lava.player=%1$s đã cố bơi trong dung nham khi đang cố thoát %2$s
+death.attack.lightningBolt=%1$s đã gọi điện trong một cơn bão
+death.attack.magic=%1$s đã bị giết bởi ma thuật đen
+death.attack.magma=%1$s đã phát hiện ra nền là dung nham
+death.attack.magma.player=%1$s đã đi vào khu vực nguy hiểm nhờ %2$s
+death.attack.mob=%1$s đã bị %2$s biến thành trò hề
+death.attack.onFire=%1$s đã quên kem chống nắng của họ
+death.attack.onFire.player=%1$s đã bị nấu thành tro khi đang cố thoát %2$s
+death.attack.outOfWorld=%1$s đã bị ném ra ngoài thế giới
+death.attack.player=%1$s đã bị đánh bởi %2$s
+death.attack.player.item=%1$s đã bị chém bởi %2$s sử dụng %3$s
+death.attack.spit=%1$s đã bị bắn nước miếng %2$s
+death.attack.starve=%1$s đã đói đến chết
+death.attack.sweetBerry=%1$s đã bị một bụi quả mọng ngọt ngào đâm đâm đến chết
+death.attack.thorns=%1$s đã bị chết khi cố đánh %2$s
+death.attack.thrown=%1$s đã bị đánh tơi bời bởi %2$s
+death.attack.thrown.item=%1$s đã bị đánh tơi bời bởi %2$s sử dụng %3$s
+death.attack.trident=%1$s đã bị Aquaman ném cây đinh ba
+death.attack.wither=%1$s đã bị dính hiệu ứng wither
+death.attack.freeze=%1$s đã quên áo len
+death.attack.sonicBoom=%1$s đã bị xóa sổ bởi một tiếng thét mang điện tích âm thanh
+death.attack.sonicBoom.player=%1$s đã bị tiêu diệt bởi một tiếng thét có sức mạnh âm thanh trong khi cố gắng trốn thoát %2$s
+death.attack.stalactite=%1$s đã bị xiên bởi một nhũ đá rơi xuống
+death.attack.stalagmite=%1$s đã bị đâm vào một nhũ đá
+death.fell.accident.generic=%1$s không nảy
+death.fell.accident.ladder=%1$s đã ngã khỏi thang
+death.fell.accident.vines=%1$s đã rơi khỏi dây leo
+death.fell.accident.water=%1$s rơi khỏi nước
+death.fell.assist=%1$s đã bị buộc phải rơi bởi %2$s
+death.fell.assist.item=%1$s đã bị buộc phải rơi bởi %2$s sử dụng %3$s
+death.fell.finish=%1$s đã rơi quá xa và đã bị kết thúc bởi %2$s
+death.fell.finish.item=%1$s đã rơi quá xa và đã bị kết thúc bởi %2$s sử dụng %3$s
+death.fell.killer=%1$s đã rơi
+deathScreen.leaveServer=Rời khỏi server
+deathScreen.message=Nhận sự đau khổ đi
+deathScreen.quit=Thoát ra một cách tức giận
+deathScreen.title=Haha bạn đã chết
+deathScreen.title.hardcore=Ối, bạn không thể hồi sinh nữa!
+
+⭐foood info⭐
+item.apple.name=Quả táo 
+item.golden_apple.name=Quả táo vàng  
+item.appleEnchanted.name=Quả táo vàng đã enchant  
+item.beef.name=Thịt bò sống 
+item.beetroot.name=Củ cải đường 
+item.beetroot_soup.name=Cháo củ cải đường 
+item.bread.name=Bánh mì 
+item.cake.name=Bánh kem 
+item.golden_carrot.name=Cà rốt vàng 
+item.carrot.name=Carrot 
+item.chorus_fruit.name=Quả chorus 
+item.cooked_beef.name=Thịt bò đã nấu 
+item.cooked_chicken.name=Thịt gà đã nấu 
+item.cooked_porkchop.name=Thịt heo đã nấu 
+item.chicken.name=Thịt gà sống 
+item.cookie.name=Bánh quy 
+item.clownfish.name=Cá nhiệt đới 
+item.cooked_fish.name=Cá tuyết chín 
+item.fish.name=Cá tuyết sống 
+item.pufferfish.name=Cá nóc  
+item.cooked_salmon.name=Cá hồi chín 
+item.salmon.name=Cá hồi sống 
+item.honey_bottle.name=Chai mật ong 
+item.melon.name=Dưa lát 
+item.mushroom_stew.name=Món hầm nấm 
+item.muttonCooked.name=Thịt cừu nấu chín 
+item.muttonRaw.name=Thịt cừu sống
+item.porkchop.name=Thịt heo
+item.potato.name=Khoai tây 
+item.baked_potato.name=Khoai tây đã nấu 
+item.poisonous_potato.name=Khoai tây độc  
+item.pumpkin_pie.name=Bánh bí ngô 
+item.cooked_rabbit.name=Thịt thỏ chín 
+item.rabbit.name=Thịt thỏ sống 
+item.rabbit_stew.name=Thịt thỏ hầm 
+item.dried_kelp.name=Tảo bẹ khô 
+item.rotten_flesh.name=Thịt thối 
+item.spider_eye.name=Mắt nhện  
+item.sweet_berries.name=Quả mọng ngọt 
+item.glow_berries.name=Quả mọng phát sáng 
+
+⭐armor points⭐
+item.turtle_helmet.name=Mai rùa 
+item.chainmail_helmet.name=Mũ xích 
+item.leather_helmet.name=Mũ da 
+item.diamond_helmet.name=Mũ kim cương 
+item.golden_helmet.name=Mũ vàng 
+item.iron_helmet.name=Mũ sắt 
+item.chainmail_chestplate.name=Áo giáp xích 
+item.leather_chestplate.name=Áo da 
+item.diamond_chestplate.name=Áo giáp kim cương 
+item.golden_chestplate.name=Áo giáp vàng 
+item.iron_chestplate.name=Áo giáp sắt 
+item.chainmail_leggings.name=Áo giáp xích 
+item.leather_leggings.name=Quần da 
+item.diamond_leggings.name=Quần kim cương 
+item.golden_leggings.name=Quần vàng 
+item.iron_leggings.name=Quần sắt 
+item.chainmail_boots.name=Giày xích 
+item.leather_boots.name=Giày da 
+item.diamond_boots.name=Giày kim cương 
+item.golden_boots.name=Giày vàng 
+item.iron_boots.name=Giày sắt 
+item.netherite_boots.name=Giày netherite 
+item.netherite_leggings.name=Quần netherite 
+item.netherite_chestplate.name=Áo giáp netherite 
+item.netherite_helmet.name=Mũ netherite 
+
+⭐colorful enchantments⭐
+enchantment.level.1=§r
+enchantment.level.2=§r
+enchantment.level.3=§r
+enchantment.level.4=§r
+enchantment.level.5=§r
+--------------------------------
+enchantment.arrowDamage= §d Sức mạnh
+enchantment.arrowFire= §c Lửa §r
+enchantment.arrowInfinite= §a Vô hạn §r
+enchantment.arrowKnockback= §2 Bật lùi
+enchantment.crossbowMultishot= §a Nhiều lần bắn §r
+enchantment.crossbowPiercing= §3 Bắn xuyên giáp
+enchantment.crossbowQuickCharge= §c Nạp nhanh
+enchantment.curse.binding= §4 Lời nguyền ràng buộc §r
+enchantment.curse.vanishing= §4 Lời nguyền biến mất §r
+enchantment.damage.all= §d Sắc bén
+enchantment.damage.arthropods= §2 Tai họa của động vật chân đốt
+enchantment.damage.undead= §5 Tai hoạ của xác sống
+enchantment.digging= §a Hiệu suất
+enchantment.durability= §g Chậm hỏng
+enchantment.fire= §c Hiệu ứng Lửa
+enchantment.fishingSpeed= §5 Nhử
+enchantment.frostwalker= §3 Băng giá
+enchantment.heavy_weapon.breach= §d Đánh xuyên giáp
+enchantment.heavy_weapon.density= §c Thêm sát thương
+enchantment.heavy_weapon.windburst= §a Bật nảy
+enchantment.knockback= §3 Đánh bật lùi
+enchantment.lootBonus= §2 Nhặt
+enchantment.lootBonusDigger= §2 Gia tài
+enchantment.lootBonusFishing= §a May mắn của biển cả
+enchantment.mending= §6 Sửa chữa §r
+enchantment.oxygen= §9 Chống chết đuối
+enchantment.protect.all= §2 Bảo vệ
+enchantment.protect.explosion= §e Bảo vệ khỏi vụ nổ
+enchantment.protect.fall= §d Rơi nhẹ
+enchantment.protect.fire= §c Bảo vệ khỏi lửa
+enchantment.protect.projectile= §3 Bảo vệ vật bắn ra
+enchantment.soul_speed= §9 Tốc độ linh hồn
+enchantment.swift_sneak= §9 Lén lút nhanh nhẹn
+enchantment.thorns= §c Gai
+enchantment.untouching= §3 Mềm mại §r
+enchantment.waterWalker= §3 Đi dưới nước
+enchantment.waterWorker= §3 Đào nhanh dưới nước §r
+enchantment.tridentChanneling= §e Sấm sét §r
+enchantment.tridentLoyalty= §a Lòng trung thành
+enchantment.tridentRiptide= §9 Lượn
+enchantment.tridentImpaling= §c Tai hoạ của động vật dưới nước
+--------------------------------
+enchantment_guide.ebook=§7Kéo, đá lửa, khiên, v.v.§r
+enchantment_guide.etable=Hướng dẫn Phù phép
+
+⭐smelting guide⭐
+nic.smelt.fuel=Nhiên liệu
+nic.smelt.count=Số lượng vật phẩm có thể nung chảy
+nic.smelt.100=§a100 vật phẩm
+nic.smelt.80=§a80 vật phẩm
+nic.smelt.20=§a20 vật phẩm
+nic.smelt.12=§g12 vật phẩm
+nic.smelt.8=§g8 vật phẩm
+nic.smelt.6=§g6 vật phẩm
+nic.smelt.105=§c1,5 vật phẩm
+nic.smelt.1=§c1 vật phẩm
+nic.smelt.05=§c0,5 vật phẩm
+nic.smelt.025=§c0,25 vật phẩm
+
+⭐brewing guide⭐
+brewing_guide.level_2=Thuốc cấp II
+brewing_guide.splash_potion=Thuốc ném
+brewing_guide.lingering_potion=Thuốc tồn đọng
+brewing_guide.extended_potion=Thuốc kéo dài
+brewing_guide.effect_potion=Hiệu ứng thuốc
+
+⭐armor_stand guide⭐
+armor_stand_guide.title=§eTên cho Giá Đỡ Giáp Tùy Chỉnh§r
+armor_stand_guide.plushie=§bThú nhồi bông:§r
+armor_stand_guide.character=§aNhân vật:§r
+armor_stand_guide.youtuber=§cYoutuber:§r
+armor_stand_guide.anime=§bAnime:§r
+armor_stand_guide.special=§dĐặc biệt:§r
+armor_stand_guide.extra=§aThêm:§r
+armor_stand_guide.custom1=§bMặc định tùy chỉnh:§r
+armor_stand_guide.custom2=§aSlim tùy chỉnh:§r
+armor_stand_guide.warning=§7(Tham gia Discord của mình nếu bạn gặp vấn đề) 
+-------------------------dont translate these-----------------------------
+armor_stand_guide.plushie_names=Camel, Creeper, Drowned, Enderman, Farmer, Fox, Ghast, Iron golem, Nic plushie, Pillager, Snow fox, Snow golem, Villager, Wandering trader, Witch, Zombie.
+armor_stand_guide.character_names=Alex, Herobrine, Notch, Old alex, Old steve, Steve
+armor_stand_guide.youtuber_names=Technoblade, Dream, Clownpierce, Mr beast.
+armor_stand_guide.anime_names=Goku, Gojo, Luffy, Madara, Sukuna, Tanjiro, Yuji.
+armor_stand_guide.special_names=Nic, Keshew, Saif, Dark, Legend, Sed, Amr9445, Alexxander, New Vietnam.
+armor_stand_guide.extra_names=Dummy, Showcase, Halloween.
+armor_stand_guide.custom1_names=Custom 1, Custom 2, Custom 3, Custom 4, Custom 5.
+armor_stand_guide.custom2_names=Custom slim 1, Custom slim 2, Custom slim 3, Custom slim 4, Custom slim 5.
+
+⭐formatting guide⭐
+formatting_guide.title=§aMã §bMàu§r
+formatting_guide.dark_purple=Tím đậm
+formatting_guide.light_purple=Tím nhạt
+formatting_guide.very_light_purple=Tím rất nhạt
+formatting_guide.dark_blue=Xanh dương đậm
+formatting_guide.ultramarine=Xanh biển sâu
+formatting_guide.blue=Xanh dương
+formatting_guide.dark_aqua=Xanh nước đậm
+formatting_guide.turquoise=Xanh ngọc
+formatting_guide.aqua=Xanh nước
+formatting_guide.mountain_meadow=Đồng cỏ núi
+formatting_guide.dark_green=Xanh lá đậm
+formatting_guide.green=Xanh lá
+formatting_guide.gold=Vàng
+formatting_guide.marigold=Vàng hoa cúc
+formatting_guide.ripe_lemon=Vàng chanh chín
+formatting_guide.yellow=Vàng sáng
+formatting_guide.orange=Cam
+formatting_guide.copper=Đồng
+formatting_guide.crimson=Đỏ thẫm
+formatting_guide.dark_red=Đỏ đậm
+formatting_guide.red=Đỏ
+formatting_guide.black=Đen
+formatting_guide.tundora=Ghi Tundora
+formatting_guide.dark_gray=Xám đậm
+formatting_guide.silver=Bạc
+formatting_guide.wafer=Trắng ngà
+formatting_guide.white=Trắng
+formatting_guide.bold=Đậm
+formatting_guide.italic=Nghiêng
+formatting_guide.animated=Động
+formatting_guide.reset=Đặt lại
+
+⭐bossbar⭐
+entity.ender_dragon.name=§d§rEnder Dragon
+entity.wither.name=§0§rWither
+raid.name=§c§rRaid

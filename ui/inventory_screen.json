@@ -1,0 +1,124 @@
+{
+  "namespace": "crafting",
+  "quick_craft_icon": {
+    "type": "image",
+    "size": [12, 12],
+    "texture": "textures/ui/containers/buttons/quick_craft"
+  },
+  "inventory_icon": {
+    "type": "image",
+    "texture": "textures/ui/Black"
+  },
+  "recipe_book_icon": {
+    "type": "image",
+    "texture": "textures/ui/Black"
+  },
+  "creative_icon": {
+    "type": "image",
+    "texture": "textures/ui/Black"
+  },
+  "quick_craft_button@common_buttons.light_content_button": {
+    "size": [18, 18],
+    "offset": [1, 2],
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
+    "$default_button_texture": "textures/ui/containers/buttons/quick_craft_button",
+    "$hover_button_texture": "textures/ui/containers/buttons/quick_craft_button_hover",
+    "$pressed_button_texture": "textures/ui/containers/buttons/quick_craft_button_pressed",
+    "$button_content": "crafting.quick_craft_icon",
+    "property_bag": {
+      "#collection_name": "crafting_output_items",
+      "#collection_index": 0
+    },
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.crafting_output_tertiary",
+        "mapping_type": "pressed"
+      }
+    ]
+  },
+  "crafting_arrow": {
+    "texture": "textures/ui/Black",
+    "controls": [
+      {
+        "quick_craft_button@crafting.quick_craft_button": {
+          "$default_button_texture": "textures/ui/Black",
+          "$hover_button_texture": "textures/ui/Black",
+          "$pressed_button_texture": "textures/ui/Black"
+        }
+      }
+    ]
+  },
+  "crafting_arrow_large": {
+    "texture": "textures/ui/Black",
+    "controls": [
+      {
+        "quick_craft_button@crafting.quick_craft_button": {
+          "size": [26, 26],
+          "offset": [3, 6]
+        }
+      }
+    ]
+  },
+  "inventory_label": {
+    "text": ""
+  },
+  "layout_template_toggle@common_toggles.light_template_toggle": {
+    "$focus_override_up": "FOCUS_OVERRIDE_STOP",
+    "$default_texture": "textures/ui/Black",
+    "$hover_texture": "textures/ui/Black",
+    "$pressed_texture": "textures/ui/Black",
+    "$pressed_no_hover_texture": "textures/ui/Black"
+  },
+  "recipe_book_layout_template_toggle@crafting.layout_template_toggle": {
+    "$default_texture": "textures/ui/recipe_book_icon",
+    "$hover_texture": "textures/ui/recipe_book_icon_hover",
+    "$pressed_texture": "textures/ui/recipe_book_icon_pressed",
+    "$pressed_no_hover_texture": "textures/ui/recipe_book_icon_hover"
+  },
+  "survival_layout_template_toggle@crafting.layout_template_toggle": {
+    "$default_texture": "textures/ui/inventory_icon",
+    "$hover_texture": "textures/ui/inventory_icon_hover",
+    "$pressed_texture": "textures/ui/inventory_icon_pressed",
+    "$pressed_no_hover_texture": "textures/ui/inventory_icon_hover"
+  },
+  "creative_layout_template_toggle@crafting.layout_template_toggle": {
+    "$default_texture": "textures/ui/creative_icon",
+    "$hover_texture": "textures/ui/creative_icon_hover",
+    "$pressed_texture": "textures/ui/creative_icon_pressed",
+    "$pressed_no_hover_texture": "textures/ui/creative_icon_hover"
+  },
+  "inventory_container_item/item_selected_image": {
+    "ignored": false
+  },
+  "crafting_grid_2x2_with_label": {
+    "type": "panel",
+    "size": ["default", 47],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "$grid_label_alignment|default": "center",
+    "controls": [
+      {
+        "crafting_grid_2x2@crafting.crafting_grid_2x2": {
+          "offset": [0, 9]
+        }
+      }
+    ]
+  },
+  "crafting_screen@crafting.inventory_screen_base": {
+    "send_telemetry": false,
+    "$uses_bundle_tooltip": true,
+    "$screen_content": "crafting_inventory_ui.crafting_inventory_screen_content",
+    "$screen_bg_content": "common.screen_background",
+    "$screen_background_alpha": 0.4,
+    "$close_on_player_hurt|default": true,
+    "close_on_player_hurt": "$close_on_player_hurt"
+  },
+  "inventory_screen@crafting.inventory_screen_base": {
+    "send_telemetry": false,
+    "$screen_content": "player_inventory_ui.player_inventory_screen_content",
+    "$screen_bg_content": "common.screen_background",
+    "$screen_background_alpha": 0.4
+  }
+}

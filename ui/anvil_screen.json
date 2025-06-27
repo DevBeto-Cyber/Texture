@@ -1,0 +1,42 @@
+{
+  "namespace": "anvil",
+  "plus_sign_icon": {
+    "type": "image",
+    "texture": "textures/ui/containers/buttons/plus",
+    "size": [14, 14]
+  },
+  "arrow_icon": {
+    "type": "image",
+    "texture": "textures/ui/Black",
+    "size": [18, 12]
+  },
+  "cross_out_icon": {
+    "type": "image",
+    "texture": "textures/ui/crossout",
+    "size": [18, 12],
+    "bindings": [
+      {
+        "binding_name": "#cross_out_icon",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+  "anvil_screen@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": true,
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "anvil_ui.anvil_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "anvil_pocket.anvil_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      }
+    ]
+  }
+}

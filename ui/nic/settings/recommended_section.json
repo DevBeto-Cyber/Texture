@@ -1,0 +1,258 @@
+{
+  "namespace": "recommended_section",
+  "recommended_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "recommended_button_toggle",
+    "$glyph_texture": "textures/ui/settings_recommended_hover",
+    "$glyph_color_texture": "textures/ui/settings_recommended",
+    "$glyph_size": [16, 16],
+    "$button_text": "recommended.buttontext",
+    "$toggle_property_bag": {
+      "#panel_title": "recommended.paneltitle"
+    }
+  },
+  "ui_profiles": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": ["50%", 25],
+    "$radio_toggle_group": true,
+    "controls": [
+      {
+        "classic_ui_profile@common_tabs.custom_tab": {
+          "$toggle_group_forced_index": 1,
+          "$toggle_name": "#ui_profile_radio_classic",
+          "$tab_text": "options.uiprofile.classic",
+          "$toggle_state_binding_name": "#ui_profile_radio_classic"
+        }
+      },
+      {
+        "pocket_ui_profile@common_tabs.custom_tab": {
+          "$toggle_group_forced_index": 2,
+          "$toggle_name": "#ui_profile_radio_pocket",
+          "$tab_text": "options.uiprofile.pocket",
+          "$toggle_state_binding_name": "#ui_profile_radio_pocket"
+        }
+      }
+    ]
+  },
+  "recommended_section": {
+    "type": "stack_panel",
+    "size": ["100%", "100%c"],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "recommended_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "recommended@settings_common.selector_group_label": {
+          "text": "recommended.recommended",
+          "font_type": "MinecraftTen",
+          "color": "$c_color_format",
+          "font_scale_factor": 1.5
+        }
+      },
+      {
+        "padding4@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 0.8
+        }
+      },
+      {
+        "block_outline@settings_common.selector_group_label": {
+          "text": "recommended.settings1",
+          "color": "$e_color_format"
+        }
+      },
+      {
+        "padding5@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 0.6
+        }
+      },
+      {
+        "option_show_toggle_camera_perspective_button@settings_common.option_toggle": {
+          "ignored": "$education_edition",
+          "$option_label": "options.showToggleCameraPerspectiveButton",
+          "$option_binding_name": "#show_toggle_camera_perspective_button",
+          "$option_enabled_binding_name": "#show_toggle_camera_perspective_button_enabled",
+          "$toggle_name": "show_toggle_camera_perspective_button"
+        }
+      },
+      {
+        "graphics_mode_switch_toggle@settings_common.option_toggle": {
+          "$option_label": "options.graphicsModeSwitch",
+          "$option_binding_name": "#graphics_mode_switch",
+          "$option_enabled_binding_name": "#graphics_mode_switch_enabled",
+          "$toggle_name": "graphics_mode_switch"
+        }
+      },
+      {
+        "outline_selection_toggle@settings_common.option_toggle": {
+          "ignored": "($is_holographic)",
+          "$option_label": "options.classic_box_selection",
+          "$option_binding_name": "#classic_box_selection",
+          "$option_enabled_binding_name": "#classic_box_selection_enabled",
+          "$toggle_name": "classic_box_selection"
+        }
+      },
+      {
+        "pause_toggle@settings_common.option_toggle": {
+          "$option_label": "options.pauseHint",
+          "$option_binding_name": "#pause_option_toggle",
+          "$toggle_name": "pause_option_toggle",
+          "bindings": [
+            {
+              "binding_name": "#pause_toggle_enabled",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "fancy_clouds_toggle@settings_common.option_toggle": {
+          "$option_label": "options.fancyskies",
+          "$option_binding_name": "#fancy_skies",
+          "$option_enabled_binding_name": "#fancy_skies_enabled",
+          "$toggle_name": "fancy_skies"
+        }
+      },
+      {
+        "option_content_file_log@settings_common.option_toggle": {
+          "$option_label": "options.copyCoordinateUI",
+          "$option_binding_name": "#copy_coordinate_ui",
+          "$toggle_name": "copy_coordinate_ui"
+        }
+      },
+      {
+        "player_names_toggle@settings_common.option_toggle": {
+          "$option_label": "options.ingamePlayerNames",
+          "$option_binding_name": "#ingame_player_names",
+          "$option_enabled_binding_name": "#ingame_player_names_enabled",
+          "$toggle_name": "ingame_player_names"
+        }
+      },
+      {
+        "padding6@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 0.6
+        }
+      },
+      {
+        "settings2@settings_common.selector_group_label": {
+          "text": "recommended.settings2",
+          "color": "$e_color_format"
+        }
+      },
+      {
+        "padding7@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 0.6
+        }
+      },
+      {
+        "ui_profile_toggle": {
+          "ignored": "($console_edition)",
+          "type": "stack_panel",
+          "size": ["100%", 45],
+          "controls": [
+            {
+              "ui_profile_txt@settings_common.selector_group_label": {
+                "text": "options.uiprofile"
+              }
+            },
+            {
+              "ui_profile_padding@settings_common.selector_group_label": {
+                "text": "",
+                "font_scale_factor": 0.2
+              }
+            },
+            {
+              "ui_profiles@recommended_section.ui_profiles": {}
+            }
+          ]
+        }
+      },
+      {
+        "padding8@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 0.6
+        }
+      },
+      {
+        "settings3@settings_common.selector_group_label": {
+          "text": "recommended.settings3",
+          "color": "$e_color_format"
+        }
+      },
+      {
+        "padding9@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 0.6
+        }
+      },
+      {
+        "gui_scale_slider@settings_common.option_slider": {
+          "ignored": "($is_holographic)",
+          "$option_label": "#gui_scale_slider_label",
+          "$slider_name": "gui_scale",
+          "$slider_value_binding_name": "#gui_scale",
+          "$slider_tts_text_value": "#gui_scale_text_value",
+          "$option_enabled_binding_name": "#gui_scale_enabled",
+          "$slider_steps_binding_name": "#gui_scale_steps",
+          "$label_bindings": [
+            {
+              "binding_name": "$option_label"
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#gui_scale_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "padding10@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 0.6
+        }
+      },
+      {
+        "settings4@settings_common.selector_group_label": {
+          "ignored": "(not $supports_user_configured_safezone or (not $is_pregame))",
+          "text": "recommended.settings4",
+          "color": "$e_color_format"
+        }
+      },
+      {
+        "padding11@settings_common.selector_group_label": {
+          "text": " ",
+          "font_scale_factor": 0.6
+        }
+      },
+      {
+        "setup_safe_zone": {
+          "ignored": "(not $supports_user_configured_safezone or (not $is_pregame))",
+          "type": "panel",
+          "size": ["100%", 32],
+          "controls": [
+            {
+              "action_button@settings_common.action_button": {
+                "$pressed_button_name": "setup_safe_zone_button",
+                "$button_text": "options.safeZone.title",
+                "anchor_from": "top_right",
+                "anchor_to": "top_right"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

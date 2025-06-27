@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "ice_plains"
+    },
+    "components": {
+      "minecraft:sky_color": {
+        "sky_color": "#00B5D9"
+      },
+      "minecraft:fog_appearance": {
+        "fog_identifier": "nic:fog_ice"
+      },
+      "minecraft:water_appearance": {
+        "surface_color": "#14559b"
+      }
+    }
+  }
+}

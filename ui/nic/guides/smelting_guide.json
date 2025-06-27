@@ -1,0 +1,290 @@
+{
+  "namespace": "nic_smelting_guide",
+  "smelting_guide_panel": {
+    "type": "panel",
+    "size": [92, 168],
+    "offset": [136, 40.33],
+    "controls": [
+      {
+        "background@mob_effect.effect_background": {}
+      },
+      {
+        "smelting_guide_left@smelting_guide_left": {}
+      },
+      {
+        "middle_strip@beacon.image_atlas": {
+          "offset": [0, 3],
+          "layer": 1,
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "texture": "textures/ui/middle_strip",
+          "size": [2, "100%-7px"]
+        }
+      },
+      {
+        "smelting_guide_right@smelting_guide_right": {}
+      }
+    ]
+  },
+  "smelting_guide_left": {
+    "type": "grid",
+    "size": [36, 148],
+    "offset": [-22, -28],
+    "layer": 4,
+    "grid_dimensions": [2, 2],
+    "controls": [
+      {
+        "fuel_offset": {
+          "type": "panel",
+          "grid_position": [0, 0],
+          "controls": [
+            {
+              "fuel@nic_smelting_icons.fuel": {
+                "offset": [0, 1]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "count_offset": {
+          "type": "panel",
+          "grid_position": [1, 0],
+          "controls": [
+            {
+              "count@nic_smelting_icons.count": {
+                "offset": [0, 1]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "items": {
+          "type": "panel",
+          "grid_position": [0, 1],
+          "controls": [
+            {
+              "item@nic_smelting_icons.multi_item_cell": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "lava@nic_smelting_icons.lava_bucket": {
+                "offset": [0, -50]
+              }
+            },
+            {
+              "coal_block@nic_smelting_icons.block_of_coal": {
+                "offset": [0, -32]
+              }
+            },
+            {
+              "kelp_block@nic_smelting_icons.kelp_block": {
+                "offset": [0, -14]
+              }
+            },
+            {
+              "blaze_rod@nic_smelting_icons.blaze_rod": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "coal@nic_smelting_icons.coal": {
+                "offset": [0, 22]
+              }
+            },
+            {
+              "boat@nic_smelting_icons.boat": {
+                "offset": [0, 40]
+              }
+            },
+            {
+              "plank@nic_smelting_icons.plank": {
+                "offset": [0, 58]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "counts": {
+          "type": "panel",
+          "grid_position": [1, 1],
+          "controls": [
+            {
+              "count@nic_smelting_icons.multi_item_cell": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "count_lava@nic_smelting_icons.count_100": {
+                "offset": [0, -50]
+              }
+            },
+            {
+              "count_coal_block@nic_smelting_icons.count_80": {
+                "offset": [0, -32]
+              }
+            },
+            {
+              "count_kelp@nic_smelting_icons.count_20": {
+                "offset": [0, -14]
+              }
+            },
+            {
+              "count_blaze@nic_smelting_icons.count_12": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "count_coal@nic_smelting_icons.count_8": {
+                "offset": [0, 22]
+              }
+            },
+            {
+              "count_boat@nic_smelting_icons.count_6": {
+                "offset": [0, 40]
+              }
+            },
+            {
+              "count_plank@nic_smelting_icons.count_105": {
+                "offset": [0, 58]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "smelting_guide_right": {
+    "type": "grid",
+    "size": [36, 148],
+    "offset": [22, -28],
+    "grid_dimensions": [2, 2],
+    "controls": [
+      {
+        "fuel_offset": {
+          "type": "panel",
+          "grid_position": [0, 0],
+          "controls": [
+            {
+              "fuel@nic_smelting_icons.fuel": {
+                "offset": [0, 0]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "count_offset": {
+          "type": "panel",
+          "grid_position": [1, 0],
+          "controls": [
+            {
+              "count@nic_smelting_icons.count": {
+                "offset": [0, 0]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "items": {
+          "type": "panel",
+          "grid_position": [0, 1],
+          "controls": [
+            {
+              "item@nic_smelting_icons.multi_item_cell": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "fence@nic_smelting_icons.fence": {
+                "offset": [0, -50]
+              }
+            },
+            {
+              "composter@nic_smelting_icons.composter": {
+                "offset": [0, -32]
+              }
+            },
+            {
+              "fishing_rod@nic_smelting_icons.fishing_rod": {
+                "offset": [0, -14]
+              }
+            },
+            {
+              "tools@nic_smelting_icons.tools": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "door@nic_smelting_icons.door": {
+                "offset": [0, 22]
+              }
+            },
+            {
+              "saplings@nic_smelting_icons.saplings": {
+                "offset": [0, 40]
+              }
+            },
+            {
+              "bamboo@nic_smelting_icons.bamboo": {
+                "offset": [0, 58]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "counts": {
+          "type": "panel",
+          "grid_position": [1, 1],
+          "controls": [
+            {
+              "count@nic_smelting_icons.multi_item_cell": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "count_fence@nic_smelting_icons.count_105": {
+                "offset": [0, -50]
+              }
+            },
+            {
+              "count_composter@nic_smelting_icons.count_105": {
+                "offset": [0, -32]
+              }
+            },
+            {
+              "count_fishing_rod@nic_smelting_icons.count_105": {
+                "offset": [0, -14]
+              }
+            },
+            {
+              "count_tools@nic_smelting_icons.count_1": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "count_door@nic_smelting_icons.count_1": {
+                "offset": [0, 22]
+              }
+            },
+            {
+              "count_saplings@nic_smelting_icons.count_05": {
+                "offset": [0, 40]
+              }
+            },
+            {
+              "count_bamboo@nic_smelting_icons.count_025": {
+                "offset": [0, 58]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "image": {
+    "type": "image"
+  },
+  "padding": {
+    "type": "panel"
+  },
+  "black_label@settings_common.selector_group_label": {
+    "color": "$0_color_format"
+  },
+  "dark_blue_label@settings_common.selector_group_label": {
+    "color": "$1_color_format"
+  },
+  "dark_green_label@settings_common.selector_group_label": {
+    "color": "$2_color_format"
+  },
+  "dark_aqua_label@settings_common.selector_group_label": {
+    "color": "$3_color_format"
+  },
+  "dark_red_label@settings_common.selector_group_label": {
+    "color": "$4_color_format"
+  },
+  "dark_purple_label@settings_common.selector_group_label": {
+    "color": "$5_color_format"
+  },
+  "gold_label@settings_common.selector_group_label": {
+    "color": "$6_color_format"
+  },
+  "gray_label@settings_common.selector_group_label": {
+    "color": "$7_color_format"
+  },
+  "dark_gray_label@settings_common.selector_group_label": {
+    "color": "$8_color_format"
+  },
+  "blue_label@settings_common.selector_group_label": {
+    "color": "$9_color_format"
+  },
+  "green_label@settings_common.selector_group_label": {
+    "color": "$a_color_format"
+  },
+  "aqua_label@settings_common.selector_group_label": {
+    "color": "$b_color_format"
+  },
+  "red_label@settings_common.selector_group_label": {
+    "color": "$c_color_format"
+  },
+  "light_purple_label@settings_common.selector_group_label": {
+    "color": "$d_color_format"
+  },
+  "yellow_label@settings_common.selector_group_label": {
+    "color": "$e_color_format"
+  },
+  "white_label@settings_common.selector_group_label": {
+    "color": "$f_color_format"
+  },
+  "inventory_panel_bottom_half_with_label@inventory_panel_bottom_half": {
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "size": ["100%", 93],
+    "offset": [0, -2],
+    "controls": [
+      {
+        "inventory_panel@inventory_panel": {}
+      }
+    ]
+  },
+  "anvil_edit_box_indent@common.edit_box_indent": {
+    "texture": "textures/ui/Black"
+  },
+  "edit_box_indent_hover@common.anvil_edit_box_indent": {},
+  "nic_hover": {
+    "type": "button",
+    "size": [0, 0],
+    "layer": 99999,
+    "default_focus_precedence": 99999,
+    "focus_enabled": true,
+    "focus_magnet_enabled": true,
+    "tts_ignore_count": true,
+    "tts_skip_message": true,
+    "tts_inherit_siblings": true
+  },
+  "highlight_slot_panel": {
+    "size": ["100% - 2px", "100% - 2px"],
+    "controls": [
+      {
+        "hover_panel": {
+          "type": "panel",
+          "size": ["100%cm", "100%cm"],
+          "$border_texture": "common.hover_background",
+          "allow_clipping": false,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 18],
+          "bindings": [
+            {
+              "binding_name": "#hover_text",
+              "binding_type": "collection",
+              "binding_collection_name": "$item_collection_name"
+            },
+            {
+              "binding_name": "#show_persistent_bundle_hover_text",
+              "binding_condition": "always"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "((not ((#hover_text-)=#hover_text)) and (#show_persistent_bundle_hover_text))",
+              "target_property_name": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "border_texture@$border_texture": {
+                "layer": 39,
+                "allow_clipping": false,
+                "size": ["100%sm + 12px", "100%sm + 12px"],
+                "bindings": [
+                  {
+                    "binding_name": "#show_persistent_bundle_hover_text",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "item_name@common.item_name": {}
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "hover_background": {
+    "type": "panel",
+    "controls": [
+      {
+        "default": {
+          "type": "image",
+          "texture": "textures/ui/purpleBorder",
+          "bindings": [
+            {
+              "binding_name": "#hover_text",
+              "binding_type": "collection",
+              "binding_collection_name": "$item_collection_name"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "((#hover_text-'§e'-'§b'-'§d')=#hover_text)",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "uncommon@common.hover_background_template": {
+          "$hover_bg": "uncommon",
+          "$rarity": "§e"
+        }
+      },
+      {
+        "rare@common.hover_background_template": {
+          "$hover_bg": "rare",
+          "$rarity": "§b"
+        }
+      },
+      {
+        "epic@common.hover_background_template": {
+          "$hover_bg": "epic",
+          "$rarity": "§d"
+        }
+      }
+    ]
+  },
+  "hover_background_template": {
+    "type": "image",
+    "texture": "('textures/ui/'+$hover_bg)",
+    "bindings": [
+      {
+        "binding_name": "#hover_text",
+        "binding_type": "collection",
+        "binding_collection_name": "$item_collection_name"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not((#hover_text-$rarity)=#hover_text))",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "item_name": {
+    "layer": 40,
+    "$hover_text_binding_name|default": "#hover_text",
+    "type": "label",
+    "text": "#hover_text",
+    "allow_clipping": false,
+    "property_bag": {
+      "#total_durability": 0,
+      "#current_durability": 0
+    },
+    "bindings": [
+      {
+        "binding_name": "$hover_text_binding_name",
+        "binding_name_override": "#item_name_text",
+        "binding_type": "collection",
+        "binding_collection_name": "$item_collection_name"
+      },
+      {
+        "binding_name": "#item_durability_total_amount",
+        "binding_type": "collection",
+        "binding_collection_name": "$item_collection_name"
+      },
+      {
+        "binding_name": "#item_durability_current_amount",
+        "binding_type": "collection",
+        "binding_collection_name": "$item_collection_name"
+      },
+      {
+        "binding_type": "view",
+        "binding_condition": "visible",
+        "source_property_name": "(#total_durability + (#total_durability < #item_durability_total_amount) * 1 - (#total_durability > #item_durability_total_amount) * 1)",
+        "target_property_name": "#total_durability"
+      },
+      {
+        "binding_type": "view",
+        "binding_condition": "visible",
+        "source_property_name": "((#item_durability_current_amount > 0) * #total_durability)",
+        "target_property_name": "#current_durability"
+      },
+      {
+        "binding_type": "view",
+        "binding_condition": "visible",
+        "source_property_name": "(#current_durability - (#item_durability_current_amount < #current_durability) * 1)",
+        "target_property_name": "#current_durability"
+      },
+      {
+        "binding_type": "view",
+        "binding_condition": "visible",
+        "source_property_name": "('\n§7Durability: ' + #current_durability + '/' + #total_durability)",
+        "target_property_name": "#durability"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#item_name_text + (((#item_durability_total_amount = 0) + #durability) - ('true' + #durability) - 'false') + #item_durability_current_amount)",
+        "target_property_name": "#hover_text"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not (#item_name_text = ''))",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "container_item": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "highlight@item_rarity.item_rarity_highlight": {
+              "layer": 6
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

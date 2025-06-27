@@ -1,0 +1,10 @@
+{
+  "namespace": "start",
+  "skin_viewer_panel/paper_doll_name_tag": {
+    "ignored": true
+  },
+  "start_screen": {
+    "$screen_content": "start_nic.start_content",
+    "$screen_bg_content": "start_nic.start_bg"
+  }
+}

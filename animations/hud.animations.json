@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.direction": {
+      "loop": true,
+      "bones": {
+        "direction": {
+          "position": [0, 256, 0.0],
+          "scale": 3
+        }
+      }
+    },
+    "animation.fps": {
+      "loop": true,
+      "bones": {
+        "fps_ones": {
+          "position": ["v.fps_space", -256, 0],
+          "scale": 3
+        },
+        "fps_tens": {
+          "position": ["v.fps_tens + v.fps_space", -256, 0],
+          "scale": 3
+        },
+        "fps_hundreds": {
+          "position": ["v.fps_tens + v.fps_hundreds + v.fps_space", -256, 0],
+          "scale": 3
+        }
+      }
+    }
+  }
+}

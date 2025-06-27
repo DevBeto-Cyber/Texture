@@ -1,0 +1,83 @@
+{
+  "namespace": "status",
+  "status_bar": {
+    "type": "panel",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "offset": [-176, 64],
+    "size": [180, 20],
+    "controls": [
+      {
+        "armor@hud.armor_renderer": {
+          "offset": [0, 0]
+        }
+      },
+      {
+        "heart@hud.heart_renderer": {
+          "offset": [0, 0]
+        }
+      },
+      {
+        "hunger@hud.hunger_renderer": {
+          "offset": [80, 10]
+        }
+      },
+      {
+        "bubbles@hud.bubbles_renderer": {
+          "offset": [80, 20]
+        }
+      }
+    ]
+  },
+  "player_renderer": {
+    "type": "image",
+    "texture": "textures/ui/Black",
+    "color": [0, 0, 0, 0],
+    "size": [62, 80],
+    "layer": 2,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "offset": [-120, 0],
+    "controls": [
+      {
+        "player_renderer_panel": {
+          "type": "panel",
+          "size": [40, 40],
+          "offset": [0, -18],
+          "controls": [
+            {
+              "player_renderer": {
+                "type": "custom",
+                "renderer": "live_player_renderer",
+                "property_bag": {
+                  "#look_at_cursor": true
+                },
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.screen_exit_size_animation_push",
+                  "@common.screen_exit_size_animation_pop",
+                  "@common.screen_entrance_size_animation_push",
+                  "@common.screen_entrance_size_animation_pop"
+                ],
+                "layer": 8,
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "status": {
+    "type": "panel",
+    "controls": [
+      {
+        "status_bar@status.status_bar": {}
+      },
+      {
+        "player_renderer@status.player_renderer": {}
+      }
+    ]
+  }
+}

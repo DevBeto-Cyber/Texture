@@ -1,0 +1,101 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.direction",
+        "texture_width": 39,
+        "texture_height": 10
+      },
+      "bones": [
+        {
+          "name": "direction",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [0, 0, 0],
+              "size": [39, 10, 0],
+              "uv": {
+                "north": {
+                  "uv": [0, 0]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.fps_hundreds",
+        "texture_width": 7,
+        "texture_height": 10
+      },
+      "bones": [
+        {
+          "name": "fps_hundreds",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [0, 0, 0],
+              "size": [7, 10, 0],
+              "uv": {
+                "north": {
+                  "uv": [0, 0]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.fps_tens",
+        "texture_width": 7,
+        "texture_height": 10
+      },
+      "bones": [
+        {
+          "name": "fps_tens",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [0, 0, 0],
+              "size": [7, 10, 0],
+              "uv": {
+                "north": {
+                  "uv": [0, 0]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.fps_ones",
+        "texture_width": 7,
+        "texture_height": 10
+      },
+      "bones": [
+        {
+          "name": "fps_ones",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [0, 0, 0],
+              "size": [7, 10, 0],
+              "uv": {
+                "north": {
+                  "uv": [0, 0]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

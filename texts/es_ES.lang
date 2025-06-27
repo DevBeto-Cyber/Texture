@@ -1,0 +1,461 @@
+⭐Ultramarine⭐
+ultramarine.title= Ultramarine Nightfall
+ultramarine.version= Nightfall X 
+--------------------------------
+info.button_label=   Info
+developer.button_label=   Desarrollador
+credit.button_label=   Creditos
+features.button_label=   Características
+changelog.button_label=   Cambios
+faq.button_label=   FAQs
+
+⭐settings⭐
+menu.settings=  Ajustes
+settings.quick_settings=Ajustes Rápidos
+settings.common_settings=Ajustes Comunes
+settings.control_settings=Ajustes de Control
+settings.other_settings=Otros Ajustes
+
+⭐recommended screen⭐
+recommended.buttontext=Recomendado
+recommended.paneltitle=Ajustes Recomendados
+recommended.recommended=Ajustes Recomendados :
+recommended.settings1=1. Activa esto.
+recommended.settings2=2. Establece el perfil ui en clásico.
+recommended.settings3=3. Utilice el valor de escala gui en -1 o 0.
+recommended.settings4=4. Establezca el área segura de la pantalla para que se ajuste a su pantalla.
+
+⭐advanced section⭐
+advanced.button=Avanzado
+advanced.panel=Ajustes Avanzados
+advanced.title=Ajustes Avanzados:
+
+⭐fps section⭐
+fps.buttontext=Fps++
+fps.paneltitle=Mejores Fps
+fps.title=Siga estos pasos para obtener mejores fps :
+fps.vsync=1. Desactiva el Vsync.
+fps.fancy=2. Desactiva todo esto.
+fps.graphics=3. Establece el modo de los gráficos en sencillos.
+fps.fps=4. Ajustalo igual que la frecuencia de actualización de tu pantalla.
+fps.aa=5. Ajustalo al mínimo.
+fps.distance=6. Establezca la distancia de renderizado entre 8 y 14 piezas.
+fps.important= Si tu juego no se ve bien, puedes activar la iluminación suave, cielos hermosos y gráficos sofisticados. Ajusta la configuración de tu dispositivo para obtener los mejores resultados.
+
+⭐sound section⭐
+sound.button=Sonido
+sound.panel=Ajustes de Sonido
+sound.music=Música y Sonido:
+
+⭐video section⭐
+video.title.hud=Ajustes de Video:
+video.title.graphics=Ajustes Gráficos:
+
+⭐Info Section⭐
+info.title=ULTRAMARINE
+info.edition=NIGHTFALL
+--------------------------------
+info.creator=Creado por §dnotnicto
+info.about1=¡Hola! Este increíble pack de recursos añade funcionalidad y visualidad a Minecraft.
+info.about2=Si encuentra algún error, repórtelo en mi servidor de Discord.
+info.thanks=Gracias Por Descargar Este Pack...
+
+⭐developer section⭐
+developer.name=notNicto
+developer.discord= discord.com/mYxjckhRNH
+developer.youtube= youtube.com/@notnicto
+developer.mcpedl= mcpedl.com/user/notnicto
+--------------------------------
+developer.about=Hola, soy Nic  de la India. Me encanta crear mods, mapas y packs de texturas de Minecraft como pasatiempo. También disfruto creando contenido relacionado con Minecraft para YouTube.
+developer.creation_title=Más Creaciones De notnicto :
+--------------------------------
+developer.creation1= Ultramarine Overhaul
+developer.creation2= Neo Texture Pack
+developer.creation3= Minecraft Akinator [Bedrock]
+developer.creation4= Food Expansion
+developer.creation5= Craft Everything
+developer.creation6= Achievement World
+
+⭐credit section⭐
+credit.title=Creditos
+credit.author1=DrAv0011
+credit.content11=Crafteo Rápido & Desbloqueo De Tradeos.
+credit.content12=Bedrock Tweaks : §abedrocktweaks.net
+credit.author2=HyperF3GamerINDO
+credit.content21=Animación de muñeco Tótem
+credit.content22=Femboy Totem : §amcpedl.com/femboy-totem
+credit.author3=Chainsketch
+credit.content31=Contador De FPS
+credit.content32=FPS Counter : §amcpedl.com/fps-counter-pack
+credit.translators=Traductores
+credit.translators1= vietnamese_9000main §7[Vietnamese]
+credit.translators2= lostliano §7[Deutsch]
+credit.translators3= nx703 §7[Español]
+credit.translators4= SuperMario2.0 §7[Indonesia]
+credit.thanks=Un agradecimiento especial a §cSaif.15§r por su ayuda para hacer que este paquete sea compatible con dispositivos móviles.
+
+⭐features section⭐
+feature.title=Características
+feature.1= Modo Oscuro con texturas saturadas.
+feature.2= Diseños de UI y GUI únicos.
+feature.3= Ajustes compactos y rápidos.
+feature.4= Tres subpacks: normal, reimagined y unbound.
+feature.5= Niebla y sombreadores dependientes del bioma.
+feature.6= Saqueo rápido, ayuda de chat & desbloqueo de tradeos.
+feature.7= Guía de pociones & crafteo rápido.
+feature.8= Visor de durabilidad de objetos.
+feature.9= Reloj digital y brújula en HUD.
+feature.10= Mensaje de muerte divertido (Solo en Inglés).
+feature.11= Animación del muñeco Tótem.
+feature.12= Soportes de armadura personalizados.
+feature.13= Vista previa del hambre y puntos de armadura.
+feature.14= Nueva textura de armadura y herramientas con adornos brillantes.
+feature.15= Partículas rediseñadas.
+feature.16= Y me olvidé XD... 
+
+⭐changelog section⭐
+changelog.title=Cambios
+--------------------------------
+changelog.v4=Versión 4.0 :
+changelog.v41= Nueva Ui.
+changelog.v42= Mejores coordenadas.
+changelog.v43= Mejor pantalla de chat.
+changelog.v44= Atmósfera mejorada.
+changelog.v45= Visor de durabilidad mejorado.
+changelog.v46= Iconos de encantamientos.
+changelog.v47= Visor de rarezas.
+changelog.v48= Guía de encantamientos mejorada.
+changelog.v49= Pantalla HUD corregida.
+changelog.v410= Varios bugs corregidos.
+--------------------------------
+changelog.v3=Versión 3.0:
+changelog.v31= Contenedores coloridos.
+changelog.v32= Aumento de FPS.
+changelog.v33= Se agregó el botón f1 y el contador de fps.
+changelog.v34= Adornos brillantes y encantamientos coloridos.
+changelog.v35= Ayudas de redstone.
+changelog.v36= Visor de durabilidad actualizado.
+changelog.v37= Tipos de aldeanos.
+changelog.v38= Nuevas animaciones de chat.
+changelog.v39= Visor de rareza de objetos.
+changelog.v310= Y muchos más...
+--------------------------------
+changelog.v2=Versión 2.0 :
+changelog.v21= Soporte para la 1.21+.
+changelog.v22= Lenguaje Español, Indonesia y Português actualizados.
+changelog.v23= Guía de cocción.
+changelog.v24= Soportes de armadura personalizados.
+changelog.v25= Nuevas animaciones del tótem.
+changelog.v26= Se agregaron texturas de armadura y herramientas.
+changelog.v27= Nuevo tipo de texto.
+changelog.v28= Se agregó una vista previa de los puntos de armadura.
+changelog.v29= Varios bugs corregidos.
+changelog.v210= Se agregó a Herobrine.
+--------------------------------
+changelog.v1=Versión 1.0 :
+changelog.v11= Modo oscuro con texturas saturadas.
+changelog.v12= Nuevo menú de inicio.
+changelog.v13= Ajustes compactos y rápidos.
+changelog.v14= Tres subpacks: normal, reimagined y unbound.
+changelog.v15= Niebla y sombreadores dependientes del bioma.
+changelog.v16= Saqueo rápido, ayuda de chat & desbloqueo de tradeos.
+changelog.v17= Mensaje de muerte divertido. [Solo en Inglés]
+changelog.v18= Reloj digital y brújula en HUD.
+changelog.v19= Porcentaje de durabilidad del objeto.
+changelog.v110= Guía de pociones & crafteo rápido.
+
+⭐faq section⭐
+faq.title=FAQs
+faq.q1= ¿Se puede aplicar este pack a los packs de recursos del mundo?
+faq.a1=¡Claro! Puedes usar este pack libremente en cualquiera de los packs de recursos de un mundo o servidor.
+faq.q2= ¿Puedo distribuir alguna característica de este pack en mi pack?
+faq.a2=¡Sí! Me encantaría que mi código te ayudara a desarrollar tus packs. Por cierto, cuando lo distribuyas, ¡no olvides dar los créditos!
+faq.q3= ¡Quiero dar reseña de este pack en Youtube o una plataforma similar!
+faq.a3=¡Estás más que invitado! Por favor, incluya la página MCPEDL/CURSEFORGE de este paci debajo de la descripción del video.
+faq.q4= Entré a un servidor específico y Ultramarine se desactivó...
+faq.a4=Algunos servidores prohíben los recursos globales. Ultramarine no puede usarse en dichos servidores.
+faq.q5= ¡Encontré un error! ¿Dónde puedo reportarlo?
+faq.a5=Si encuentra un error, repórtelo en el servidor de Discord:  §bhttps://discord.gg/mYxjckhRNH§r
+faq.q6= ¿Cómo agregó mi skin como tótem?
+faq.a6=Únete a mi servidor de Discord. Allí encontrarás un tutorial detallado.
+faq.q7= ¿Puedo usar mi skin como modelo de soporte de armadura personalizado?
+faq.a7=Claro. Hay 10 espacios extra. Únete a mi servidor de Discord. El tutorial detallado está publicado allí.
+
+⭐progress screen⭐
+progress.overworld=Ingresando al §aOverworld
+progress.nether=Ingresando al §cNether
+progress.end=Ingresando al §dEnd
+
+⭐better cords⭐
+map.position=Position: %s, %s, %s
+map.chunk=Chunk
+map.sub_chunk=Subchunk
+map.chunk_border=Borde
+map.chunk_corner=Esquina
+map.chunk_center=Centro
+hudScreen.daysPlayed=§dDías jugados:§r %s
+
+⭐death massages⭐
+death.attack.anvil=%1$s fue aplastado por un yunque que cayó
+death.attack.arrow=%1$s recibió un disparo directo de %2$s
+death.attack.arrow.item=%1$s recibió un disparo directo de %2$s usando %3$s
+death.attack.bullet=%1$s fue eliminado a distancia por %2$s
+death.attack.cactus=%1$s murió pinchado por un cactus
+death.attack.cactus.player=%1$s caminó hacia un cactus intentando escapar de %2$s
+death.attack.drown=%1$s se convirtió en comida de peces
+death.attack.drown.player=%1$s se ahogó intentando escapar de %2$s
+death.attack.explosion=%1$s explotó por completo
+death.attack.explosion.player=%1$s fue volado en pedazos por %2$s
+death.attack.fall=%1$s cayó en una trampa para osos
+death.attack.fallingBlock=%1$s fue aplastado por un bloque que cayó
+death.attack.fireball=%1$s fue asado por %2$s
+death.attack.fireball.item=%1$s fue asado por %2$s usando %3$s
+death.attack.fireworks=%1$s explotó con fuegos artificiales
+death.attack.flyIntoWall=%1$s sufrió las consecuencias de la energía cinética
+death.attack.generic=%1$s murió
+death.attack.indirectMagic=%1$s fue asesinado por %2$s usando magia
+death.attack.indirectMagic.item=%1$s fue asesinado por %2$s usando %3$s
+death.attack.inFire=%1$s se quemó vivo
+death.attack.inFire.player=%1$s caminó por el fuego mientras luchaba contra %2$s
+death.attack.inWall=%1$s se asfixió en una pared
+death.attack.lava=%1$s intentó nadar en lava
+death.attack.lava.player=%1$s intentó nadar en lava para escapar de %2$s
+death.attack.lightningBolt=%1$s hizo una llamada en plena tormenta
+death.attack.magic=%1$s fue asesinado por magia
+death.attack.magma=%1$s descubrió que el suelo era lava
+death.attack.magma.player=%1$s pisó zona peligrosa por culpa de %2$s
+death.attack.mob=%1$s fue víctima de %2$s
+death.attack.onFire=%1$s olvidó ponerse protector solar
+death.attack.onFire.player=%1$s se quemó completamente mientras peleaba con %2$s
+death.attack.outOfWorld=%1$s fue expulsado del mundo
+death.attack.player=%1$s fue golpeado por %2$s
+death.attack.player.item=%1$s fue asesinado por %2$s usando %3$s
+death.attack.spit=%1$s recibió una bola de saliva de %2$s
+death.attack.starve=%1$s murió de hambre
+death.attack.sweetBerry=%1$s fue pinchado hasta morir por un arbusto de bayas dulces
+death.attack.thorns=%1$s murió intentando dañar a %2$s
+death.attack.thrown=%1$s fue golpeado por %2$s
+death.attack.thrown.item=%1$s fue golpeado por %2$s usando %3$s
+death.attack.trident=%1$s fue empalado por Aquaman
+death.attack.wither=%1$s se marchitó hasta morir
+death.attack.freeze=%1$s olvidó ponerse abrigo
+death.attack.sonicBoom=%1$s fue destruido por un grito sónico
+death.attack.sonicBoom.player=%1$s fue destruido por un grito sónico intentando escapar de %2$s
+death.attack.stalactite=%1$s fue atravesado por una estalactita que cayó
+death.attack.stalagmite=%1$s fue empalado por una estalagmita
+death.fell.accident.generic=%1$s no rebotó
+death.fell.accident.ladder=%1$s se cayó de una escalera
+death.fell.accident.vines=%1$s se cayó de unas enredaderas
+death.fell.accident.water=%1$s se cayó al agua
+death.fell.assist=%1$s fue empujado a caer por %2$s
+death.fell.assist.item=%1$s fue empujado a caer por %2$s usando %3$s
+death.fell.finish=%1$s cayó demasiado y fue rematado por %2$s
+death.fell.finish.item=%1$s cayó demasiado y fue rematado por %2$s usando %3$s
+death.fell.killer=%1$s fue condenado a caer
+deathScreen.leaveServer=Salir del servidor
+deathScreen.message=Te han destruido
+deathScreen.quit=Abandono por rabia
+deathScreen.title=Te han destruido
+deathScreen.title.hardcore=Uf, perdiste
+
+⭐foood info⭐
+item.apple.name=Manzana 
+item.golden_apple.name=Manzana de oro  
+item.appleEnchanted.name=Manzana encantada  
+item.beef.name=Ternera cruda 
+item.beetroot.name=Remolacha 
+item.beetroot_soup.name=Sopa de remolacha 
+item.bread.name=Pan 
+item.cake.name=Pastel 
+item.golden_carrot.name=Zanahoria dorada 
+item.carrot.name=Zanahoria 
+item.chorus_fruit.name=Fruta coral 
+item.cooked_beef.name=Filete cocinado 
+item.cooked_chicken.name=Pollo cocinado 
+item.cooked_porkchop.name=Chuleta de cerdo cocinada 
+item.chicken.name=Pollo crudo 
+item.cookie.name=Galleta 
+item.clownfish.name=Pez tropical 
+item.cooked_fish.name=Bacalao cocinado 
+item.fish.name=Bacalao crudo 
+item.pufferfish.name=Pez globo  
+item.cooked_salmon.name=Salmón cocinado 
+item.salmon.name=Salmón 
+item.honey_bottle.name=Botella de miel 
+item.melon.name=Sandía 
+item.mushroom_stew.name=Estofado de champiñones 
+item.muttonCooked.name=Cordero cocinado 
+item.muttonRaw.name=Cordero crudo 
+item.porkchop.name=Chuleta de cerdo cruda 
+item.potato.name=Patata 
+item.baked_potato.name=Patata asada 
+item.poisonous_potato.name=Patata venenosa  
+item.pumpkin_pie.name=Tarta de calabaza 
+item.cooked_rabbit.name=Conejo cocinado 
+item.rabbit.name=Conejo crudo 
+item.rabbit_stew.name=Estofado de conejo 
+item.dried_kelp.name=Alga marina seca 
+item.rotten_flesh.name=Carne podrida 
+item.spider_eye.name=Araña de las cuevas  
+item.sweet_berries.name=Bayas dulces 
+item.glow_berries.name=Bayas resplandecientes 
+
+⭐armor points⭐
+item.turtle_helmet.name=Caparazón de tortuga 
+item.chainmail_helmet.name=Casco de malla 
+item.leather_helmet.name=Gorra de cuero 
+item.diamond_helmet.name=Casco de diamante 
+item.golden_helmet.name=Casco de oro 
+item.iron_helmet.name=Casco de hierro 
+item.chainmail_chestplate.name=Coraza de malla 
+item.leather_chestplate.name=Túnica de cuero 
+item.diamond_chestplate.name=Coraza de diamante 
+item.golden_chestplate.name=Coraza de oro 
+item.iron_chestplate.name=Coraza de hierro 
+item.chainmail_leggings.name=Mallas de malla 
+item.leather_leggings.name=Pantalones de cuero 
+item.diamond_leggings.name=Mallas de diamante 
+item.golden_leggings.name=Mallas de oro 
+item.iron_leggings.name=Mallas de hierro 
+item.chainmail_boots.name=Botas de malla 
+item.leather_boots.name=Botas de cuero 
+item.diamond_boots.name=Botas de diamante 
+item.golden_boots.name=Botas de oro 
+item.iron_boots.name=Botas de hierro 
+item.netherite_boots.name=Botas de inframundita 
+item.netherite_leggings.name=Mallas de inframundita 
+item.netherite_chestplate.name=Coraza de inframundita 
+item.netherite_helmet.name=Casco de inframundita 
+
+⭐colorful enchantments⭐
+enchantment.level.1=§r
+enchantment.level.2=§r
+enchantment.level.3=§r
+enchantment.level.4=§r
+enchantment.level.5=§r
+-----------------------------------
+enchantment_guide.ebook=§7Tijeras, pedernal y acero, escudo, etc.§r
+enchantment_guide.etable=Guía de Encantamientos
+-----------------------------------
+enchantment.arrowDamage= §c Poder
+enchantment.arrowFire= §c Llama §r
+enchantment.arrowInfinite= §a Infinidad §r
+enchantment.arrowKnockback= §2 Puñetazo
+enchantment.crossbowMultishot= §a Disparo múltiple §r
+enchantment.crossbowPiercing= §3 Penetrante
+enchantment.crossbowQuickCharge= §c Carga rápida
+enchantment.curse.binding= §4 Maldición de vinculación §r
+enchantment.curse.vanishing= §4 Maldición de desvanecimiento §r
+enchantment.damage.all= §c Afilado
+enchantment.damage.arthropods= §2 Maldición de los artrópodos
+enchantment.damage.undead= §5 Aporrear
+enchantment.digging= §a Eficiencia
+enchantment.durability= §g Irrompible
+enchantment.fire= §c Aspecto ígneo
+enchantment.fishingSpeed= §5 Atracción
+enchantment.frostwalker= §3 Paso helado
+enchantment.heavy_weapon.breach= §c Incumplimiento
+enchantment.heavy_weapon.density= §c Densidad
+enchantment.heavy_weapon.windburst= §a Ráfaga de viento
+enchantment.knockback= §3 Derribar
+enchantment.lootBonus= §2 Saqueo
+enchantment.lootBonusDigger= §2 Fortuna
+enchantment.lootBonusFishing= §a Suerte marina
+enchantment.mending= §6 Reparación §r
+enchantment.oxygen= §9 Respiración
+enchantment.protect.all= §2 Protección
+enchantment.protect.explosion= §g Protección de ráfagas
+enchantment.protect.fall= §c Caída de pluma
+enchantment.protect.fire= §c Protección del fuego
+enchantment.protect.projectile= §3 Protección contra proyectiles
+enchantment.soul_speed= §9 Velocidad de almas
+enchantment.swift_sneak= §9 Acecho rápido
+enchantment.thorns= §c Espinas
+enchantment.untouching= §3 Toque sedoso §r
+enchantment.waterWalker= §3 Agilidad acuática
+enchantment.waterWorker= §3 Afinidad al agua §r
+enchantment.tridentChanneling= §g Canalización §r
+enchantment.tridentLoyalty= §a Lealtad
+enchantment.tridentRiptide= §9 Corriente
+enchantment.tridentImpaling= §c Empalar
+
+⭐smelting guide⭐
+nic.smelt.fuel=Combustible
+nic.smelt.count=Número de objetos que se pueden fundir
+nic.smelt.100=§a100 objetos
+nic.smelt.80=§a80 objetos
+nic.smelt.20=§a20 objetos
+nic.smelt.12=§g12 objetos
+nic.smelt.8=§g8 objetos
+nic.smelt.6=§g6 objetos
+nic.smelt.105=§c1.5 objetos
+nic.smelt.1=§c1 objeto
+nic.smelt.05=§c0.5 objeto
+nic.smelt.025=§c0.25 objeto
+
+⭐brewing guide⭐
+brewing_guide.level_2=Poción Nivel II
+brewing_guide.splash_potion=Poción Arrojadiza
+brewing_guide.lingering_potion=Poción Persistente
+brewing_guide.extended_potion=Poción Extendida
+brewing_guide.effect_potion=Efecto de la Poción
+
+⭐armor_stand guide⭐
+armor_stand_guide.title=§eEtiqueta para Soportes de Armadura Personalizados§r
+armor_stand_guide.plushie=§bPeluches:§r
+armor_stand_guide.character=§aPersonaje:§r
+armor_stand_guide.youtuber=§cYoutuber:§r
+armor_stand_guide.anime=§bAnime:§r
+armor_stand_guide.special=§dEspecial:§r
+armor_stand_guide.extra=§aExtra:§r
+armor_stand_guide.custom1=§bPredeterminado Personalizado:§r
+armor_stand_guide.custom2=§aSlim Personalizado:§r
+armor_stand_guide.warning=§7(Únete a mi servidor de Discord si tienes algún problema)
+-------------------------dont translate these-----------------------------
+armor_stand_guide.plushie_names=Camel, Creeper, Drowned, Enderman, Farmer, Fox, Ghast, Iron golem, Nic plushie, Pillager, Snow fox, Snow golem, Villager, Wandering trader, Witch, Zombie.
+armor_stand_guide.character_names=Alex, Herobrine, Notch, Old alex, Old steve, Steve
+armor_stand_guide.youtuber_names=Technoblade, Dream, Clownpierce, Mr beast.
+armor_stand_guide.anime_names=Goku, Gojo, Luffy, Madara, Sukuna, Tanjiro, Yuji.
+armor_stand_guide.special_names=Nic, Keshew, Saif, Dark, Legend, Sed, Amr9445, Alexxander, New Vietnam.
+armor_stand_guide.extra_names=Dummy, Showcase, Halloween.
+armor_stand_guide.custom1_names=Custom 1, Custom 2, Custom 3, Custom 4, Custom 5.
+armor_stand_guide.custom2_names=Custom slim 1, Custom slim 2, Custom slim 3, Custom slim 4, Custom slim 5.
+
+⭐formatting guide⭐
+formatting_guide.title=§aCódigos §bde Color§r
+formatting_guide.dark_purple=Morado Oscuro
+formatting_guide.light_purple=Morado Claro
+formatting_guide.very_light_purple=Morado Muy Claro
+formatting_guide.dark_blue=Azul Oscuro
+formatting_guide.ultramarine=Ultramarino
+formatting_guide.blue=Azul
+formatting_guide.dark_aqua=Azul Verdoso Oscuro
+formatting_guide.turquoise=Turquesa
+formatting_guide.aqua=Aqua
+formatting_guide.mountain_meadow=Pradera Montañosa
+formatting_guide.dark_green=Verde Oscuro
+formatting_guide.green=Verde
+formatting_guide.gold=Oro
+formatting_guide.marigold=Caléndula
+formatting_guide.ripe_lemon=Limón Maduro
+formatting_guide.yellow=Amarillo
+formatting_guide.orange=Naranja
+formatting_guide.copper=Cobre
+formatting_guide.crimson=Carmesí
+formatting_guide.dark_red=Rojo Oscuro
+formatting_guide.red=Rojo
+formatting_guide.black=Negro
+formatting_guide.tundora=Tundora
+formatting_guide.dark_gray=Gris Oscuro
+formatting_guide.silver=Plata
+formatting_guide.wafer=Oblea
+formatting_guide.white=Blanco
+formatting_guide.bold=Negrita
+formatting_guide.italic=Cursiva
+formatting_guide.animated=Animado
+formatting_guide.reset=Restablecer
+
+⭐bossbar⭐
+entity.ender_dragon.name=§d§rEnder Dragon
+entity.wither.name=§0§rWither
+raid.name=§c§rRaid

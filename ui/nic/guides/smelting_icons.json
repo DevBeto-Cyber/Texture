@@ -1,0 +1,238 @@
+{
+  "namespace": "nic_smelting_icons",
+  "single_item_cell": {
+    "type": "panel",
+    "layer": 5,
+    "$item_texture|default": "textures/misc/missing_texture",
+    "$image_size|default": [16, 16],
+    "size": [18, 18],
+    "controls": [
+      {
+        "background": {
+          "type": "image",
+          "layer": 6,
+          "texture": "textures/ui/cell_image_lock",
+          "size": [18, 18],
+          "offset": [0, 0],
+          "anchor_from": "center",
+          "anchor_to": "center"
+        }
+      },
+      {
+        "item@item_icon": {}
+      },
+      {
+        "hover_button@hover_button": {}
+      }
+    ]
+  },
+  "multi_item_cell": {
+    "type": "panel",
+    "layer": 5,
+    "size": [18, 126],
+    "$background_size|default": [18, 126],
+    "controls": [
+      {
+        "background": {
+          "type": "image",
+          "layer": 6,
+          "texture": "textures/ui/cell_image_lock",
+          "size": "$background_size",
+          "offset": [0, 0],
+          "anchor_from": "center",
+          "anchor_to": "center"
+        }
+      }
+    ]
+  },
+  "item_icon": {
+    "type": "image",
+    "layer": 10,
+    "texture": "$item_texture",
+    "size": "$image_size",
+    "offset": [0, 0],
+    "anchor_from": "center",
+    "anchor_to": "center"
+  },
+  "multi_item_panel": {
+    "type": "panel",
+    "layer": 5,
+    "$item_texture|default": "textures/misc/missing_texture",
+    "$image_size|default": [16, 16],
+    "size": [18, 18],
+    "controls": [
+      {
+        "item@item_icon": {}
+      },
+      {
+        "hover_button@hover_button": {}
+      }
+    ]
+  },
+  "hover_button@common.button": {
+    "layer": 15,
+    "$pressed_button_name": "by notnicto",
+    "size": [18, 18],
+    "sound_volume": 0,
+    "default_control": "",
+    "pressed_control": "",
+    "controls": [
+      {
+        "hover@common.empty_panel": {
+          "size": [18, 18],
+          "controls": [
+            {
+              "hover_text_image@nic_smelting_icons.hover_text_image": {}
+            },
+            {
+              "white_border@common.white_border_slot": {
+                "layer": 2,
+                "size": [18, 18]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "hover_text_image": {
+    "type": "image",
+    "allow_clipping": false,
+    "alpha": 1,
+    "texture": "textures/ui/purpleBorder",
+    "size": ["100%c + 8px", "100%c + 8px"],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "offset": [18, 0],
+    "layer": 25,
+    "controls": [
+      {
+        "hover_text_panel": {
+          "type": "panel",
+          "size": ["100%cm", "100%cm"],
+          "controls": [
+            {
+              "hover_text@hover_text": {
+                "text": "$hover_text"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "hover_text": {
+    "type": "label",
+    "offset": [0, 0],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "layer": 2,
+    "color": "$f_color_format",
+    "$hover_text|default": "Unset",
+    "shadow": false
+  },
+  "fuel@single_item_cell": {
+    "$item_texture": "textures/ui/smelting_guide/fuel",
+    "$hover_text": "nic.smelt.fuel"
+  },
+  "count@single_item_cell": {
+    "$item_texture": "textures/ui/smelting_guide/count",
+    "$hover_text": "nic.smelt.count"
+  },
+  "lava_bucket@multi_item_panel": {
+    "$item_texture": "textures/items/bucket_lava",
+    "$hover_text": "item.bucketLava.name"
+  },
+  "block_of_coal@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/block_of_coal",
+    "$hover_text": "tile.coal_block.name"
+  },
+  "kelp_block@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/kelp_block",
+    "$hover_text": "tile.dried_kelp_block.name"
+  },
+  "blaze_rod@multi_item_panel": {
+    "$item_texture": "textures/items/blaze_rod",
+    "$hover_text": "item.blaze_rod.name"
+  },
+  "coal@multi_item_panel": {
+    "$item_texture": "textures/items/coal",
+    "$hover_text": "%item.coal.name\n%item.charcoal.name"
+  },
+  "boat@multi_item_panel": {
+    "$item_texture": "textures/items/boat_oak",
+    "$hover_text": "%itemGroup.name.boat\n%itemGroup.name.chestboat"
+  },
+  "plank@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/plank",
+    "$hover_text": "%itemGroup.name.log\n%itemGroup.name.planks\n%itemGroup.name.slab"
+  },
+  "fence@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/gate",
+    "$hover_text": "%itemGroup.name.fence\n%itemGroup.name.fencegate\n%itemGroup.name.pressurePlate\n%itemGroup.name.trapdoor\n%itemGroup.name.buttons"
+  },
+  "composter@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/table",
+    "$hover_text": "%tile.crafting_table.name\n%tile.composter.name\n%tile.fletching_table.name\n%tile.cartography_table.name\n%tile.smithing_table.name\n%tile.lectern.name\n%tile.chest.name\n%tile.loom.name\n%tile.barrel.name\n%tile.jukebox.name\n%tile.noteblock.name"
+  },
+  "fishing_rod@multi_item_panel": {
+    "$item_texture": "textures/items/fishing_rod_uncast",
+    "$hover_text": "%item.fishing_rod.name\n%itemGroup.name.banner\n%tile.ladder.name"
+  },
+  "tools@multi_item_panel": {
+    "$item_texture": "textures/items/wood_pickaxe",
+    "$hover_text": "%item.wooden_sword.name\n%item.wooden_shovel.name\n%item.wooden_axe.name\n%item.wooden_pickaxe.name\n%item.wooden_hoe.name\n%item.bow.name\n%item.crossbow.name"
+  },
+  "door@multi_item_panel": {
+    "$item_texture": "textures/items/sign",
+    "$hover_text": "%itemGroup.name.door\n%itemGroup.name.hanging_sign\n%tile.standing_sign.name\n%item.bowl.name"
+  },
+  "saplings@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/sapling",
+    "$hover_text": "%itemGroup.name.sapling\n%item.stick.name\n%tile.leaf_litter.name\n%tile.deadbush.name"
+  },
+  "bamboo@multi_item_panel": {
+    "$item_texture": "textures/items/bamboo",
+    "$hover_text": "%tile.bamboo.name\n%tile.scaffolding.name"
+  },
+  "count_100@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/100",
+    "$hover_text": "nic.smelt.100"
+  },
+  "count_80@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/80",
+    "$hover_text": "nic.smelt.80"
+  },
+  "count_20@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/20",
+    "$hover_text": "nic.smelt.20"
+  },
+  "count_12@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/12",
+    "$hover_text": "nic.smelt.12"
+  },
+  "count_8@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/8",
+    "$hover_text": "nic.smelt.8"
+  },
+  "count_6@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/6",
+    "$hover_text": "nic.smelt.6"
+  },
+  "count_105@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/105",
+    "$hover_text": "nic.smelt.105"
+  },
+  "count_1@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/1",
+    "$hover_text": "nic.smelt.1"
+  },
+  "count_05@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/05",
+    "$hover_text": "nic.smelt.05"
+  },
+  "count_025@multi_item_panel": {
+    "$item_texture": "textures/ui/smelting_guide/025",
+    "$hover_text": "nic.smelt.025"
+  }
+}

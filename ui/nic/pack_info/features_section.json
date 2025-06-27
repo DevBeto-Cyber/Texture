@@ -1,0 +1,121 @@
+{
+  "namespace": "features_section",
+  "features_section": {
+    "type": "stack_panel",
+    "size": ["100%", "100%c"],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [0, 4]
+        }
+      },
+      {
+        "title@common.green_label": {
+          "text": "feature.title",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 2,
+          "shadow": true
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [0, 8]
+        }
+      },
+      {
+        "feature1@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.1"
+        }
+      },
+      {
+        "feature2@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.2"
+        }
+      },
+      {
+        "feature3@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.3"
+        }
+      },
+      {
+        "feature4@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.4"
+        }
+      },
+      {
+        "feature5@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.5"
+        }
+      },
+      {
+        "feature6@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.6"
+        }
+      },
+      {
+        "feature7@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.7"
+        }
+      },
+      {
+        "feature8@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.9"
+        }
+      },
+      {
+        "feature10@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.10"
+        }
+      },
+      {
+        "feature11@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.11"
+        }
+      },
+      {
+        "feature12@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.12"
+        }
+      },
+      {
+        "feature13@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.13"
+        }
+      },
+      {
+        "feature14@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.14"
+        }
+      },
+      {
+        "feature15@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.15"
+        }
+      },
+      {
+        "feature16@settings_common.selector_group_label": {
+          "type": "label",
+          "text": "feature.16"
+        }
+      }
+    ]
+  }
+}

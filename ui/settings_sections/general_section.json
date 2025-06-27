@@ -1,0 +1,99 @@
+{
+  "namespace": "general_section",
+  "general_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "general_button_toggle",
+    "$glyph_texture": "textures/ui/settings_general_hover",
+    "$glyph_color_texture": "textures/ui/settings_general",
+    "$glyph_size": [18, 13],
+    "$button_text": "options.general",
+    "$toggle_property_bag": {
+      "#panel_title": "options.generalTitle"
+    }
+  },
+  "accessibility_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "accessibility_button_toggle",
+    "$glyph_texture": "textures/ui/accessibility_glyph",
+    "$glyph_color_texture": "textures/ui/accessibility_glyph_color",
+    "$glyph_size": [16, 15],
+    "$button_text": "options.accessibility",
+    "$toggle_property_bag": {
+      "#panel_title": "options.accessibility.title"
+    }
+  },
+  "global_texture_pack_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "global_texture_pack_button_toggle",
+    "$glyph_texture": "textures/ui/settings_pack_hover",
+    "$glyph_color_texture": "textures/ui/settings_pack",
+    "$glyph_size": [13, 15],
+    "$button_text": "menu.globalpacks",
+    "$toggle_property_bag": {
+      "#panel_title": "menu.globalpacks"
+    }
+  },
+  "creator_button@settings_common.section_toggle_base": {
+    "ignored": "$ignore_creator_section",
+    "$toggle_view_binding_name": "creator_button_toggle",
+    "$glyph_texture": "textures/ui/settings_creator_hover",
+    "$glyph_color_texture": "textures/ui/settings_creator",
+    "$glyph_size": [14, 13],
+    "$button_text": "options.creator",
+    "$toggle_property_bag": {
+      "#panel_title": "options.creatorTitle"
+    }
+  },
+  "storage_management_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "storage_management_button_toggle",
+    "enabled": "(not $trial)",
+    "visible": "($is_pregame)",
+    "$glyph_texture": "textures/ui/settings_storage_hover",
+    "$glyph_color_texture": "textures/ui/settings_storage",
+    "$glyph_size": [17, 13],
+    "variables": [
+      {
+        "requires": "$education_edition",
+        "$button_text": "menu.eduLocalStorage",
+        "$toggle_property_bag": {
+          "#panel_title": "menu.eduLocalStorage"
+        }
+      },
+      {
+        "requires": "(not $education_edition)",
+        "$button_text": "menu.storageManagement",
+        "$toggle_property_bag": {
+          "#panel_title": "menu.storageManagement"
+        }
+      }
+    ]
+  },
+  "account_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "account_button_toggle",
+    "$glyph_texture": "textures/ui/settings_creator_hover",
+    "$glyph_color_texture": "textures/ui/settings_profile",
+    "$glyph_size": [14, 13],
+    "$button_text": "options.account",
+    "$toggle_property_bag": {
+      "#panel_title": "options.accountTitle"
+    }
+  },
+  "view_subscriptions_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "view_subscriptions_button_toggle",
+    "enabled": "(not $trial)",
+    "$glyph_texture": "textures/ui/settings_subscription_hover",
+    "$glyph_color_texture": "textures/ui/settings_subscription",
+    "$glyph_size": [19, 14],
+    "$button_text": "options.viewSubscriptions",
+    "$toggle_property_bag": {
+      "#panel_title": "options.viewSubscriptions"
+    }
+  },
+  "language_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "language_button_toggle",
+    "$glyph_texture": "textures/ui/settings_language_hover",
+    "$glyph_color_texture": "textures/ui/settings_language",
+    "$glyph_size": [15, 15],
+    "$button_text": "options.language",
+    "$toggle_property_bag": {
+      "#panel_title": "options.language"
+    }
+  }
+}

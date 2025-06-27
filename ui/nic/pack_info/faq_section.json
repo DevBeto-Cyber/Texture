@@ -1,0 +1,168 @@
+{
+  "namespace": "faq_section",
+  "faq_section": {
+    "type": "stack_panel",
+    "size": ["100%", "100%c"],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [0, 4]
+        }
+      },
+      {
+        "title@common.red_label": {
+          "text": "faq.title",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 2,
+          "shadow": true
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [0, 8]
+        }
+      },
+      {
+        "faq_1@faq_section.faq": {
+          "$question": "faq.q1",
+          "$answer": "faq.a1"
+        }
+      },
+      {
+        "faq_2@faq_section.faq": {
+          "$question": "faq.q2",
+          "$answer": "faq.a2"
+        }
+      },
+      {
+        "faq_3@faq_section.faq": {
+          "$question": "faq.q3",
+          "$answer": "faq.a3"
+        }
+      },
+      {
+        "faq_4@faq_section.faq": {
+          "$question": "faq.q4",
+          "$answer": "faq.a4"
+        }
+      },
+      {
+        "faq_5@faq_section.faq": {
+          "$question": "faq.q5",
+          "$answer": "faq.a5"
+        }
+      },
+      {
+        "faq_5@faq_section.faq": {
+          "$question": "faq.q6",
+          "$answer": "faq.a6"
+        }
+      },
+      {
+        "faq_5@faq_section.faq": {
+          "$question": "faq.q7",
+          "$answer": "faq.a7"
+        }
+      }
+    ]
+  },
+  "faq_toggle_button_content": {
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "controls": [
+      {
+        "labels": {
+          "type": "stack_panel",
+          "size": ["100%", 10],
+          "offset": [2, 0],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "title": {
+                "type": "label",
+                "text": "$question"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dropdown_chevron": {
+          "type": "image",
+          "texture": "textures/ui/down_arrow",
+          "color": "$text_color",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [-5, 0],
+          "size": [11, 11]
+        }
+      }
+    ]
+  },
+  "faq": {
+    "type": "stack_panel",
+    "size": ["100%", "100%c"],
+    "$question|default": "",
+    "controls": [
+      {
+        "toggle_button@common_toggles.dark_content_toggle": {
+          "size": ["100%", 25],
+          "$button_content": "faq_section.faq_toggle_button_content",
+          "$toggle_name": "$question",
+          "$toggle_view_binding_name": "$question",
+          "$toggle_sound": true
+        }
+      },
+      {
+        "details_panel": {
+          "type": "image",
+          "size": ["100%", "100%c + 5px"],
+          "texture": "textures/ui/Black",
+          "controls": [
+            {
+              "stack": {
+                "type": "stack_panel",
+                "size": ["100% - 4px", "100%c"],
+                "layer": 10,
+                "controls": [
+                  {
+                    "answer@faq_section.text": {
+                      "$text": "$answer"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "$question",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [0, 4]
+        }
+      }
+    ]
+  },
+  "text": {
+    "type": "label",
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "size": ["100%", "default"],
+    "shadow": false,
+    "text": "$text",
+    "$text|default": ""
+  }
+}

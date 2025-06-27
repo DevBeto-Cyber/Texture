@@ -1,0 +1,143 @@
+   {
+  "namespace": "storage_management",
+  "storage_header_panel": {
+    "type": "panel",
+    "size": ["100%", "100%c"],
+    "controls": [
+      {
+        "header_panel": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": ["100% - 4px", "100%c + 4px"],
+          "offset": [0, 2],
+          "controls": [
+            {
+              "file_storage_dropdown@settings_common.option_dropdown": {
+                "$option_label": "options.filelocation.title",
+                "ignored": "($education_edition or ($is_holographic and $is_reality_mode))",
+                "visible": "($storage_location_switch_enabled and not $gear_vr)",
+                "$dropdown_content": "general_section.file_storage_location_content",
+                "$dropdown_area": "content_area",
+                "$dropdown_name": "file_storage_location",
+                "$option_enabled_binding_name": "#file_storage_location_enabled",
+                "$options_dropdown_toggle_label_binding": "#file_storage_location_toggle_label",
+                "$dropdown_scroll_content_size": ["100%", "200%"]
+              }
+            },
+            {
+              "file_storage_dropdown_edu@settings_common.option_dropdown": {
+                "$option_label": "options.filelocation.title.edu",
+                "ignored": "((not $education_edition) or ($is_holographic and $is_reality_mode))",
+                "visible": "($storage_location_switch_enabled and not $gear_vr)",
+                "$dropdown_content": "general_section.file_storage_location_content",
+                "$dropdown_area": "content_area",
+                "$dropdown_name": "file_storage_location",
+                "$option_enabled_binding_name": "#file_storage_location_enabled",
+                "$options_dropdown_toggle_label_binding": "#file_storage_location_toggle_label",
+                "$dropdown_scroll_content_size": ["100%", "200%"]
+              }
+            },
+            {
+              "general_3": {
+                "type": "stack_panel",
+                "size": ["33.333%", 30],
+                "orientation": "horizontal",
+                "controls": [
+                  {
+                    "clear_cache_button_panel": {
+                      "type": "panel",
+                      "size": ["100%", "100%c + 2px"],
+                      "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+                      "$focus_override_up": "FOCUS_OVERRIDE_STOP",
+                      "$clear_cache_button_text|default": "#none",
+                      "controls": [
+                        {
+                          "clear_cache_button@common_buttons.light_text_button": {
+                            "size": ["100%", 30],
+                            "offset": [-1, -2],
+                            "$pressed_button_name": "button.clear_cache",
+                            "$button_text": "$clear_cache_button_text"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "clear_screenshots_cache_button_panel": {
+                      "ignored": "$education_edition",
+                      "type": "panel",
+                      "size": ["100%", "100%c + 2px"],
+                      "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+                      "$clear_screenshots_cache_button_text|default": "#none",
+                      "controls": [
+                        {
+                          "clear_screenshots_cache_button@common_buttons.light_text_button": {
+                            "size": ["100%", 30],
+                            "offset": [-1, -2],
+                            "$pressed_button_name": "button.clear_screenshots_cache",
+                            "$button_text": "$clear_screenshots_cache_button_text"
+                          }
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_name": "#screenshots_showcase_enabled",
+                          "binding_name_override": "#visible"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "delete_local_screenshots_button_panel": {
+                      "ignored": "$education_edition",
+                      "type": "panel",
+                      "size": ["100%", "100%c + 2px"],
+                      "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+                      "$delete_local_screenshots_button_text|default": "#none",
+                      "controls": [
+                        {
+                          "delete_local_screenshots_button@common_buttons.light_text_button": {
+                            "size": ["100%", 30],
+                            "offset": [-1, -2],
+                            "$pressed_button_name": "button.delete_local_screenshots",
+                            "$button_text": "$delete_local_screenshots_button_text"
+                          }
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_name": "#screenshots_gallery_enabled",
+                          "binding_name_override": "#visible"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "panel": {
+                "type": "panel",
+                "size": ["100%", 32],
+                "controls": [
+                  {
+                    "multiselect_button@common_toggles.light_image_toggle": {
+                      "offset": [-1, 0],
+                      "$toggle_name": "toggle.enableMultiselect",
+                      "$button_content": "storage_management.generic_button",
+                      "$button_texture": "textures/ui/multiselection",
+                      "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+                      "size": ["100%", "100%"]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

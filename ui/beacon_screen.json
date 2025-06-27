@@ -1,0 +1,27 @@
+{
+  "namespace": "beacon",
+  "item_seperator@beacon.image_atlas": {
+    "size": [5, 18],
+    "texture": "textures/ui/Black",
+    "anchor_to": "top_left",
+    "anchor_from": "top_left"
+  },
+  "beacon_screen@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": true,
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "beacon_ui.beacon_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "beacon_pocket.beacon_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      }
+    ]
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "namespace": "common_ui",
+  "animation": {
+    "anim_type": "flip_book",
+    "frame_count": "$frame_count",
+    "initial_uv": [0, 0],
+    "easing": "linear",
+    "frame_step": 0,
+    "fps": "$fps"
+  },
+  "group_toggle_base@common_toggles.light_content_toggle": {
+    "$toggle_name": "panel_toggle",
+    "$radio_toggle_group": true,
+    "$toggle_group_default_selected": 0,
+    "$default_border_visible": false,
+    "$hover_border_visible": false,
+    "$button_content": "common.padding",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$visible_when",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "panel_close@common_ui.group_toggle_base": {
+    "$toggle_view_binding_name": "panel_close",
+    "$visible_when": "panel_open",
+    "$toggle_group_forced_index": 0,
+    "$default_texture": "textures/ui/recipe_book_icon_hover",
+    "$pressed_texture": "$default_texture",
+    "$toggle_default_state": true
+  },
+  "panel_open@common_ui.group_toggle_base": {
+    "$toggle_view_binding_name": "panel_open",
+    "$toggle_group_forced_index": 1,
+    "$visible_when": "panel_close",
+    "$default_texture": "textures/ui/recipe_book_icon",
+    "$pressed_texture": "textures/ui/recipe_book_icon_pressed"
+  },
+  "cell_image_blank@common.cell_image": {
+    "texture": "textures/ui/Black"
+  },
+  "cell_image_panel_blank": {
+    "type": "panel",
+    "controls": [
+      {
+        "cell_image@common_ui.cell_image_blank": {
+          "$cell_selected_binding_name": "#is_selected_slot",
+          "visible": true,
+          "bindings": [
+            {
+              "binding_name": "(not $cell_selected_binding_name)",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "$item_collection_name"
+            }
+          ]
+        }
+      },
+      {
+        "cell_image_selected@common.cell_image_selected": {
+          "$cell_selected_binding_name": "#is_selected_slot",
+          "visible": false,
+          "bindings": [
+            {
+              "binding_name": "$cell_selected_binding_name",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "$item_collection_name"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "container_item_blank@common.container_item": {
+    "$background_images": "common_ui.cell_image_panel_blank"
+  },
+  "custom_container_panel": {
+    "type": "panel",
+    "$show_close_button|default": true,
+    "$close_button_visible_binding_name|default": "#close_button_visible",
+    "$close_button_offset|default": [0, 0],
+    "$close_button_layer|default": 2,
+    "$use_compact_close_button|default": false
+  },
+  "close_button_holder": {
+    "type": "panel",
+    "offset": [20, 0],
+    "ignored": "(not $show_close_button)",
+    "controls": [
+      {
+        "close@common.close_button": {
+          "layer": "$close_button_layer",
+          "offset": "$close_button_offset",
+          "ignored": "$use_compact_close_button"
+        }
+      },
+      {
+        "compact_close@common.compact_close_button": {
+          "layer": "$close_button_layer",
+          "offset": "$close_button_offset",
+          "ignored": "(not $use_compact_close_button)"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "$close_button_visible_binding_name",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+  "custom_container_bg": {
+    "type": "image",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "texture": "textures/ui/containers/panel/small_chest",
+    "size": [256, 256]
+  },
+  "anvil_panel@common_ui.custom_container_panel": {
+    "size": [176, 168],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/anvil"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {
+          "offset": [2, 0]
+        }
+      }
+    ]
+  },
+  "barrel_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/barrel"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "beacon_panel@common_ui.custom_container_panel": {
+    "size": [214, 218],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/beacon"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "blast_furnace_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/blast_furnace"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {
+          "offset": [120, 0]
+        }
+      }
+    ]
+  },
+  "brewing_stand_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/brewing_stand"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {
+          "offset": [0, 0]
+        }
+      }
+    ]
+  },
+  "cartography_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/cartography_table"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "crafter_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/crafter"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "crafting_inventory_panel@common_ui.custom_container_panel": {
+    "size": [176, 168],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/crafting_inventory"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "dispenser_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/dispenser"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "dropper_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/dropper"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "ender_chest_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/ender_chest"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "enchanting_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/enchanting_table"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {
+          "offset": [66, 0]
+        }
+      }
+    ]
+  },
+  "furnace_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/furnace"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {
+          "offset": [120, 0]
+        }
+      }
+    ]
+  },
+  "grindstone_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/grindstone"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "hopper_panel@common_ui.custom_container_panel": {
+    "size": [176, 135],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/hopper"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "horse_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/horse"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "large_chest_panel@common_ui.custom_container_panel": {
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/large_chest"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "loom_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/loom"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "player_inventory_panel@common_ui.custom_container_panel": {
+    "size": [176, 168],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/player_inventory"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "shulker_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/shulker"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "small_chest_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {}
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "smoker_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/smoker"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {
+          "offset": [120, 0]
+        }
+      }
+    ]
+  },
+  "smithing_table_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/smithing_table"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  },
+  "stonecutter_panel@common_ui.custom_container_panel": {
+    "size": [176, 166],
+    "controls": [
+      {
+        "texture@common_ui.custom_container_bg": {
+          "texture": "textures/ui/containers/panel/stonecutter"
+        }
+      },
+      {
+        "close_button_holder@common_ui.close_button_holder": {}
+      }
+    ]
+  }
+}

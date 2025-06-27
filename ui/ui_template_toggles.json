@@ -1,0 +1,16 @@
+{
+  "namespace": "common_toggles",
+  "custom_light_content_toggle@common_toggles.light_content_toggle": {
+    "$default_texture": "textures/ui/button_borderless_light",
+    "$hover_texture": "textures/ui/button_borderless_lightpressed",
+    "$pressed_texture": "textures/ui/button_borderless_lighthover",
+    "$pressed_no_hover_texture": "textures/ui/button_borderless_lightpressed"
+  },
+  "custom_light_template_toggle@common_toggles.light_template_toggle": {
+    "$button_type_panel": "common_buttons.button_content_panel",
+    "$default_texture": "textures/ui/button_borderless_light",
+    "$hover_texture": "textures/ui/button_borderless_lightpressed",
+    "$pressed_texture": "textures/ui/button_borderless_lighthover",
+    "$pressed_no_hover_texture": "textures/ui/button_borderless_lightpressed"
+  }
+}

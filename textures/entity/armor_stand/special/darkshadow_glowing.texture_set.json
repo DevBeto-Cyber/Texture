@@ -1,0 +1,7 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "darkshadow_glowing",
+		"metalness_emissive_roughness": "darkshadow_glowing_mer"
+	}
+}

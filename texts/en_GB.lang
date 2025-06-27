@@ -1,0 +1,462 @@
+﻿⭐Ultramarine⭐
+ultramarine.title= Ultramarine Nightfall
+ultramarine.version= Nightfall X 
+--------------------------------
+info.button_label=   Info
+developer.button_label=   Developer
+credit.button_label=   Credits
+features.button_label=   Features
+changelog.button_label=   Changelogs
+faq.button_label=   FAQs
+
+⭐settings⭐
+menu.settings=  Settings
+settings.quick_settings=Quick Settings
+settings.common_settings=Common Settings
+settings.control_settings=Control Settings
+settings.other_settings=Other Settings
+
+⭐recommended screen⭐
+recommended.buttontext=Recommended
+recommended.paneltitle=Recommended Settings
+recommended.recommended=Recommended Settings :
+recommended.settings1=1. Turn these on.
+recommended.settings2=2. Set ui profile to classic.
+recommended.settings3=3. Use gui scale value as -1 or 0.
+recommended.settings4=4. Set screen safe area so it fits your screen.
+
+⭐advanced section⭐
+advanced.button=Advanced
+advanced.panel=Advanced Settings
+advanced.title=Advanced Settings:
+
+⭐fps section⭐
+fps.buttontext=Fps++
+fps.paneltitle=Better Fps
+fps.title=Follow these steps for better fps :
+fps.vsync=1. Turn Off Vsync.
+fps.fancy=2. Turn all these off.
+fps.graphics=3. Set Graphics mode to simple.
+fps.fps=4. Put it same as your screen refresh rate.
+fps.aa=5. Set it to lowest.
+fps.distance=6. Set render distance between 8-14 chunks.
+fps.important= If your game looking bad, feel free to turn on smooth lightning, beautiful skies and fancy graphics. Set according to your device for best result.
+
+⭐sound section⭐
+sound.button=Sound
+sound.panel=Sound settings
+sound.music=Music And Sound :
+
+⭐video section⭐
+video.title.hud=HUD settings :
+video.title.graphics=Graphics settings :
+
+⭐Info Section⭐
+info.title=ULTRAMARINE
+info.edition=NIGHTFALL
+--------------------------------
+info.creator=Made By §dnotnicto
+info.about1=Hey there! This awesome resource pack adds some extra functionality and visuality to Minecraft.
+info.about2=If you find any bug, please report them on my Discord server.
+info.thanks=Thanks For Downloading The Pack...
+
+⭐developer section⭐
+developer.name=notNicto
+developer.discord= discord.com/mYxjckhRNH
+developer.youtube= youtube.com/@notnicto
+developer.mcpedl= mcpedl.com/user/notnicto
+--------------------------------
+developer.about=Hello, I'm Nic  from India. I love making Minecraft mods, maps, and texture packs as a hobby. Also, I enjoy creating Minecraft-related content for YouTube.
+developer.creation_title=More Creation By notnicto :
+--------------------------------
+developer.creation1= Ultramarine Overhaul
+developer.creation2= Neo Texture Pack
+developer.creation3= Minecraft Akinator [Bedrock]
+developer.creation4= Food Expansion
+developer.creation5= Craft Everything
+developer.creation6= Achievement World
+
+⭐credit section⭐
+credit.title=Credits
+credit.translators=Translators
+credit.thanks=Special thanks to §cSaif.15§r for his help in making this pack compatible with mobile devices.
+--------------------------------
+credit.author1=DrAv0011
+credit.content11=Quick Craft & Trade Unlocker.
+credit.content12=Bedrock Tweaks : §abedrocktweaks.net
+credit.author2=HyperF3GamerINDO
+credit.content21=Totem doll animation
+credit.content22=Femboy Totem : §amcpedl.com/femboy-totem
+credit.author3=Chainsketch
+credit.content31=FPS Counter
+credit.content32=FPS Counter : §amcpedl.com/fps-counter-pack
+credit.translators1= vietnamese_9000main §7[Vietnamese]
+credit.translators2= lostliano §7[Deutsch]
+credit.translators3= nx703 §7[Español]
+credit.translators4= SuperMario2.0 §7[Indonesia]
+
+⭐features section⭐
+feature.title=features
+feature.1= Dark Mode with saturated textures.
+feature.2= Unique Ui and Gui designs.
+feature.3= Compact and quick settings.
+feature.4= Three subpacks: normal, reimagined and unbound.
+feature.5= Biome dependant fog and shaders.
+feature.6= Quick loot, chat helper & trading unlocker.
+feature.7= Brewing guides & quick crafting.
+feature.8= Item durability viewer.
+feature.9= Digital clock and compass in hud.
+feature.10= Funny death message.
+feature.11= Totem doll animation.
+feature.12= Custom armor stands.
+feature.13= Hunger preview & armor points.
+feature.14= New armor and tools texture with glow trims.
+feature.15= Redesigned particles.
+feature.16= And I forgot lol... 
+
+⭐changelog section⭐
+changelog.title=changelogs
+--------------------------------
+changelog.v4=Version 4.0 :
+changelog.v41= Vibrant visual support.
+changelog.v42= New Ui.
+changelog.v43= Better cords.
+changelog.v44= Better chat screen.
+changelog.v45= Improved atmosphere.
+changelog.v46= Improved durability viewer.
+changelog.v47= Enchant icons.
+changelog.v48= Rarity viewer.
+changelog.v49= Improved enchantment guides.
+changelog.v410= Various bug fixed.
+--------------------------------
+changelog.v3=Version 3.0:
+changelog.v31= Colorful Containers.
+changelog.v32= Increased FPS.
+changelog.v33= Added f1 button and fps counter.
+changelog.v34= Glowing trims and colorful enchants.
+changelog.v35= Redstone tweaks.
+changelog.v36= Updated durability viewer.
+changelog.v37= villager types.
+changelog.v38= New chat animations.
+changelog.v39= Item rarity viewer.
+changelog.v310= And many more...
+--------------------------------
+changelog.v2=Version 2.0 :
+changelog.v21= 1.21+ Support.
+changelog.v22= Español, Indonesia and Português language updated.
+changelog.v23= Smelting guide.
+changelog.v24= Custom armor stands.
+changelog.v25= New totem animations.
+changelog.v26= Armor and tool textures added.
+changelog.v27= New fonts.
+changelog.v28= Armor point preview added.
+changelog.v29= Various bug fixed.
+changelog.v210= Added Herobrine.
+--------------------------------
+changelog.v1=Version 1.0 :
+changelog.v11= Dark Mode with saturated textures.
+changelog.v12= Brand new start menu.
+changelog.v13= Compact and quick settings.
+changelog.v14= Three subpacks: normal, reimagined and unbound.
+changelog.v15= Biome dependant fog and shaders.
+changelog.v16= Quick loot, chat helper & trading unlocker.
+changelog.v17= Funny death message. [Only English]
+changelog.v18= Digital clock and compass in hud.
+changelog.v19= Item durability percentage.
+changelog.v110= Brewing guides and quick crafting.
+
+⭐faq section⭐
+faq.title=FAQs
+faq.q1= Can this pack be applied to the world resource pack?
+faq.a1=Of course! You can freely apply this pack to any world or server resource pack!
+faq.q2= Can I distribute any feature of this pack in my pack?
+faq.a2=Yes! I would be happy if my code can help you develop your packs! By the way, when you distribute it, Don't forget to give credits!
+faq.q3= I want to review this pack on Youtube or similar platform!
+faq.a3=You are more than welcome! Please provide MCPEDL/CURSEFORGE page of this pack under the video descripton!
+faq.q4= I entered a certain server and Ultramarine disabled itself...
+faq.a4=Some servers prohibit global resources. Ultramarine cannot be used on such servers.
+faq.q5= I found a bug! Where do I report it?
+faq.a5=If you find a bug, please report it on Discord server -  §bhttps://discord.gg/mYxjckhRNH§r
+faq.q6= How do I upload my skin as totem?
+faq.a6=Join my discord server. Detailed tutorial is posted there.
+faq.q7= Can I use my skin as custom armor stand models?
+faq.a7=Certainly. There are 10 extra slot. Join my discord server. Detailed tutorial is posted there.
+
+⭐progress screen⭐
+progress.overworld=Entering §aOverworld
+progress.nether=Entering §cNether
+progress.end=Entering §dThe End
+
+⭐death massages⭐
+death.attack.anvil=%1$s was sandwitchedS by a falling anvil
+death.attack.arrow=%1$s no-scoped by %2$s
+death.attack.arrow.item=%1$s no-scoped by %2$s using %3$s
+death.attack.bullet=%1$s was sniped by %2$s
+death.attack.cactus=%1$s was pricked to death
+death.attack.cactus.player=%1$s walked into a cactus whilst trying to escape %2$s
+death.attack.drown=%1$s became fish food
+death.attack.drown.player=%1$s drowned whilst trying to escape %2$s
+death.attack.explosion=%1$s is a noob
+death.attack.explosion.player=%1$s was blown up by %2$s
+death.attack.fall=%1$s walked into a bear trap
+death.attack.fallingBlock=%1$s was squashed by a falling block
+death.attack.fireball=%1$s got BBQd by %2$s
+death.attack.fireball.item=%1$s got BBQd by %2$s using %3$s
+death.attack.fireworks=%1$s went off with a bang
+death.attack.flyIntoWall=%1$s experienced kinetic energy
+death.attack.generic=%1$s died
+death.attack.indirectMagic=%1$s was killed by %2$s using magic
+death.attack.indirectMagic.item=%1$s was killed by %2$s using %3$s
+death.attack.inFire=%1$s went up in flames
+death.attack.inFire.player=%1$s walked into fire whilst fighting %2$s
+death.attack.inWall=%1$s suffocated in a wall
+death.attack.lava=%1$s tried to swim in lava
+death.attack.lava.player=%1$s tried to swim in lava to escape %2$s
+death.attack.lightningBolt=%1$s made a phone call in a storm
+death.attack.magic=%1$s was killed by magic
+death.attack.magma=%1$s discovered floor was lava
+death.attack.magma.player=%1$s walked on danger zone due to %2$s
+death.attack.mob=%1$s got memed by %2$s
+death.attack.onFire=%1$s forgot their sunscreen
+death.attack.onFire.player=%1$s was burnt to a crisp whilst fighting %2$s
+death.attack.outOfWorld=%1$s was yeeted out of the world
+death.attack.player=%1$s got smacked by %2$s
+death.attack.player.item=%1$s was slain by %2$s using %3$s
+death.attack.spit=%1$s was spitballed by %2$s
+death.attack.starve=%1$s starved to death
+death.attack.sweetBerry=%1$s was poked to death by a sweet berry bush
+death.attack.thorns=%1$s was killed trying to hurt %2$s
+death.attack.thrown=%1$s was pummeled by %2$s
+death.attack.thrown.item=%1$s was pummeled by %2$s using %3$s
+death.attack.trident=%1$s was impaled by Aquaman
+death.attack.wither=%1$s withered away
+death.attack.freeze=%1$s forgot their coat
+death.attack.sonicBoom=%1$s was obliterated by a sonically-charged shriek
+death.attack.sonicBoom.player=%1$s was obliterated by a sonically-charged shriek whilst trying to escape %2$s
+death.attack.stalactite=%1$s was skewered by a falling stalactite
+death.attack.stalagmite=%1$s was impaled on a stalagmite
+death.fell.accident.generic=%1$s didn't bounce
+death.fell.accident.ladder=%1$s fell off a ladder
+death.fell.accident.vines=%1$s fell off some vines
+death.fell.accident.water=%1$s fell out of the water
+death.fell.assist=%1$s was doomed to fall by %2$s
+death.fell.assist.item=%1$s was doomed to fall by %2$s using %3$s
+death.fell.finish=%1$s fell too far and was finished by %2$s
+death.fell.finish.item=%1$s fell too far and was finished by %2$s using %3$s
+death.fell.killer=%1$s was doomed to fall
+deathScreen.leaveServer=Leave server
+deathScreen.message=Get rekt
+deathScreen.quit=Rage quit
+deathScreen.title=Get rekt
+deathScreen.title.hardcore=Oof you lost
+
+⭐foood info⭐
+item.apple.name=Apple 
+item.golden_apple.name=Golden Apple  
+item.appleEnchanted.name=Enchanted Golden Apple  
+item.beef.name=Raw Beef 
+item.beetroot.name=Beetroot 
+item.beetroot_soup.name=Beetroot Soup 
+item.bread.name=Bread 
+item.cake.name=Cake 
+item.golden_carrot.name=Golden Carrot 
+item.carrot.name=Carrot 
+item.chorus_fruit.name=Chorus Fruit 
+item.cooked_beef.name=Cooked Beef 
+item.cooked_chicken.name=Cooked Chicken 
+item.cooked_porkchop.name=Cooked Porkchop 
+item.chicken.name=Raw Chicken 
+item.cookie.name=Cookie 
+item.clownfish.name=Tropical Fish 
+item.cooked_fish.name=Cooked Cod 
+item.fish.name=Raw Cod 
+item.pufferfish.name=Pufferfish  
+item.cooked_salmon.name=Cooked Salmon 
+item.salmon.name=Raw Salmon 
+item.honey_bottle.name=Honey Bottle 
+item.melon.name=Melon Slice 
+item.mushroom_stew.name=Mushroom Stew 
+item.muttonCooked.name=Cooked Mutton 
+item.muttonRaw.name=Raw Mutton 
+item.porkchop.name=Raw Porkchop 
+item.potato.name=Potato 
+item.baked_potato.name=Baked Potato 
+item.poisonous_potato.name=Poisonous Potato  
+item.pumpkin_pie.name=Pumpkin Pie 
+item.cooked_rabbit.name=Cooked Rabbit 
+item.rabbit.name=Raw Rabbit 
+item.rabbit_stew.name=Rabbit Stew 
+item.dried_kelp.name=Dried Kelp 
+item.rotten_flesh.name=Rotten Flesh 
+item.spider_eye.name=Spider Eye  
+item.sweet_berries.name=Sweet Berries 
+item.glow_berries.name=Glow Berries 
+
+
+⭐armor points⭐
+item.chainmail_boots.name=Chain Boots 
+item.chainmail_chestplate.name=Chain Chestplate 
+item.chainmail_helmet.name=Chain Helmet 
+item.chainmail_leggings.name=Chain Leggings 
+item.diamond_boots.name=Diamond Boots 
+item.diamond_chestplate.name=Diamond Chestplate 
+item.diamond_helmet.name=Diamond Helmet 
+item.diamond_leggings.name=Diamond Leggings 
+item.golden_boots.name=Golden Boots 
+item.golden_chestplate.name=Golden Chestplate 
+item.golden_helmet.name=Golden Helmet 
+item.golden_leggings.name=Golden Leggings 
+item.iron_boots.name=Iron Boots 
+item.iron_chestplate.name=Iron Chestplate 
+item.iron_helmet.name=Iron Helmet 
+item.iron_leggings.name=Iron Leggings 
+item.leather_boots.name=Leather Boots 
+item.leather_chestplate.name=Leather Tunic 
+item.leather_helmet.name=Leather Cap 
+item.leather_leggings.name=Leather Pants 
+item.netherite_boots.name=Netherite Boots 
+item.netherite_chestplate.name=Netherite Chestplate 
+item.netherite_helmet.name=Netherite Helmet 
+item.netherite_leggings.name=Netherite Leggings 
+item.turtle_helmet.name=Turtle Shell 
+
+⭐colorful enchantments⭐
+enchantment.level.1=§r
+enchantment.level.2=§r
+enchantment.level.3=§r
+enchantment.level.4=§r
+enchantment.level.5=§r
+enchantment.arrowDamage= §c Power
+enchantment.arrowFire= §c Flame §r
+enchantment.arrowInfinite= §a Infinity §r
+enchantment.arrowKnockback= §2 Punch
+enchantment.crossbowMultishot= §a MultiShot §r
+enchantment.crossbowPiercing= §3 Piercing
+enchantment.crossbowQuickCharge= §c Quick Charge
+enchantment.curse.binding= §4 Curse of Binding §r
+enchantment.curse.vanishing= §4 Curse of Vanishing §r
+enchantment.damage.all= §c Sharpness
+enchantment.damage.arthropods= §2 Bane of Arthropods
+enchantment.damage.undead= §5 Smite
+enchantment.digging= §a Efficiency
+enchantment.durability= §g Unbreaking
+enchantment.fire= §c Fire Aspect
+enchantment.fishingSpeed= §5 Lure
+enchantment.frostwalker= §3 Frost Walker
+enchantment.heavy_weapon.breach= §c Breach
+enchantment.heavy_weapon.density= §c Density
+enchantment.heavy_weapon.windburst= §a Wind Burst
+enchantment.knockback= §3 Knockback
+enchantment.lootBonus= §2 Looting
+enchantment.lootBonusDigger= §2 Fortune
+enchantment.lootBonusFishing= §a Luck of the Sea
+enchantment.mending= §6 Mending §r
+enchantment.oxygen= §9 Respiration
+enchantment.protect.all= §2 Protection
+enchantment.protect.explosion= §g Blast Protection
+enchantment.protect.fall= §c Feather Falling
+enchantment.protect.fire= §c Fire Protection
+enchantment.protect.projectile= §3 Projectile Protection
+enchantment.soul_speed= §9 Soul Speed
+enchantment.swift_sneak= §9 Swift Sneak
+enchantment.thorns= §c Thorns
+enchantment.untouching= §3 Silk Touch §r
+enchantment.waterWalker= §3 Depth Strider
+enchantment.waterWorker= §3 Aqua Affinity §r
+enchantment.tridentChanneling= §g Channeling §r
+enchantment.tridentLoyalty= §a Loyalty
+enchantment.tridentRiptide= §9 Riptide
+enchantment.tridentImpaling= §c Impaling
+
+enchantment_guide.ebook=§7Shears, flint and steel, shield etc.§r
+enchantment_guide.etable=Enchantment Guide
+
+⭐smelting guide⭐
+nic.smelt.fuel=Fuel
+nic.smelt.count=No. of items that can be smelted
+nic.smelt.100=§a100 Items
+nic.smelt.80=§a80 Items
+nic.smelt.20=§a20 Items
+nic.smelt.12=§g12 Items
+nic.smelt.8=§g8 Items
+nic.smelt.6=§g6 Items
+nic.smelt.105=§c1.5 Item
+nic.smelt.1=§c1 Item
+nic.smelt.05=§c0.5 Item
+nic.smelt.025=§c0.25 Item
+
+⭐brewing guide⭐
+brewing_guide.level_2=Level II Potion
+brewing_guide.splash_potion=Splash Potion
+brewing_guide.lingering_potion=Lingering Potion
+brewing_guide.extended_potion=Extended Potion
+brewing_guide.effect_potion=Potion Effect
+
+⭐armor_stand guide⭐
+armor_stand_guide.title=§eNametag for Custom Armor Stands§r
+armor_stand_guide.plushie=§bPlushie:§r
+armor_stand_guide.character=§aCharacter:§r
+armor_stand_guide.youtuber=§cYoutuber:§r
+armor_stand_guide.anime=§bAnime:§r
+armor_stand_guide.special=§dSpecial:§r
+armor_stand_guide.extra=§aExtra:§r
+armor_stand_guide.custom1=§bCustom Default:§r
+armor_stand_guide.custom2=§aCustom Slim:§r
+armor_stand_guide.warning=§7(Join my discord server if you face any problem)
+-------------------------dont translate these-----------------------------
+armor_stand_guide.plushie_names=Camel, Creeper, Drowned, Enderman, Farmer, Fox, Ghast, Iron golem, Nic plushie, Pillager, Snow fox, Snow golem, Villager, Wandering trader, Witch, Zombie.
+armor_stand_guide.character_names=Alex, Herobrine, Notch, Old alex, Old steve, Steve
+armor_stand_guide.youtuber_names=Technoblade, Dream, Clownpierce, Mr beast.
+armor_stand_guide.anime_names=Goku, Gojo, Luffy, Madara, Sukuna, Tanjiro, Yuji.
+armor_stand_guide.special_names=Nic, Keshew, Saif, Dark, Legend, Sed, Amr9445, Alexxander, New Vietnam.
+armor_stand_guide.extra_names=Dummy, Showcase, Halloween.
+armor_stand_guide.custom1_names=Custom 1, Custom 2, Custom 3, Custom 4, Custom 5.
+armor_stand_guide.custom2_names=Custom slim 1, Custom slim 2, Custom slim 3, Custom slim 4, Custom slim 5.
+
+⭐formatting guide⭐
+formatting_guide.title=§aColor §bCodes§r
+formatting_guide.dark_purple=Dark Purple
+formatting_guide.light_purple=Light Purple
+formatting_guide.very_light_purple=Very Light Purple
+formatting_guide.dark_blue=Dark Blue
+formatting_guide.ultramarine=Ultramarine
+formatting_guide.blue=Blue
+formatting_guide.dark_aqua=Dark Aqua
+formatting_guide.turquoise=Turquoise
+formatting_guide.aqua=Aqua
+formatting_guide.mountain_meadow=Mountain Meadow
+formatting_guide.dark_green=Dark Green
+formatting_guide.green=Green
+formatting_guide.gold=Gold
+formatting_guide.marigold=Marigold
+formatting_guide.ripe_lemon=Ripe Lemon
+formatting_guide.yellow=Yellow
+formatting_guide.orange=Orange
+formatting_guide.copper=Copper
+formatting_guide.crimson=Crimson
+formatting_guide.dark_red=Dark Red
+formatting_guide.red=Red
+formatting_guide.black=Black
+formatting_guide.tundora=Tundora
+formatting_guide.dark_gray=Dark Gray
+formatting_guide.silver=Silver
+formatting_guide.wafer=Wafer
+formatting_guide.white=White
+formatting_guide.bold=Bold
+formatting_guide.italic=Italic
+formatting_guide.animated=Animated
+formatting_guide.reset=Reset
+
+⭐bossbar⭐
+entity.ender_dragon.name=§d§rEnder Dragon
+entity.wither.name=§0§rWither
+raid.name=§c§rRaid
+
+⭐better cords⭐
+map.position=Position: %s, %s, %s
+map.chunk=Chunk
+map.sub_chunk=Subchunk
+map.chunk_border=Border
+map.chunk_corner=Corner
+map.chunk_center=Center
+hudScreen.daysPlayed=§dDays played:§r %s

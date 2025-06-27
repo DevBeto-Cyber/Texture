@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "soulsand_valley"
+    },
+    "components": {
+      "minecraft:fog_appearance": {
+        "fog_identifier": "nic:fog_soulsand_valley"
+      },
+
+      "minecraft:color_grading_identifier": {
+        "color_grading_identifier": "nic:default_color_grading"
+      },
+      "minecraft:lighting_identifier": {
+        "lighting_identifier": "nic:hell_lightning"
+      }
+    }
+  }
+}

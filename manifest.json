@@ -1,0 +1,68 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Made with ❤ by notnicto (V4.0.3)",
+    "name": "§dULTRAMARINE NIGHTFALL §7X",
+    "uuid": "67cdd12a-6341-4014-a685-fa2a634415a3",
+    "version": [4, 0, 3],
+    "min_engine_version": [1, 21, 0]
+  },
+  "capabilities": ["pbr"],
+  "metadata": {
+    "author": "notnicto",
+    "credits": [
+      {
+        "name": "Bedrock Tweaks",
+        "author": "DrAv0011",
+        "hyperlink": "https://bedrocktweaks.net"
+      },
+      {
+        "name": "Femboy Totem",
+        "author": "HyperF3GamerINDO",
+        "hyperlink": "https://www.mcpedl.com/femboy-totem"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "4360b447-7d36-4627-9cca-4f3b81b9269d",
+      "version": [4, 0, 3]
+    }
+  ],
+  "subpacks": [
+    {
+      "folder_name": "unbound",
+      "name": "§d§l UNBOUND §r\n\n+ Realistic clouds [§cTurn on beautiful skies§r]",
+      "memory_tier": 0
+    },
+    {
+      "folder_name": "reimagined",
+      "name": "§g§l REIMAGINED §r\n\n+ Cubic clouds [§cTurn on beautiful skies§r]",
+      "memory_tier": 0
+    },
+    {
+      "folder_name": "normal",
+      "name": "§a§l NORMAL §r",
+      "memory_tier": 0
+    }
+  ],
+  "settings": [
+    {
+      "type": "label",
+      "text": "Ultramarine Nightfall §7by notnicto§r\nPack Version: §7V4.0§r Release Date: §7June, 2025§r\nSupported Minecraft Versions: §71.21+§r\nIf you found a bug/error, You can report it in my discord server."
+    },
+    {
+      "name": "dc",
+      "type": "input",
+      "text": "Join Discord Server : §3Nicverse",
+      "default": "discord.gg/mYxjckhRNH"
+    },
+    {
+      "name": "yt",
+      "type": "input",
+      "text": "Support Me On Youtube",
+      "default": "youtube.com/@notnicto"
+    }
+  ]
+}

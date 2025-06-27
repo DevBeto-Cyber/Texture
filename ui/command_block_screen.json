@@ -1,0 +1,576 @@
+{
+  "namespace": "command_block",
+  "autocomplete_back_image": {
+    "type": "image",
+    "layer": 2,
+    "size": [12, 11],
+    "texture": "textures/ui/chat_autocomplete_back"
+  },
+  "autocomplete_image": {
+    "type": "image",
+    "layer": 2,
+    "size": [12, 11],
+    "texture": "textures/ui/chat_autocomplete"
+  },
+  "autocomplete_back_button@common_buttons.light_glyph_button": {
+    "size": [30, 30],
+    "layer": 1,
+    "$button_content": "command_block.autocomplete_back_image",
+    "$pressed_button_name": "button.chat_autocomplete_back",
+    "$default_glyph_color": "$light_glyph_hover_color",
+    "bindings": [
+      {
+        "binding_name": "(not #maximized_input_visible)",
+        "binding_name_override": "#enabled"
+      }
+    ]
+  },
+  "autocomplete_button@common_buttons.light_glyph_button": {
+    "size": [30, 30],
+    "layer": 1,
+    "$button_content": "command_block.autocomplete_image",
+    "$pressed_button_name": "button.chat_autocomplete",
+    "$default_glyph_color": "$light_glyph_hover_color",
+    "bindings": [
+      {
+        "binding_name": "(not #maximized_input_visible)",
+        "binding_name_override": "#enabled"
+      }
+    ]
+  },
+  "right_scroll_panel_content": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "controls": [
+      {
+        "command_block_commands_panel": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": ["100%", "100%c + 4px"],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "controls": [
+            {
+              "spacer1": {
+                "type": "panel",
+                "visible": true,
+                "size": [0, 3]
+              }
+            },
+            {
+              "centering_panel": {
+                "type": "panel",
+                "size": ["100%", "100%c"],
+                "controls": [
+                  {
+                    "option_label": {
+                      "type": "label",
+                      "color": "$body_text_color",
+                      "size": ["100%", "default"],
+                      "offset": [2, 0],
+                      "layer": 1,
+                      "text": "advMode.command",
+                      "visible": true,
+                      "locked_alpha": 0.5
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer2": {
+                "type": "panel",
+                "visible": true,
+                "size": [0, 1]
+              }
+            },
+            {
+              "centering_panel1": {
+                "type": "panel",
+                "size": ["100%", "100%c"],
+                "controls": [
+                  {
+                    "command_block_commands_panel": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "size": ["100% - 4px", 60],
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "controls": [
+                        {
+                          "offset": {
+                            "type": "panel",
+                            "size": ["fill", "100%c"],
+                            "controls": [
+                              {
+                                "command_block_commands_text@command_block.command_block_text_edit_box": {
+                                  "anchor_from": "left_middle",
+                                  "anchor_to": "left_middle",
+                                  "$focus_id": "command_block_commands_text",
+                                  "focus_change_left": "hover_note_text",
+                                  "focus_change_up": "hover_note_text",
+                                  "size": ["100%", 60],
+                                  "max_length": 32500,
+                                  "$text_box_name": "command_block.command_text",
+                                  "$text_edit_box_content_binding_name": "#command_text_edit",
+                                  "$place_holder_text": ""
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "advance_command_block_button_coloum_1": {
+                            "type": "stack_panel",
+                            "orientation": "vertical",
+                            "anchor_from": "right_middle",
+                            "anchor_to": "right_middle",
+                            "size": [30, 60],
+                            "controls": [
+                              {
+                                "paste_button@command_block.paste_button": {
+                                  "layer": 2
+                                }
+                              },
+                              {
+                                "autocomplete_back_button@command_block.autocomplete_back_button": {
+                                  "layer": 2
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "advance_command_block_button_coloum_2": {
+                            "type": "stack_panel",
+                            "orientation": "vertical",
+                            "anchor_from": "right_middle",
+                            "anchor_to": "right_middle",
+                            "size": [30, 60],
+                            "controls": [
+                              {
+                                "plus_button@command_block.plus_button": {
+                                  "layer": 2
+                                }
+                              },
+                              {
+                                "autocomplete_button@command_block.autocomplete_button": {
+                                  "layer": 2
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "self_label@command_block.command_block_helper_stack": {
+          "$text_override": "advMode.self"
+        }
+      },
+      {
+        "self_label_offset": {
+          "type": "panel",
+          "size": ["100%", 2]
+        }
+      },
+      {
+        "nearest_player_label@command_block.command_block_helper_stack": {
+          "$text_override": "advMode.nearestPlayer"
+        }
+      },
+      {
+        "nearest_player_label_offset": {
+          "type": "panel",
+          "size": ["100%", 2]
+        }
+      },
+      {
+        "random_player_label@command_block.command_block_helper_stack": {
+          "$text_override": "advMode.randomPlayer"
+        }
+      },
+      {
+        "random_player_label_offset": {
+          "type": "panel",
+          "size": ["100%", 2]
+        }
+      },
+      {
+        "all_players_label@command_block.command_block_helper_stack": {
+          "$text_override": "advMode.allPlayers"
+        }
+      },
+      {
+        "all_players_label_offset": {
+          "type": "panel",
+          "size": ["100%", 2]
+        }
+      },
+      {
+        "all_entities_label@command_block.command_block_helper_stack": {
+          "$text_override": "advMode.allEntities"
+        }
+      },
+      {
+        "all_entities_label_offset": {
+          "type": "panel",
+          "size": ["100%", 20]
+        }
+      },
+      {
+        "command_block_previous_output_panel": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": ["100%", "100%c + 4px"],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "controls": [
+            {
+              "previous_output_label_stack_centering_panel": {
+                "type": "panel",
+                "size": ["100%", "100%c"],
+                "controls": [
+                  {
+                    "previous_output_label_stack": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "size": ["100%", 12],
+                      "offset": [2, 0],
+                      "controls": [
+                        {
+                          "show_output_toggle@settings_common.option_toggle": {
+                            "size": [32, 12],
+                            "$show_option_label": false,
+                            "$focus_id": "show_output_toggle",
+                            "$option_binding_name": "#track_output_binding",
+                            "$option_enabled_binding_name": "#close_button_visible_binding_name",
+                            "$toggle_name": "track_output"
+                          }
+                        },
+                        {
+                          "option_label": {
+                            "type": "label",
+                            "color": "$body_text_color",
+                            "size": ["100%", "default"],
+                            "layer": 2,
+                            "text": "advMode.previousOutput",
+                            "visible": true,
+                            "locked_alpha": 0.5
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer": {
+                "type": "panel",
+                "visible": true,
+                "size": [0, 1]
+              }
+            },
+            {
+              "command_output_text_centering_panel": {
+                "type": "panel",
+                "size": ["100%", "100%c"],
+                "controls": [
+                  {
+                    "command_output_text@command_block.command_block_multiline_text_edit_box": {
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "size": ["85% + 26px", 60],
+                      "focus_enabled": false,
+                      "$text_box_name": "command_block.output_text",
+                      "max_length": 32500,
+                      "$text_edit_box_content_binding_name": "#command_output_text",
+                      "$place_holder_text": "",
+                      "button_mappings": [
+                        {
+                          "from_button_id": "button.menu_select",
+                          "to_button_id": "button.menu_select",
+                          "handle_select": false,
+                          "handle_deselect": false,
+                          "mapping_type": "pressed"
+                        },
+                        {
+                          "from_button_id": "button.menu_ok",
+                          "to_button_id": "button.menu_ok",
+                          "handle_select": false,
+                          "handle_deselect": false,
+                          "mapping_type": "focused"
+                        },
+                        {
+                          "from_button_id": "button.menu_cancel",
+                          "to_button_id": "button.menu_cancel",
+                          "handle_select": false,
+                          "handle_deselect": false,
+                          "mapping_type": "global"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "previous_block_type_text@command_block.previous_command_block_info_stack": {
+          "$start_text": "commandBlockScreen.blockType",
+          "$text_binding_name": "#previous_block_type_text",
+          "$text_color_binding_name": "#previous_block_type_text_color",
+          "$bind_type": "global"
+        }
+      },
+      {
+        "offset4": {
+          "type": "panel",
+          "size": ["100%", 2]
+        }
+      },
+      {
+        "previous_conditional_mode_text@command_block.previous_command_block_info_stack": {
+          "$start_text": "commandBlockScreen.condition",
+          "$text_binding_name": "#previous_condition_mode_text"
+        }
+      },
+      {
+        "offset5": {
+          "type": "panel",
+          "size": ["100%", 2]
+        }
+      },
+      {
+        "previous_redstone_mode_text@command_block.previous_command_block_info_stack": {
+          "$start_text": "commandBlockScreen.redstone",
+          "$text_binding_name": "#previous_redstone_mode_text"
+        }
+      }
+    ]
+  },
+  "command_block_screen_content": {
+    "type": "panel",
+    "size": "$extra_large_screen_size",
+    "max_size": "$extra_large_max_screen_size",
+    "controls": [
+      {
+        "background_divider@common.common_panel": {
+          "$dialog_background": "common.dialog_background_hollow_3",
+          "$fill_alpha": 1,
+          "$show_divider": true,
+          "$divider_offset": ["40%", "22px"],
+          "$divider_visible_binding_name": "#divider_visible",
+          "$divider_visible_binding_type": "global",
+          "controls": [
+            {
+              "bg_image@$dialog_background": {
+                "layer": 1
+              }
+            },
+            {
+              "dialog_divider@common.dialog_divider": {
+                "visible": "$show_divider",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": "$divider_offset",
+                "size": ["5px", "100% - 29px"],
+                "bindings": [
+                  {
+                    "binding_name": "$divider_visible_binding_name",
+                    "binding_name_override": "#visible",
+                    "binding_type": "$divider_visible_binding_type"
+                  }
+                ]
+              }
+            },
+            {
+              "header_buttons_stack_panel": {
+                "type": "stack_panel",
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "orientation": "horizontal",
+                "size": ["100%c", 18],
+                "offset": [-4, 4],
+                "layer": 3,
+                "controls": [
+                  {
+                    "autocomplete_back_button@command_block.autocomplete_back_button": {
+                      "layer": 2,
+                      "anchor_from": "top_right",
+                      "anchor_to": "top_right",
+                      "size": [16, 16],
+                      "bindings": [
+                        {
+                          "binding_name": "#minimize_button_visible_binding_name",
+                          "binding_name_override": "#visible",
+                          "binding_type": "global"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "autocomplete_button@command_block.autocomplete_button": {
+                      "layer": 2,
+                      "anchor_from": "top_right",
+                      "anchor_to": "top_right",
+                      "size": [16, 16],
+                      "bindings": [
+                        {
+                          "binding_name": "#minimize_button_visible_binding_name",
+                          "binding_name_override": "#visible",
+                          "binding_type": "global"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "paste_button@command_block.paste_button": {
+                      "layer": 2,
+                      "anchor_from": "top_right",
+                      "anchor_to": "top_right",
+                      "size": [16, 16],
+                      "bindings": [
+                        {
+                          "binding_name": "#minimize_button_visible_binding_name",
+                          "binding_name_override": "#visible",
+                          "binding_type": "global"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "close_button_holder": {
+                      "type": "panel",
+                      "size": [18, 16],
+                      "controls": [
+                        {
+                          "close@common.close_button": {
+                            "layer": 2,
+                            "anchor_to": "center",
+                            "anchor_from": "center",
+                            "$close_button_offset": [0, 0],
+                            "bindings": [
+                              {
+                                "binding_name": "#close_button_visible_binding_name",
+                                "binding_name_override": "#visible",
+                                "binding_type": "global"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "minimize@common.close_button": {
+                            "anchor_to": "center",
+                            "anchor_from": "center",
+                            "$close_button_offset": [0, 0],
+                            "button_mappings": [
+                              {
+                                "from_button_id": "button.menu_select",
+                                "to_button_id": "command_block.input_minimize",
+                                "mapping_type": "pressed"
+                              },
+                              {
+                                "from_button_id": "button.menu_ok",
+                                "to_button_id": "command_block.input_minimize",
+                                "mapping_type": "focused"
+                              }
+                            ],
+                            "controls": [
+                              {
+                                "default@close_button_panel": {
+                                  "$close_button_texture": "textures/ui/minimize"
+                                }
+                              },
+                              {
+                                "hover@close_button_panel": {
+                                  "$close_button_texture": "textures/ui/minimizeHover"
+                                }
+                              },
+                              {
+                                "pressed@close_button_panel": {
+                                  "$close_button_texture": "textures/ui/minimizePress"
+                                }
+                              }
+                            ],
+                            "bindings": [
+                              {
+                                "binding_name": "#minimize_button_visible_binding_name",
+                                "binding_name_override": "#visible",
+                                "binding_type": "global"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": {
+          "type": "label",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "offset": [0, 8],
+          "layer": 4,
+          "text": "commandBlock.genericName",
+          "color": "$title_text_color"
+        }
+      },
+      {
+        "content@command_block.divider_content": {
+          "layer": 4,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "maximized_command_block_text@command_block.command_block_text_edit_box": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "layer": 17,
+          "size": ["100% - 16px", "100% - 31px"],
+          "offset": [0, "23px"],
+          "max_length": 32500,
+          "$text_box_name": "command_block.command_text",
+          "$text_edit_box_content_binding_name": "#command_text_edit",
+          "$place_holder_text": "Enter your command input here",
+          "$cancel_button_id": "command_block.input_minimize",
+          "bindings": [
+            {
+              "binding_name": "#maximized_input_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "command_block_screen@common.base_screen": {
+    "$screen_content": "command_block.command_block_screen_content",
+    "$screen_bg_content": "common.screen_background",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_exit",
+        "mapping_type": "global"
+      }
+    ]
+  }
+}

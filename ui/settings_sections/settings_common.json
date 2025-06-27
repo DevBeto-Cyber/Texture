@@ -1,0 +1,9 @@
+{
+  "settings_content/background": {
+    "texture": "textures/ui/black_69",
+    "alpha": 0.5
+  },
+  "dynamic_dialog_screen": {
+    "$screen_background_control": "common.empty_panel"
+  }
+}

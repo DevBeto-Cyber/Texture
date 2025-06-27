@@ -1,0 +1,27 @@
+{
+  "namespace": "win10_trial_conversion",
+  "win10_trial_conversion_screen": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_exit",
+        "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_tab_left",
+        "to_button_id": "button.menu_tab_left",
+        "mapping_type": "global",
+        "scope": "view"
+      },
+      {
+        "from_button_id": "button.menu_tab_right",
+        "to_button_id": "button.menu_tab_right",
+        "mapping_type": "global",
+        "scope": "view"
+      }
+    ],
+    "force_render_below": false,
+    "$screen_content": "tabbed_upsell.root_panel",
+    "$screen_bg_content": "tabbed_upsell.black"
+  }
+}

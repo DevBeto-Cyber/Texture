@@ -1,0 +1,119 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.direction": {
+      "geometry": "Geometry.direction",
+      "materials": [
+        {
+          "*": "Material.hud_text"
+        }
+      ],
+      "is_hurt_color": {},
+      "on_fire_color": {},
+      "filter_lighting": true,
+      "ignore_lighting": true,
+      "arrays": {
+        "textures": {
+          "array.count": [
+            "Texture.south",
+            "Texture.south_west",
+            "Texture.west",
+            "Texture.north_west",
+            "Texture.north",
+            "Texture.north_east",
+            "Texture.east",
+            "Texture.south_east"
+          ]
+        }
+      },
+      "textures": ["array.count[ v.direction ]"]
+    },
+    "controller.render.fps_ones": {
+      "geometry": "Geometry.fps_ones",
+      "materials": [
+        {
+          "*": "Material.hud_text"
+        }
+      ],
+      "arrays": {
+        "textures": {
+          "array.count": [
+            "Texture.zero",
+            "Texture.one",
+            "Texture.two",
+            "Texture.three",
+            "Texture.four",
+            "Texture.five",
+            "Texture.six",
+            "Texture.seven",
+            "Texture.eight",
+            "Texture.nine"
+          ]
+        }
+      },
+      "textures": ["array.count[ v.fps ]"],
+      "is_hurt_color": {},
+      "on_fire_color": {},
+      "filter_lighting": true,
+      "ignore_lighting": true
+    },
+    "controller.render.fps_tens": {
+      "geometry": "Geometry.fps_tens",
+      "materials": [
+        {
+          "*": "Material.hud_text"
+        }
+      ],
+      "arrays": {
+        "textures": {
+          "array.count": [
+            "Texture.zero",
+            "Texture.one",
+            "Texture.two",
+            "Texture.three",
+            "Texture.four",
+            "Texture.five",
+            "Texture.six",
+            "Texture.seven",
+            "Texture.eight",
+            "Texture.nine"
+          ]
+        }
+      },
+      "textures": ["array.count[ v.fps/10 ]"],
+      "is_hurt_color": {},
+      "on_fire_color": {},
+      "filter_lighting": true,
+      "ignore_lighting": true
+    },
+    "controller.render.fps_hundreds": {
+      "geometry": "Geometry.fps_hundreds",
+      "materials": [
+        {
+          "*": "Material.hud_text"
+        }
+      ],
+      "arrays": {
+        "textures": {
+          "array.count": [
+            "Texture.zero",
+            "Texture.one",
+            "Texture.two",
+            "Texture.three",
+            "Texture.four",
+            "Texture.five",
+            "Texture.six",
+            "Texture.seven",
+            "Texture.eight",
+            "Texture.nine"
+          ]
+        }
+      },
+      "textures": ["array.count[ v.fps/100 ]"],
+      "is_hurt_color": {},
+      "on_fire_color": {},
+      "filter_lighting": true,
+      "ignore_lighting": true
+    }
+  }
+}

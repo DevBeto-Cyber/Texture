@@ -1,0 +1,20 @@
+{
+  "namespace": "horse",
+  "horse_screen@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": false,
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "horse_ui.horse_panel",
+        "$screen_bg_content": "common.screen_background"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "horse_pocket.horse_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$close_on_player_hurt": true
+      }
+    ]
+  }
+}

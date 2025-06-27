@@ -1,0 +1,463 @@
+﻿
+⭐Ultramarine⭐
+ultramarine.title= Ultramarine Nightfall
+ultramarine.version= Nightfall X 
+--------------------------------
+info.button_label=   Info
+developer.button_label=   Pengembang
+credit.button_label=   Kredit
+features.button_label=   Fitur
+changelog.button_label=   Catatan Perubahan
+faq.button_label=   FAQ
+
+⭐settings⭐
+menu.settings=  Pengaturan
+settings.quick_settings=Pengaturan Cepat
+settings.common_settings=Pengaturan Umum
+settings.control_settings=Pengaturan Kontrol
+settings.other_settings=Pengaturan Lainnya
+
+⭐recommended screen⭐
+recommended.buttontext=Direkomendasikan
+recommended.paneltitle=Pengaturan Direkomendasikan
+recommended.recommended=Pengaturan Direkomendasikan:
+recommended.settings1=1. Aktifkan ini.
+recommended.settings2=2. Atur profil UI ke klasik.
+recommended.settings3=3. Gunakan nilai skala GUI -1 atau 0.
+recommended.settings4=4. Atur area aman layar agar sesuai dengan layar Anda.
+
+⭐advanced section⭐
+advanced.button=Lanjutan
+advanced.panel=Pengaturan Lanjutan
+advanced.title=Pengaturan Lanjutan:
+
+⭐fps section⭐
+fps.buttontext=Fps++
+fps.paneltitle=Fps Lebih Baik
+fps.title=Ikuti langkah-langkah ini untuk fps yang lebih baik:
+fps.vsync=1. Matikan Vsync.
+fps.fancy=2. Matikan semua ini.
+fps.graphics=3. Atur mode Grafik ke sederhana.
+fps.fps=4. Samakan dengan refresh rate layar Anda.
+fps.aa=5. Atur ke yang terendah.
+fps.distance=6. Atur jarak render antara 8-14 chunk.
+fps.important= Jika tampilan game Anda buruk, silakan aktifkan pencahayaan halus, langit yang indah, dan grafik mewah. Sesuaikan dengan perangkat Anda untuk hasil terbaik.
+
+⭐sound section⭐
+sound.button=Suara
+sound.panel=Pengaturan Suara
+sound.music=Musik dan Suara :
+
+⭐video section⭐
+video.title.hud=Pengaturan HUD :
+video.title.graphics=Pengaturan Grafik :
+
+⭐Info Section⭐
+info.title=ULTRAMARINE
+info.edition=NIGHTFALL
+--------------------------------
+info.creator=Dibuat Oleh §dnotnicto
+info.about1=Hai! Resource pack keren ini menambahkan beberapa fungsi dan visual tambahan ke Minecraft.
+info.about2=Jika kamu menemukan bug, silakan laporkan di server Discord saya.
+info.thanks=Terima kasih telah mengunduh pack ini...
+
+⭐developer section⭐
+developer.name=notNicto
+developer.discord= discord.com/mYxjckhRNH
+developer.youtube= youtube.com/@notnicto
+developer.mcpedl= mcpedl.com/user/notnicto
+developer.creation1= Ultramarine Overhaul
+developer.creation2= Neo Texture Pack
+developer.creation3= Minecraft Akinator [Bedrock]
+developer.creation4= Food Expansion
+developer.creation5= Craft Everything
+developer.creation6= Achievement World
+--------------------------------
+developer.about=Halo, saya Nic  dari India. Saya suka membuat mod, peta, dan texture pack Minecraft sebagai hobi. Saya juga senang membuat konten terkait Minecraft untuk YouTube.
+developer.creation_title=Karya Lain dari notnicto :
+
+⭐credit section⭐
+credit.title=Kredit
+credit.translators=Penerjemah
+credit.thanks=Terima kasih khusus kepada §cSaif.15§r atas bantuannya dalam membuat paket ini kompatibel dengan perangkat seluler.
+--------------------------------
+credit.author1=DrAv0011
+credit.content11=Quick Craft & Trade Unlocker.
+credit.content12=Bedrock Tweaks : §abedrocktweaks.net
+credit.author2=HyperF3GamerINDO
+credit.content21=Totem doll animation
+credit.content22=Femboy Totem : §amcpedl.com/femboy-totem
+credit.author3=Chainsketch
+credit.content31=FPS Counter
+credit.content32=FPS Counter : §amcpedl.com/fps-counter-pack
+credit.translators1= vietnamese_9000main §7[Vietnamese]
+credit.translators2= lostliano §7[Deutsch]
+credit.translators3= nx703 §7[Español]
+credit.translators4= SuperMario2.0 §7[Indonesia]
+
+⭐features section⭐
+feature.title=f fitur
+feature.1= Mode Gelap dengan tekstur yang jenuh.
+feature.2= Desain UI dan GUI yang unik.
+feature.3= Pengaturan cepat dan ringkas.
+feature.4= Tiga subpaket: normal, reimagined, dan unbound.
+feature.5= Kabut dan shader tergantung bioma.
+feature.6= Loot cepat, pembantu chat & pembuka perdagangan.
+feature.7= Panduan pembuatan ramuan & crafting cepat.
+feature.8= Penampil daya tahan item.
+feature.9= Jam digital dan kompas di HUD.
+feature.10= Pesan kematian lucu.
+feature.11= Animasi boneka totem.
+feature.12= Armor stand khusus.
+feature.13= Pratinjau rasa lapar & poin armor.
+feature.14= Tekstur armor dan alat baru dengan hiasan bercahaya.
+feature.15= Partikel yang didesain ulang.
+feature.16= Dan aku lupa, lol... 
+
+⭐changelog section⭐
+changelog.title=catatan perubahan
+--------------------------------
+changelog.v4=Versi 4.0 :
+changelog.v41= Dukungan visual yang cerah.
+changelog.v42= UI baru.
+changelog.v43= Koordinat yang lebih baik.
+changelog.v44= Tampilan layar chat yang lebih baik.
+changelog.v45= Atmosfer yang ditingkatkan.
+changelog.v46= Penampil daya tahan yang diperbaiki.
+changelog.v47= Ikon enchant.
+changelog.v48= Penampil kelangkaan.
+changelog.v49= Panduan enchantment yang ditingkatkan.
+changelog.v410= Berbagai bug telah diperbaiki.
+--------------------------------
+changelog.v3=Versi 3.0:
+changelog.v31= Kontainer berwarna-warni.
+changelog.v32= FPS meningkat.
+changelog.v33= Tombol F1 dan penghitung FPS ditambahkan.
+changelog.v34= Hiasan bercahaya dan enchant berwarna.
+changelog.v35= Perubahan pada redstone.
+changelog.v36= Penampil daya tahan diperbarui.
+changelog.v37= Tipe villager baru.
+changelog.v38= Animasi chat baru.
+changelog.v39= Penampil kelangkaan item.
+changelog.v310= Dan masih banyak lagi...
+--------------------------------
+changelog.v2=Versi 2.0 :
+changelog.v21= Dukungan untuk 1.21+.
+changelog.v22= Bahasa Español, Indonesia, dan Português diperbarui.
+changelog.v23= Panduan peleburan.
+changelog.v24= Armor stand kustom.
+changelog.v25= Animasi totem baru.
+changelog.v26= Tekstur armor dan alat ditambahkan.
+changelog.v27= Font baru.
+changelog.v28= Pratinjau poin armor ditambahkan.
+changelog.v29= Berbagai bug telah diperbaiki.
+changelog.v210= Herobrine ditambahkan.
+--------------------------------
+changelog.v1=Versi 1.0 :
+changelog.v11= Mode Gelap dengan tekstur jenuh.
+changelog.v12= Menu awal baru.
+changelog.v13= Pengaturan cepat dan ringkas.
+changelog.v14= Tiga subpaket: normal, reimagined, dan unbound.
+changelog.v15= Kabut dan shader bergantung bioma.
+changelog.v16= Loot cepat, pembantu chat & pembuka perdagangan.
+changelog.v17= Pesan kematian lucu. [Hanya Bahasa Inggris]
+changelog.v18= Jam digital dan kompas di HUD.
+changelog.v19= Persentase daya tahan item.
+changelog.v110= Panduan brewing dan crafting cepat.
+
+⭐faq section⭐
+faq.title=FAQ (Pertanyaan yang Sering Diajukan)
+faq.q1= Apakah pack ini bisa diterapkan ke world resource pack?
+faq.a1=Tentu saja! Kamu bebas menerapkan pack ini ke world atau resource pack server mana pun!
+faq.q2= Bolehkah saya mendistribusikan fitur dari pack ini dalam pack saya?
+faq.a2=Ya! Saya senang jika kodenya bisa membantumu mengembangkan pack-mu! Tapi, jangan lupa cantumkan kredit saat mendistribusikannya!
+faq.q3= Saya ingin mengulas pack ini di Youtube atau platform serupa!
+faq.a3=Silakan! Pastikan untuk menyertakan halaman MCPEDL/CURSEFORGE pack ini di deskripsi videomu!
+faq.q4= Saya masuk ke server tertentu dan Ultramarine menonaktifkan dirinya...
+faq.a4=Beberapa server melarang penggunaan resource global. Ultramarine tidak dapat digunakan di server seperti itu.
+faq.q5= Saya menemukan bug! Di mana saya harus melaporkannya?
+faq.a5=Jika kamu menemukan bug, laporkan melalui server Discord -  §bhttps://discord.gg/mYxjckhRNH§r
+faq.q6= Bagaimana cara saya mengunggah skin saya sebagai totem?
+faq.a6=Gabung ke server Discord saya. Tutorial lengkap telah diposting di sana.
+faq.q7= Bisakah saya menggunakan skin saya sebagai model armor stand kustom?
+faq.a7=Tentu saja. Tersedia 10 slot tambahan. Gabung ke server Discord saya. Tutorial lengkap tersedia di sana.
+
+⭐progress screen⭐
+progress.overworld=Memasuki §aOverworld
+progress.nether=Memasuki §cNether
+progress.end=Memasuki §dThe End
+
+⭐better cords⭐
+map.position=Position: %s, %s, %s
+map.chunk=Chunk
+map.sub_chunk=Subchunk
+map.chunk_border=Perbatasan
+map.chunk_corner=Sudut
+map.chunk_center=Pusat
+hudScreen.daysPlayed=§dHari Bermain:§r %s
+
+⭐death massages⭐
+death.attack.anvil=%1$s terjepit oleh landasan jatuh
+death.attack.arrow=%1$s terkena no-scope oleh %2$s
+death.attack.arrow.item=%1$s terkena no-scope oleh %2$s menggunakan %3$s
+death.attack.bullet=%1$s ditembak dari jauh oleh %2$s
+death.attack.cactus=%1$s tertusuk sampai mati
+death.attack.cactus.player=%1$s berjalan ke kaktus saat mencoba kabur dari %2$s
+death.attack.drown=%1$s menjadi makanan ikan
+death.attack.drown.player=%1$s tenggelam saat mencoba kabur dari %2$s
+death.attack.explosion=%1$s adalah noob
+death.attack.explosion.player=%1$s meledak oleh %2$s
+death.attack.fall=%1$s terjebak perangkap beruang
+death.attack.fallingBlock=%1$s tertimpa balok jatuh
+death.attack.fireball=%1$s dibakar oleh %2$s
+death.attack.fireball.item=%1$s dibakar oleh %2$s menggunakan %3$s
+death.attack.fireworks=%1$s meledak dengan gemuruh
+death.attack.flyIntoWall=%1$s mengalami energi kinetik
+death.attack.generic=%1$s mati
+death.attack.indirectMagic=%1$s dibunuh oleh %2$s dengan sihir
+death.attack.indirectMagic.item=%1$s dibunuh oleh %2$s menggunakan %3$s
+death.attack.inFire=%1$s terbakar habis
+death.attack.inFire.player=%1$s berjalan ke api saat melawan %2$s
+death.attack.inWall=%1$s sesak di dalam tembok
+death.attack.lava=%1$s mencoba berenang di lava
+death.attack.lava.player=%1$s mencoba berenang di lava untuk kabur dari %2$s
+death.attack.lightningBolt=%1$s menerima sambaran petir
+death.attack.magic=%1$s dibunuh dengan sihir
+death.attack.magma=%1$s menyadari lantai adalah lava
+death.attack.magma.player=%1$s berjalan di zona bahaya karena %2$s
+death.attack.mob=%1$s di-bully oleh %2$s
+death.attack.onFire=%1$s lupa pakai tabir surya
+death.attack.onFire.player=%1$s terbakar habis saat melawan %2$s
+death.attack.outOfWorld=%1$s dilempar keluar dunia
+death.attack.player=%1$s dipukul oleh %2$s
+death.attack.player.item=%1$s dibunuh oleh %2$s menggunakan %3$s
+death.attack.spit=%1$s diludahi oleh %2$s
+death.attack.starve=%1$s kelaparan sampai mati
+death.attack.sweetBerry=%1$s tertusuk semak beri manis sampai mati
+death.attack.thorns=%1$s terbunuh saat mencoba menyakiti %2$s
+death.attack.thrown=%1$s dipukul habis oleh %2$s
+death.attack.thrown.item=%1$s dipukul habis oleh %2$s menggunakan %3$s
+death.attack.trident=%1$s ditusuk oleh Aquaman
+death.attack.wither=%1$s mengering dan mati
+death.attack.freeze=%1$s lupa pakai jaket
+death.attack.sonicBoom=%1$s hancur oleh teriakan berfrekuensi tinggi
+death.attack.sonicBoom.player=%1$s hancur oleh teriakan berfrekuensi tinggi saat mencoba kabur dari %2$s
+death.attack.stalactite=%1$s ditusuk oleh stalaktit jatuh
+death.attack.stalagmite=%1$s ditusuk oleh stalagmit
+death.fell.accident.generic=%1$s gagal melenting
+death.fell.accident.ladder=%1$s jatuh dari tangga
+death.fell.accident.vines=%1$s jatuh dari sulur
+death.fell.accident.water=%1$s jatuh dari air
+death.fell.assist=%1$s dijatuhkan oleh %2$s
+death.fell.assist.item=%1$s dijatuhkan oleh %2$s menggunakan %3$s
+death.fell.finish=%1$s jatuh terlalu jauh dan diselesaikan oleh %2$s
+death.fell.finish.item=%1$s jatuh terlalu jauh dan diselesaikan oleh %2$s menggunakan %3$s
+death.fell.killer=%1$s dijatuhkan
+deathScreen.leaveServer=Keluar server
+deathScreen.message=Kamu mati
+deathScreen.quit=Keluar paksa
+deathScreen.title=Kamu mati
+deathScreen.title.hardcore=Waduh, kamu kalah
+
+⭐foood info⭐
+item.apple.name=Apel 
+item.golden_apple.name=Apel Emas  
+item.appleEnchanted.name=Apel Sihir  
+item.beef.name=Daging Mentah 
+item.beetroot.name=Ubi Bit Merah 
+item.beetroot_soup.name=Sup Ubi Bit Merah 
+item.bread.name=Roti 
+item.cake.name=Kue 
+item.golden_carrot.name=Wortel Emas 
+item.carrot.name=Wortel 
+item.chorus_fruit.name=Buah Chorus 
+item.cooked_beef.name=Daging Sapi Matang 
+item.cooked_chicken.name=Daging Ayam Matang 
+item.cooked_porkchop.name=Potongan Daging Babi Matang 
+item.chicken.name=Ayam Mentah 
+item.cookie.name=Kukis 
+item.clownfish.name=Ikan Badut 
+item.cooked_fish.name=Ikan Kod Matang 
+item.fish.name=Kod Mentah 
+item.pufferfish.name=Ikan Buntal  
+item.cooked_salmon.name=Salmon Matang 
+item.salmon.name=Salmon Mentah 
+item.honey_bottle.name=Botol Madu 
+item.melon.name=Melon 
+item.mushroom_stew.name=Semur Jamur 
+item.muttonCooked.name=Daging Domba Matang 
+item.muttonRaw.name=Daging Domba Mentah 
+item.porkchop.name=Potongan Daging Babi Mentah 
+item.potato.name=Kentang 
+item.baked_potato.name=Kentang Panggang 
+item.poisonous_potato.name=Kentang Beracun  
+item.pumpkin_pie.name=Pai labu 
+item.cooked_rabbit.name=Kelinci Matang 
+item.rabbit.name=Kelinci Mentah 
+item.rabbit_stew.name=Semur Kelinci 
+item.dried_kelp.name=Rumput Laut Kering 
+item.rotten_flesh.name=Daging Busuk 
+item.spider_eye.name=Mata Laba-Laba  
+item.sweet_berries.name=Buah Beri Manis 
+item.glow_berries.name=Buah Beri Bersinar 
+
+
+⭐armor points⭐
+item.turtle_helmet.name=Tempurung Kura-kura 
+item.chainmail_helmet.name=Helm Rantai 
+item.leather_helmet.name=Topi Kulit 
+item.diamond_helmet.name=Helm Berlian 
+item.golden_helmet.name=Helm Emas 
+item.iron_helmet.name=Helm Besi 
+item.chainmail_chestplate.name=Pelat Dada Rantai 
+item.leather_chestplate.name=Tunic Kulit 
+item.diamond_chestplate.name=Pelat Dada Berlian 
+item.golden_chestplate.name=Pelat Dada Emas 
+item.iron_chestplate.name=Pelat Dada Besi 
+item.chainmail_leggings.name=Celana Rantai 
+item.leather_leggings.name=Celana Kulit 
+item.diamond_leggings.name=Celana Berlian 
+item.golden_leggings.name=Celana Emas 
+item.iron_leggings.name=Celana Besi 
+item.chainmail_boots.name=Sepatu Bot Rantai 
+item.leather_boots.name=Sepatu Bot Kulit 
+item.diamond_boots.name=Sepatu Bot Berlian 
+item.golden_boots.name=Sepatu Bot Emas 
+item.iron_boots.name=Sepatu Bot Besi 
+item.netherite_boots.name=Sepatu Bot Netherite 
+item.netherite_leggings.name=Legging Netherite 
+item.netherite_chestplate.name=Pelat Dada Netherite 
+item.netherite_helmet.name=Helm Netherite 
+
+⭐colorful enchantments⭐
+enchantment.level.1=§r
+enchantment.level.2=§r
+enchantment.level.3=§r
+enchantment.level.4=§r
+enchantment.level.5=§r
+--------------------------------
+enchantment.arrowDamage= §c Kekuatan
+enchantment.arrowFire= §c Api §r
+enchantment.arrowInfinite= §a Tak Terbatas §r
+enchantment.arrowKnockback= §2 Tinjuan
+enchantment.crossbowMultishot= §a Tembakan Beruntun §r
+enchantment.crossbowPiercing= §3 Tajam
+enchantment.crossbowQuickCharge= §c Isi Cepat
+enchantment.curse.binding= §4 Kutukan Mengikat §r
+enchantment.curse.vanishing= §4 Kutukan Menghilang §r
+enchantment.damage.all= §c Ketajaman
+enchantment.damage.arthropods= §2 Kutukan Artropoda
+enchantment.damage.undead= §5 Pukul
+enchantment.digging= §a Efisiensi
+enchantment.durability= §g Tak Terpatahkan
+enchantment.fire= §c Aspek Api
+enchantment.fishingSpeed= §5 Pancing
+enchantment.frostwalker= §3 Pejalan Es
+enchantment.heavy_weapon.breach= §c Pelanggaran
+enchantment.heavy_weapon.density= §c Kepadatan
+enchantment.heavy_weapon.windburst= §a Semburan Angin
+enchantment.knockback= §3 Pukul Mundur
+enchantment.lootBonus= §2 Penjarahan
+enchantment.lootBonusDigger= §2 Keberuntungan
+enchantment.lootBonusFishing= §a Keberuntungan Laut
+enchantment.mending= §6 Perbaikan §r
+enchantment.oxygen= §9 Pernapasan
+enchantment.protect.all= §2 Perlindungan
+enchantment.protect.explosion= §g Perlindungan Ledakan
+enchantment.protect.fall= §c Jatuh Seperti Bulu
+enchantment.protect.fire= §c Perlindungan Api
+enchantment.protect.projectile= §3 Perlindungan Proyektil
+enchantment.soul_speed= §9 Kecepatan Jiwa
+enchantment.swift_sneak= §9 Menyelinap dengan Gesit
+enchantment.thorns= §c Duri
+enchantment.untouching= §3 Sentuhan Sutra §r
+enchantment.waterWalker= §3 Penjelajah Kedalaman
+enchantment.waterWorker= §3 Afinitas Air §r
+enchantment.tridentChanneling= §g Penyaluran §r
+enchantment.tridentLoyalty= §a Loyalitas
+enchantment.tridentRiptide= §9 Gelombang Pasang
+enchantment.tridentImpaling= §c Penusukan
+--------------------------------
+enchantment_guide.ebook=§7Gunting, batu api, perisai, dll.§r
+enchantment_guide.etable=Panduan Enchantment
+
+⭐smelting guide⭐
+nic.smelt.fuel=Bahan Bakar
+nic.smelt.count=Jumlah Item yang Bisa Dilebur
+nic.smelt.100=§a100 Item
+nic.smelt.80=§a80 Item
+nic.smelt.20=§a20 Item
+nic.smelt.12=§g12 Item
+nic.smelt.8=§g8 Item
+nic.smelt.6=§g6 Item
+nic.smelt.105=§c1.5 Item
+nic.smelt.1=§c1 Item
+nic.smelt.05=§c0.5 Item
+nic.smelt.025=§c0.25 Item
+
+⭐brewing guide⭐
+brewing_guide.level_2=Ramuan Level II
+brewing_guide.splash_potion=Ramuan Percik
+brewing_guide.lingering_potion=Ramuan Tertinggal
+brewing_guide.extended_potion=Ramuan Diperpanjang
+brewing_guide.effect_potion=Efek Ramuan
+
+⭐armor_stand guide⭐
+armor_stand_guide.title=§eNametag untuk Armor Stand Kustom§r
+armor_stand_guide.plushie=§bBoneka:§r
+armor_stand_guide.character=§aKarakter:§r
+armor_stand_guide.youtuber=§cYoutuber:§r
+armor_stand_guide.anime=§bAnime:§r
+armor_stand_guide.special=§dSpesial:§r
+armor_stand_guide.extra=§aEkstra:§r
+armor_stand_guide.custom1=§bKustom Default:§r
+armor_stand_guide.custom2=§aKustom Slim:§r
+armor_stand_guide.warning=§7(Bergabung di server Discord saya jika ada masalah)  
+-------------------------dont translate these-----------------------------
+armor_stand_guide.plushie_names=Camel, Creeper, Drowned, Enderman, Farmer, Fox, Ghast, Iron golem, Nic plushie, Pillager, Snow fox, Snow golem, Villager, Wandering trader, Witch, Zombie.
+armor_stand_guide.character_names=Alex, Herobrine, Notch, Old alex, Old steve, Steve
+armor_stand_guide.youtuber_names=Technoblade, Dream, Clownpierce, Mr beast.
+armor_stand_guide.anime_names=Goku, Gojo, Luffy, Madara, Sukuna, Tanjiro, Yuji.
+armor_stand_guide.special_names=Nic, Keshew, Saif, Dark, Legend, Sed, Amr9445, Alexxander, New Vietnam.
+armor_stand_guide.extra_names=Dummy, Showcase, Halloween.
+armor_stand_guide.custom1_names=Custom 1, Custom 2, Custom 3, Custom 4, Custom 5.
+armor_stand_guide.custom2_names=Custom slim 1, Custom slim 2, Custom slim 3, Custom slim 4, Custom slim 5.
+
+⭐formatting guide⭐
+formatting_guide.title=§aKode §bWarna§r
+formatting_guide.dark_purple=Ungu Gelap
+formatting_guide.light_purple=Ungu Muda
+formatting_guide.very_light_purple=Ungu Sangat Muda
+formatting_guide.dark_blue=Biru Gelap
+formatting_guide.ultramarine=Ultramarine
+formatting_guide.blue=Biru
+formatting_guide.dark_aqua=Aqua Gelap
+formatting_guide.turquoise=Turquoise
+formatting_guide.aqua=Aqua
+formatting_guide.mountain_meadow=Mountain Meadow
+formatting_guide.dark_green=Hijau Gelap
+formatting_guide.green=Hijau
+formatting_guide.gold=Emas
+formatting_guide.marigold=Marigold
+formatting_guide.ripe_lemon=Lemon Matang
+formatting_guide.yellow=Kuning
+formatting_guide.orange=Oranye
+formatting_guide.copper=Tembaga
+formatting_guide.crimson=Crimson
+formatting_guide.dark_red=Merah Gelap
+formatting_guide.red=Merah
+formatting_guide.black=Hitam
+formatting_guide.tundora=Tundora
+formatting_guide.dark_gray=Abu-abu Gelap
+formatting_guide.silver=Perak
+formatting_guide.wafer=Wafer
+formatting_guide.white=Putih
+formatting_guide.bold=Cetak Tebal
+formatting_guide.italic=Miring
+formatting_guide.animated=Animasi
+formatting_guide.reset=Reset
+
+⭐bossbar⭐
+entity.ender_dragon.name=§d§rEnder Dragon
+entity.wither.name=§0§rWither
+raid.name=§c§rRaid

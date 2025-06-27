@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.fps": {
+      "initial_state": "fps",
+      "states": {
+        "default": {
+          "on_entry": ["v.life_time = q.life_time;"],
+          "transitions": [
+            {
+              "fps": "(q.life_time - v.life_time)>= 0.5"
+            }
+          ]
+        },
+        "fps": {
+          "on_entry": ["v.fps = ((1 / q.delta_time) + 1 - 1);"],
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

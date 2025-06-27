@@ -1,0 +1,47 @@
+{
+  "namespace": "common_tabs",
+  "custom_tab@common_tabs.tab_top": {
+    "$tab_content": "common_tabs.custom_tab_panel",
+    "$unchecked_default_image": "textures/ui/button_borderless_light",
+    "$unchecked_hover_image": "textures/ui/button_borderless_lighthover",
+    "$checked_default_image": "textures/ui/button_borderless_lightpressednohover",
+    "$checked_hover_image": "textures/ui/button_borderless_lightpressed"
+  },
+  "custom_tab_panel": {
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "controls": [
+      {
+        "text": {
+          "type": "label",
+          "text": "$tab_text"
+        }
+      }
+    ]
+  },
+  "pocket_tab_help_button": {
+    "modifications": [
+      {
+        "control_name": "help_button",
+        "operation": "remove"
+      }
+    ]
+  },
+  "pocket_tab_close_and_help_button": {
+    "size": ["100%", 34],
+    "modifications": [
+      {
+        "control_name": "help_button",
+        "operation": "remove"
+      }
+    ]
+  },
+  "tab_close_and_help_button": {
+    "modifications": [
+      {
+        "control_name": "help_button",
+        "operation": "remove"
+      }
+    ]
+  }
+}

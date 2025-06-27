@@ -1,0 +1,291 @@
+{
+  "namespace": "changelog_section",
+  "changelog_section": {
+    "type": "stack_panel",
+    "size": ["100%", "100%c"],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [0, 4]
+        }
+      },
+      {
+        "changelog_title@common.aqua_label": {
+          "text": "changelog.title",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 2,
+          "shadow": true
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [0, 8]
+        }
+      },
+      {
+        "v4_title@common.red_label": {
+          "text": "changelog.v4",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 1.5
+        }
+      },
+      {
+        "v4_padding": {
+          "type": "panel",
+          "size": [0, 3]
+        }
+      },
+      {
+        "v4_content1@settings_common.selector_group_label": {
+          "text": "changelog.v41"
+        }
+      },
+      {
+        "v4_conten3@settings_common.selector_group_label": {
+          "text": "changelog.v43"
+        }
+      },
+      {
+        "v4_content4@settings_common.selector_group_label": {
+          "text": "changelog.v44"
+        }
+      },
+      {
+        "v4_content5@settings_common.selector_group_label": {
+          "text": "changelog.v45"
+        }
+      },
+      {
+        "v4_content6@settings_common.selector_group_label": {
+          "text": "changelog.v46"
+        }
+      },
+      {
+        "v4_content7@settings_common.selector_group_label": {
+          "text": "changelog.v47"
+        }
+      },
+      {
+        "v4_content8@settings_common.selector_group_label": {
+          "text": "changelog.v48"
+        }
+      },
+      {
+        "v4_content9@settings_common.selector_group_label": {
+          "text": "changelog.v49"
+        }
+      },
+      {
+        "v4_content10@settings_common.selector_group_label": {
+          "text": "changelog.v410"
+        }
+      },
+      {
+        "v43_padding": {
+          "type": "panel",
+          "size": [0, 5]
+        }
+      },
+      {
+        "v3_title@common.red_label": {
+          "text": "changelog.v3",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 1.5
+        }
+      },
+      {
+        "v3_padding": {
+          "type": "panel",
+          "size": [0, 3]
+        }
+      },
+      {
+        "v3_content1@settings_common.selector_group_label": {
+          "text": "changelog.v31"
+        }
+      },
+      {
+        "v3_conten3@settings_common.selector_group_label": {
+          "text": "changelog.v33"
+        }
+      },
+      {
+        "v3_content4@settings_common.selector_group_label": {
+          "text": "changelog.v34"
+        }
+      },
+      {
+        "v3_content5@settings_common.selector_group_label": {
+          "text": "changelog.v35"
+        }
+      },
+      {
+        "v3_content6@settings_common.selector_group_label": {
+          "text": "changelog.v36"
+        }
+      },
+      {
+        "v3_content7@settings_common.selector_group_label": {
+          "text": "changelog.v37"
+        }
+      },
+      {
+        "v3_content8@settings_common.selector_group_label": {
+          "text": "changelog.v38"
+        }
+      },
+      {
+        "v3_content9@settings_common.selector_group_label": {
+          "text": "changelog.v39"
+        }
+      },
+      {
+        "v3_content10@settings_common.selector_group_label": {
+          "text": "changelog.v310"
+        }
+      },
+      {
+        "v23_padding": {
+          "type": "panel",
+          "size": [0, 5]
+        }
+      },
+      {
+        "v2_title@common.red_label": {
+          "text": "changelog.v2",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 1.5
+        }
+      },
+      {
+        "v2_padding": {
+          "type": "panel",
+          "size": [0, 3]
+        }
+      },
+      {
+        "v2_content1@settings_common.selector_group_label": {
+          "text": "changelog.v21"
+        }
+      },
+      {
+        "v2_content2@settings_common.selector_group_label": {
+          "text": "changelog.v22"
+        }
+      },
+      {
+        "v2_conten3@settings_common.selector_group_label": {
+          "text": "changelog.v23"
+        }
+      },
+      {
+        "v2_content4@settings_common.selector_group_label": {
+          "text": "changelog.v24"
+        }
+      },
+      {
+        "v2_content5@settings_common.selector_group_label": {
+          "text": "changelog.v25"
+        }
+      },
+      {
+        "v2_content6@settings_common.selector_group_label": {
+          "text": "changelog.v26"
+        }
+      },
+      {
+        "v2_content7@settings_common.selector_group_label": {
+          "text": "changelog.v27"
+        }
+      },
+      {
+        "v2_content8@settings_common.selector_group_label": {
+          "text": "changelog.v28"
+        }
+      },
+      {
+        "v2_content9@settings_common.selector_group_label": {
+          "text": "changelog.v29"
+        }
+      },
+      {
+        "v2_content10@settings_common.selector_group_label": {
+          "text": "changelog.v210"
+        }
+      },
+      {
+        "v12_padding": {
+          "type": "panel",
+          "size": [0, 5]
+        }
+      },
+      {
+        "v1_title@common.red_label": {
+          "text": "changelog.v1",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 1.5
+        }
+      },
+      {
+        "v1_padding": {
+          "type": "panel",
+          "size": [0, 3]
+        }
+      },
+      {
+        "v1_content1@settings_common.selector_group_label": {
+          "text": "changelog.v11"
+        }
+      },
+      {
+        "v1_content2@settings_common.selector_group_label": {
+          "text": "changelog.v12"
+        }
+      },
+      {
+        "v1_content3@settings_common.selector_group_label": {
+          "text": "changelog.v13"
+        }
+      },
+      {
+        "v1_content4@settings_common.selector_group_label": {
+          "text": "changelog.v14"
+        }
+      },
+      {
+        "v1_content5@settings_common.selector_group_label": {
+          "text": "changelog.v15"
+        }
+      },
+      {
+        "v1_content6@settings_common.selector_group_label": {
+          "text": "changelog.v16"
+        }
+      },
+      {
+        "v1_content7@settings_common.selector_group_label": {
+          "text": "changelog.v17"
+        }
+      },
+      {
+        "v1_content8@settings_common.selector_group_label": {
+          "text": "changelog.v18"
+        }
+      },
+      {
+        "v1_content9@settings_common.selector_group_label": {
+          "text": "changelog.v19"
+        }
+      },
+      {
+        "v1_content10@settings_common.selector_group_label": {
+          "text": "changelog.v110"
+        }
+      }
+    ]
+  }
+}

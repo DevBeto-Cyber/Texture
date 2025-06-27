@@ -1,0 +1,143 @@
+{
+  "namespace": "formatting_guide",
+  "formatting_list_panel": {
+    "type": "panel",
+    "size": [126, 440],
+    "controls": [
+      {
+        "pack_icon_panel": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": ["100%-8px", "100%"],
+          "controls": [
+            {
+              "title@settings_common.selector_group_label": {
+                "type": "label",
+                "text": "\n§l§k§eii§r§l %formatting_guide.title §l§k§eii§r\n\n : §5%formatting_guide.dark_purple§r\n : §d%formatting_guide.light_purple§r\n : §u%formatting_guide.very_light_purple§r\n : §1%formatting_guide.dark_blue§r\n : §t%formatting_guide.ultramarine§r\n : §9%formatting_guide.blue§r\n : §3%formatting_guide.dark_aqua\n : §s%formatting_guide.turquoise§r\n : §b%formatting_guide.aqua§r\n : §q%formatting_guide.mountain_meadow§r\n : §2%formatting_guide.dark_green§r\n : §a%formatting_guide.green§r\n : §6%formatting_guide.gold§r\n : §p%formatting_guide.marigold§r\n : §g%formatting_guide.ripe_lemon§r\n : §e%formatting_guide.yellow§r\n : §v%formatting_guide.orange§r\n : §n%formatting_guide.copper§r\n : §m%formatting_guide.crimson§r\n : §4%formatting_guide.dark_red§r\n : §c%formatting_guide.red§r\n : §0%formatting_guide.black§r\n : §j%formatting_guide.tundora§r\n : §8%formatting_guide.dark_gray§r\n : §i%formatting_guide.silver§r\n : §h%formatting_guide.wafer§r\n : §f%formatting_guide.white§r\n\n : §l%formatting_guide.bold§r\n : §o%formatting_guide.italic§r\n : §kii§r%formatting_guide.animated§kii§r\n : §r%formatting_guide.reset§r",
+                "font_scale_factor": 1,
+                "shadow": false
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "formatting_guide_scroll@common.scrolling_panel": {
+    "size": ["100% + 2px", "100% - 340px"],
+    "$show_background": false,
+    "$scrolling_content": "formatting_guide.formatting_list_panel"
+  },
+  "formatting_guide_panel_black": {
+    "type": "panel",
+    "size": [128, 500],
+    "offset": [-160, 43],
+    "layer": 4,
+    "controls": [
+      {
+        "background@mob_effect.effect_background": {
+          "texture": "textures/ui/formatting_background_black",
+          "size": ["100% + 14px", "100% - 332px"],
+          "layer": 2
+        }
+      },
+      {
+        "formatting_guide@formatting_guide_scroll": {}
+      }
+    ]
+  },
+  "formatting_guide_panel_white": {
+    "type": "panel",
+    "size": [128, 500],
+    "offset": [-160, 43],
+    "layer": 4,
+    "controls": [
+      {
+        "background@mob_effect.effect_background": {
+          "texture": "textures/ui/formatting_background_white",
+          "size": ["100% + 14px", "100% - 332px"],
+          "layer": 2
+        }
+      },
+      {
+        "formatting_guide@formatting_guide_scroll": {}
+      }
+    ]
+  },
+  "mode_toggle_base@common_toggles.light_content_toggle": {
+    "$toggle_name": "mode_toggle",
+    "$radio_toggle_group": true,
+    "$toggle_group_default_selected": 0,
+    "$default_border_visible": false,
+    "$hover_border_visible": false,
+    "$button_content": "common.padding",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$visible_when",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "light_mode_toggle@formatting_guide.mode_toggle_base": {
+    "$toggle_view_binding_name": "formatting_guide_light_mode",
+    "$visible_when": "formatting_guide_dark_mode",
+    "$default_texture": "textures/ui/containers/buttons/light_mode_hover",
+    "$pressed_texture": "textures/ui/containers/buttons/light_mode_hover",
+    "$toggle_group_forced_index": 1
+  },
+  "dark_mode_toggle@formatting_guide.mode_toggle_base": {
+    "$toggle_view_binding_name": "formatting_guide_dark_mode",
+    "$visible_when": "formatting_guide_light_mode",
+    "$default_texture": "textures/ui/containers/buttons/dark_mode_hover",
+    "$pressed_texture": "textures/ui/containers/buttons/dark_mode_hover",
+    "$toggle_default_state": true,
+    "$toggle_group_forced_index": 0
+  },
+  "formatting_guide_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "light_mode_toggle@formatting_guide.light_mode_toggle": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [16, 16],
+          "offset": [-4, 2]
+        }
+      },
+      {
+        "dark_mode_toggle@formatting_guide.dark_mode_toggle": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [16, 16],
+          "offset": [-4, 2]
+        }
+      },
+      {
+        "formatting_guide_panel_black@formatting_guide_panel_black": {
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "formatting_guide_light_mode",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "formatting_guide_panel_white@formatting_guide_panel_white": {
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "formatting_guide_dark_mode",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

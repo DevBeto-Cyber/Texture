@@ -1,0 +1,90 @@
+{
+  "namespace": "dispenser_ui",
+  "redstone_input_grid": {
+    "type": "grid",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "offset": "$grid_offset",
+    "grid_dimensions": "$grid_dimensions",
+    "collection_name": "container_items",
+    "grid_item_template": "common_ui.container_item_blank",
+    "$item_collection_name": "container_items"
+  },
+  "redstone_panel_top_half": {
+    "type": "panel",
+    "size": ["100%", "50% - 12px"],
+    "offset": [0, 7],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "redstone_input_grid@dispenser_ui.redstone_input_grid": {}
+      }
+    ]
+  },
+  "panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "container_gamepad_helpers@common.container_gamepad_helpers": {}
+      },
+      {
+        "selected_item_details_factory@common.selected_item_details_factory": {}
+      },
+      {
+        "item_lock_notification_factory@common.item_lock_notification_factory": {}
+      },
+      {
+        "nic_hover@common.nic_hover": {}
+      },
+      {
+        "root_panel@common.root_panel": {
+          "layer": 1,
+          "size": "$screen_dimensions",
+          "controls": [
+            {
+              "common_panel@common_ui.dispenser_panel": {}
+            },
+            {
+              "redstone_screen_inventory": {
+                "type": "panel",
+                "layer": 5,
+                "controls": [
+                  {
+                    "red_panel@dispenser_ui.redstone_panel_top_half": {}
+                  },
+                  {
+                    "red_bottom_half@common.inventory_panel_bottom_half_with_label": {}
+                  },
+                  {
+                    "hotbar_grid@common.hotbar_grid_template": {}
+                  },
+                  {
+                    "red_hold_icon@common.inventory_take_progress_icon_button": {}
+                  }
+                ]
+              }
+            },
+            {
+              "red_icon@common.inventory_selected_icon_button": {}
+            },
+            {
+              "gamepad_cursor@common.gamepad_cursor_button": {}
+            },
+            {
+              "$screen_label@$screen_label": {}
+            }
+          ]
+        }
+      },
+      {
+        "flying_item_renderer@common.flying_item_renderer": {
+          "layer": 21
+        }
+      },
+      {
+        "status@status.status": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "namespace": "start_nic",
+  "slide_anims": {
+    "anim_type": "offset",
+    "easing": "in_out_back",
+    "duration": 1,
+    "from": [2, "-25%"],
+    "to": [2, 2]
+  },
+  "text_ten": {
+    "type": "label",
+    "font_type": "MinecraftTen"
+  },
+  "play_button_content@start_nic.text_ten": {
+    "text": "menu.play",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "offset": [0, -8]
+  },
+  "skin_button_content": {
+    "type": "panel",
+    "controls": [
+      {
+        "viewer_panel": {
+          "type": "input_panel",
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "offset": [0, -24],
+          "size": ["75%", "75%"],
+          "gesture_tracking_button": "button.turn_doll",
+          "tts_ignore_count": true,
+          "button_mappings": [
+            {
+              "from_button_id": "button.menu_select",
+              "to_button_id": "button.turn_doll",
+              "mapping_type": "pressed",
+              "button_up_right_of_first_refusal": true
+            }
+          ],
+          "controls": [
+            {
+              "paper_doll_panel": {
+                "type": "panel",
+                "size": ["100%", "100% - 10px"],
+                "controls": [
+                  {
+                    "paper_doll": {
+                      "type": "custom",
+                      "renderer": "paper_doll_renderer",
+                      "camera_tilt_degrees": -10,
+                      "starting_rotation": 30,
+                      "layer": 2,
+                      "rotation": "gesture_x",
+                      "size": ["100%", "100%"],
+                      "animation_reset_name": "screen_animation_reset",
+                      "anims": [
+                        "@common.screen_exit_size_animation_push",
+                        "@common.screen_exit_size_animation_pop",
+                        "@common.screen_entrance_size_animation_push",
+                        "@common.screen_entrance_size_animation_pop"
+                      ],
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          "source_control_name": "viewer_panel",
+                          "source_property_name": "#gesture_delta_source",
+                          "target_property_name": "#gesture_delta_source"
+                        },
+                        {
+                          "binding_type": "view",
+                          "source_control_name": "viewer_panel",
+                          "source_property_name": "#gesture_mouse_delta_x",
+                          "target_property_name": "#gesture_mouse_delta_x"
+                        },
+                        {
+                          "binding_name": "#is_appearance_visible",
+                          "binding_name_override": "#visible",
+                          "binding_condition": "always"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "appearacne_loading_panel@common_store.progress_loading": {
+                      "$hide_failure_text": true,
+                      "$hide_progress_loading_outline": true,
+                      "$source_control_name": "paper_doll",
+                      "$source_property_name": "(not #visible)"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "play_button@start_nic.text_ten": {
+          "text": "#playername_text",
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "offset": [0, -8],
+          "bindings": [
+            {
+              "binding_name": "#playername"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "#playername",
+              "target_property_name": "#playername_text"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "settings_button_content@start_nic.text_ten": {
+    "text": "menu.settings"
+  },
+  "profile_button_content@start_nic.text_ten": {
+    "text": "menu.profile"
+  },
+  "friendsdrawer_button_content": {
+    "type": "panel",
+    "size": ["100%c", 24],
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "profile_button_label@common_buttons.new_ui_binding_button_label": {
+          "layer": 1,
+          "$button_text_binding_type": "global",
+          "$button_text_size": ["default", "default"],
+          "$button_text_max_size": ["default", 20],
+          "$font_type": "MinecraftTen",
+          "$button_binding_condition": "none",
+          "$button_text_grid_collection_name": ""
+        }
+      }
+    ]
+  },
+  "realms_button_content@start_nic.text_ten": {
+    "type": "label",
+    "text": "menu.realms"
+  },
+  "about_button_content@start_nic.text_ten": {
+    "type": "label",
+    "text": "Ultramarine X"
+  },
+  "inbox_button_content": {
+    "type": "panel",
+    "controls": [
+      {
+        "unread_notification_icon@start_nic.text_ten": {
+          "text": "%menu.inbox §e!!",
+          "color": "$f_color_format",
+          "bindings": [
+            {
+              "binding_name": "#unread_notification_icon"
+            },
+            {
+              "binding_name": "#unread_notification_icon_visibility",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "read_notification_icon@start_nic.text_ten": {
+          "text": "menu.inbox",
+          "color": "$f_color_format",
+          "bindings": [
+            {
+              "binding_name": "#unread_notification_icon"
+            },
+            {
+              "binding_name": "(not #unread_notification_icon_visibility)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "store_button_content": {
+    "type": "panel",
+    "controls": [
+      {
+        "button_label@common_buttons.new_ui_binding_button_label": {
+          "layer": 5,
+          "font_type": "MinecraftTen"
+        }
+      },
+      {
+        "sales_banner@start.store_button_sale_banner": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [-2, -8],
+          "visible": false
+        }
+      }
+    ]
+  },
+  "left_buttons_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": ["100%cm", "100%cm"],
+    "controls": [
+      {
+        "profile_button@common_buttons.light_content_button": {
+          "$pressed_button_name": "button.menu_profile",
+          "$button_content": "start_nic.profile_button_content",
+          "$default_button_texture": "textures/ui/start/profile",
+          "$hover_button_texture": "textures/ui/start/profile_hover",
+          "$pressed_button_texture": "textures/ui/start/profile_hover",
+          "$locked_button_texture|default": "textures/ui/start/profile_hover",
+          "size": [90, 40]
+        }
+      },
+      {
+        "realms_button@common_buttons.light_content_button": {
+          "size": [90, 40],
+          "$pressed_button_name": "button.menu_realms",
+          "$button_content": "start_nic.realms_button_content",
+          "$default_button_texture": "textures/ui/start/realms",
+          "$hover_button_texture": "textures/ui/start/realms_hover",
+          "$pressed_button_texture": "textures/ui/start/realms_hover",
+          "$locked_button_texture|default": "textures/ui/start/realms_hover"
+        }
+      },
+      {
+        "friends_button@common_buttons.light_content_button": {
+          "size": [90, 40],
+          "$pressed_button_name": "button.friends_drawer",
+          "$button_text": "#friends_with_count",
+          "$button_content": "start_nic.friendsdrawer_button_content",
+          "$default_button_texture": "textures/ui/start/friends",
+          "$hover_button_texture": "textures/ui/start/friends_hover",
+          "$pressed_button_texture": "textures/ui/start/friends_hover",
+          "$locked_button_texture|default": "textures/ui/start/friends_hover"
+        }
+      }
+    ]
+  },
+  "right_buttons_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": ["100%cm", "100%cm"],
+    "controls": [
+      {
+        "inbox_button@common_buttons.light_content_button": {
+          "size": [90, 40],
+          "$pressed_button_name": "button.menu_inbox",
+          "$button_content": "start_nic.inbox_button_content",
+          "$default_button_texture": "textures/ui/start/inbox",
+          "$hover_button_texture": "textures/ui/start/inbox_hover",
+          "$pressed_button_texture": "textures/ui/start/inbox_hover",
+          "$locked_button_texture|default": "textures/ui/start/inbox_hover"
+        }
+      },
+      {
+        "store_button@common_buttons.light_content_button": {
+          "size": [90, 40],
+          "$button_text": "menu.store",
+          "$pressed_button_name": "button.menu_store",
+          "$button_content": "start_nic.store_button_content",
+          "$default_button_texture": "textures/ui/start/store",
+          "$hover_button_texture": "textures/ui/start/store_hover",
+          "$pressed_button_texture": "textures/ui/start/store_hover",
+          "$locked_button_texture|default": "textures/ui/start/store_hover"
+        }
+      },
+      {
+        "about_button@common_buttons.light_content_button": {
+          "size": [90, 40],
+          "$button_content": "start_nic.about_button_content",
+          "$pressed_button_name": "button.menu_buy_game",
+          "$default_button_texture": "textures/ui/start/about",
+          "$hover_button_texture": "textures/ui/start/about_hover",
+          "$pressed_button_texture": "textures/ui/start/about_hover",
+          "$locked_button_texture|default": "textures/ui/start/about_hover"
+        }
+      }
+    ]
+  },
+  "top_middle_buttons_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": ["100%cm", "100%cm"],
+    "controls": [
+      {
+        "skin_button@common_buttons.light_content_button": {
+          "$pressed_button_name": "button.menu_skins",
+          "$button_content": "start_nic.skin_button_content",
+          "$default_button_texture": "textures/ui/start/skin",
+          "$hover_button_texture": "textures/ui/start/skin_hover",
+          "$pressed_button_texture": "textures/ui/start/skin_hover",
+          "$locked_button_texture|default": "textures/ui/start/skin_hover",
+          "size": [90, 120]
+        }
+      },
+      {
+        "play_button@common_buttons.light_content_button": {
+          "$pressed_button_name": "$play_button_target",
+          "$button_content": "start_nic.play_button_content",
+          "$default_button_texture": "textures/ui/start/play",
+          "$hover_button_texture": "textures/ui/start/play_hover",
+          "$pressed_button_texture": "textures/ui/start/play_hover",
+          "$locked_button_texture|default": "textures/ui/start/play_hover",
+          "size": [90, 120]
+        }
+      }
+    ]
+  },
+  "bottom_middle_buttons_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": ["100%cm", "100%cm"],
+    "controls": [
+      {
+        "settings_button@common_buttons.light_content_button": {
+          "$pressed_button_name": "button.menu_settings",
+          "$button_content": "start_nic.settings_button_content",
+          "$default_button_texture": "textures/ui/start/settings",
+          "$hover_button_texture": "textures/ui/start/settings_hover",
+          "$pressed_button_texture": "textures/ui/start/settings_hover",
+          "$locked_button_texture|default": "textures/ui/start/settings_hover",
+          "size": [180, 30]
+        }
+      }
+    ]
+  },
+  "middle_buttons_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": ["100%cm", "100%cm"],
+    "controls": [
+      {
+        "top_middle_buttons_panel@start_nic.top_middle_buttons_panel": {}
+      },
+      {
+        "bottom_middle_buttons_panel@start_nic.bottom_middle_buttons_panel": {}
+      }
+    ]
+  },
+  "center_buttons_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": ["100%cm", "100%cm"],
+    "controls": [
+      {
+        "left_buttons_panel@start_nic.left_buttons_panel": {}
+      },
+      {
+        "middle_buttons_panel@start_nic.middle_buttons_panel": {}
+      },
+      {
+        "right_buttons_panel@start_nic.right_buttons_panel": {}
+      }
+    ]
+  },
+  "center_content": {
+    "type": "panel",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "title": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "type": "image",
+          "animation_reset_name": "screen_animation_reset",
+          "anims": ["@start_nic.slide_anims"],
+          "size": ["25%", "25%"],
+          "texture": "textures/ui/pack_title",
+          "offset": [0, 0]
+        }
+      },
+      {
+        "buttons_panel": {
+          "type": "panel",
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "offset": [-90, 0],
+          "controls": [
+            {
+              "center_buttons_panel@start_nic.center_buttons_panel": {
+                "animation_reset_name": "screen_animation_reset",
+                "anims": ["@start_nic.slide_anims"]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "gathering_panel@start.gathering_panel": {}
+      },
+      {
+        "version_text": {
+          "type": "label",
+          "text": "#version_text",
+          "color": "$f_color_format",
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "alpha": 0.75,
+          "offset": [0, -10],
+          "bindings": [
+            {
+              "binding_name": "#version"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "('Minecraft ' + #version)",
+              "target_property_name": "#version_text"
+            }
+          ]
+        }
+      },
+      {
+        "copyright_text": {
+          "type": "label",
+          "text": "© Mojang Studios. All rights reserved.",
+          "color": "$f_color_format",
+          "alpha": 0.5,
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle"
+        }
+      }
+    ]
+  },
+  "start_content@start.start_screen_content": {
+    "controls": [
+      {
+        "center_content@start_nic.center_content": {}
+      }
+    ]
+  }
+}

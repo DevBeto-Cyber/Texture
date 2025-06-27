@@ -1,0 +1,52 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/blast_furnace/blast_furnace_front_on",
+    "atlas_tile": "blast_furnace_front_on",
+    "ticks_per_frame": 10
+  },
+  {
+    "flipbook_texture": "textures/blocks/blast_furnace/blast_furnace_side_on",
+    "atlas_tile": "blast_furnace_side_on",
+    "ticks_per_frame": 10
+  },
+  {
+    "flipbook_texture": "textures/blocks/furnace/furnace_front_on",
+    "atlas_tile": "furnace_front_on",
+    "ticks_per_frame": 10
+  },
+  {
+    "flipbook_texture": "textures/blocks/furnace/furnace_side_on",
+    "atlas_tile": "furnace_side_on",
+    "ticks_per_frame": 10
+  },
+  {
+    "flipbook_texture": "textures/blocks/smoker/smoker_front_on",
+    "atlas_tile": "smoker_front_on",
+    "ticks_per_frame": 10
+  },
+  {
+    "flipbook_texture": "textures/blocks/smoker/smoker_side_on",
+    "atlas_tile": "smoker_side_on",
+    "ticks_per_frame": 10
+  },
+  {
+    "flipbook_texture": "textures/blocks/lava_still",
+    "atlas_tile": "still_lava",
+    "ticks_per_frame": 100
+  },
+  {
+    "flipbook_texture": "textures/blocks/lava_flow",
+    "atlas_tile": "flowing_lava",
+    "ticks_per_frame": 100
+  },
+  {
+    "flipbook_texture": "textures/blocks/sculk",
+    "atlas_tile": "sculk",
+    "ticks_per_frame": 100
+  },
+  {
+    "flipbook_texture": "textures/blocks/sculk_vein",
+    "atlas_tile": "sculk_vein",
+    "ticks_per_frame": 100
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "namespace": "developer_section",
+  "developer_section": {
+    "type": "stack_panel",
+    "size": ["100%", "100%c"],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [0, 4]
+        }
+      },
+      {
+        "Developer_icon_panel": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": ["100%", 80],
+          "offset": [0, 0],
+          "controls": [
+            {
+              "Developer_icon": {
+                "type": "image",
+                "texture": "textures/ui/nic",
+                "size": [70, 70],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left"
+              }
+            },
+            {
+              "padding_1": {
+                "type": "panel",
+                "size": [6, 0]
+              }
+            },
+            {
+              "texts": {
+                "type": "stack_panel",
+                "size": ["fill", "100%c"],
+                "controls": [
+                  {
+                    "Developer": {
+                      "type": "label",
+                      "text": "developer.name",
+                      "font_type": "MinecraftTen",
+                      "color": "$d_color_format",
+                      "font_scale_factor": 2.5,
+                      "shadow": true
+                    }
+                  },
+                  {
+                    "padding_2": {
+                      "type": "panel",
+                      "size": [0, 10]
+                    }
+                  },
+                  {
+                    "discord": {
+                      "type": "label",
+                      "text": "developer.discord",
+                      "color": "$discord_color_format",
+                      "font_scale_factor": 1,
+                      "shadow": true
+                    }
+                  },
+                  {
+                    "youtube": {
+                      "type": "label",
+                      "text": "developer.youtube",
+                      "color": "$c_color_format",
+                      "font_scale_factor": 1,
+                      "shadow": true
+                    }
+                  },
+                  {
+                    "mcpedl": {
+                      "type": "label",
+                      "text": "developer.mcpedl",
+                      "color": "$mcpedl_color_format",
+                      "font_scale_factor": 1,
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "about1@common.white_label": {
+          "type": "label",
+          "text": "developer.about"
+        }
+      },
+      {
+        "padding_3": {
+          "type": "panel",
+          "size": [0, 8]
+        }
+      },
+      {
+        "cration_header@common.dark_aqua_label": {
+          "type": "label",
+          "text": "developer.creation_title",
+          "color": "$3_color_format",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 1.5
+        }
+      },
+      {
+        "padding_4": {
+          "type": "panel",
+          "size": [0, 4]
+        }
+      },
+      {
+        "creation1@common.white_label": {
+          "type": "label",
+          "text": "developer.creation1"
+        }
+      },
+      {
+        "creation2@common.white_label": {
+          "type": "label",
+          "text": "developer.creation2"
+        }
+      },
+      {
+        "creation3@common.white_label": {
+          "type": "label",
+          "text": "developer.creation3"
+        }
+      },
+      {
+        "creation4@common.white_label": {
+          "type": "label",
+          "text": "developer.creation4"
+        }
+      },
+      {
+        "creation5@common.white_label": {
+          "type": "label",
+          "text": "developer.creation5"
+        }
+      },
+      {
+        "creation6@common.white_label": {
+          "type": "label",
+          "text": "developer.creation6"
+        }
+      }
+    ]
+  }
+}

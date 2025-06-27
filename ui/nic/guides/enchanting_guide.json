@@ -1,0 +1,147 @@
+{
+  "namespace": "nic_enchanting_guide",
+  "enchanting_guide_panel": {
+    "type": "panel",
+    "size": [44, 168],
+    "offset": [112, 42.33],
+    "controls": [
+      {
+        "background@mob_effect.effect_background": {}
+      },
+      {
+        "enchanting_guide@enchanting_guide": {}
+      }
+    ]
+  },
+  "enchanting_guide": {
+    "type": "grid",
+    "size": [36, 148],
+    "offset": [0.5, -28],
+    "layer": 4,
+    "grid_dimensions": [2, 2],
+    "controls": [
+      {
+        "etable_offset": {
+          "type": "panel",
+          "grid_position": [0, 0],
+          "controls": [
+            {
+              "etable@nic_enchanting_icons.etable": {
+                "offset": [0, -2.5]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "ebook_offset": {
+          "type": "panel",
+          "grid_position": [1, 0],
+          "controls": [
+            {
+              "ebook@nic_enchanting_icons.ebook": {
+                "offset": [0, -2.5]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "item_panel_1": {
+          "type": "panel",
+          "grid_position": [0, 1],
+          "controls": [
+            {
+              "items_1@nic_enchanting_icons.multi_item_cell": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "helmet@nic_enchanting_icons.helmet": {
+                "offset": [0, -50]
+              }
+            },
+            {
+              "chestplate@nic_enchanting_icons.chestplate": {
+                "offset": [0, -32]
+              }
+            },
+            {
+              "leggings@nic_enchanting_icons.leggings": {
+                "offset": [0, -14]
+              }
+            },
+            {
+              "boots@nic_enchanting_icons.boots": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "mace@nic_enchanting_icons.mace": {
+                "offset": [0, 22]
+              }
+            },
+            {
+              "trident@nic_enchanting_icons.trident": {
+                "offset": [0, 40]
+              }
+            },
+            {
+              "fishing_rod@nic_enchanting_icons.fishing_rod": {
+                "offset": [0, 58]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "item_panel_2": {
+          "type": "panel",
+          "grid_position": [1, 1],
+          "controls": [
+            {
+              "items_2@nic_enchanting_icons.multi_item_cell": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "sword@nic_enchanting_icons.sword": {
+                "offset": [0, -50]
+              }
+            },
+            {
+              "axe@nic_enchanting_icons.axe": {
+                "offset": [0, -32]
+              }
+            },
+            {
+              "pickaxe@nic_enchanting_icons.pickaxe": {
+                "offset": [0, -14]
+              }
+            },
+            {
+              "shovel@nic_enchanting_icons.shovel": {
+                "offset": [0, 4]
+              }
+            },
+            {
+              "hoe@nic_enchanting_icons.hoe": {
+                "offset": [0, 22]
+              }
+            },
+            {
+              "bow@nic_enchanting_icons.bow": {
+                "offset": [0, 40]
+              }
+            },
+            {
+              "crossbow@nic_enchanting_icons.crossbow": {
+                "offset": [0, 58]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

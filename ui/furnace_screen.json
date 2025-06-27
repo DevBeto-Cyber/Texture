@@ -1,0 +1,45 @@
+{
+  "namespace": "furnace",
+  "furnace_arrow_empty_image": {
+    "type": "image",
+    "layer": 1,
+    "texture": "textures/ui/arrow_inactive_furnace",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [24, 16]
+  },
+  "furnace_arrow_full_image": {
+    "type": "image",
+    "layer": 3,
+    "texture": "textures/ui/arrow_active_furnace",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [24, 16],
+    "clip_direction": "left",
+    "bindings": [
+      {
+        "binding_name": "#furnace_arrow_ratio",
+        "binding_name_override": "#clip_ratio",
+        "binding_condition": "always"
+      }
+    ]
+  },
+  "furnace_screen@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": true,
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "furnace_ui.furnace_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "furnace_pocket.furnace_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      }
+    ]
+  }
+}

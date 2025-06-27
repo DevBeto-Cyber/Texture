@@ -1,0 +1,48 @@
+{
+  "namespace": "brewing_stand",
+  "brewing_arrow_empty_image": {
+    "type": "image",
+    "layer": 1,
+    "texture": "textures/ui/brewing_arrow_empty",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "offset": [20, -14],
+    "size": [8, 25]
+  },
+
+  "brewing_arrow_full_image": {
+    "type": "image",
+    "layer": 3,
+    "texture": "textures/ui/brewing_arrow_full",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "offset": [20, -14],
+    "size": [8, 25],
+    "clip_direction": "up",
+    "bindings": [
+      {
+        "binding_name": "#brewing_arrow_ratio",
+        "binding_name_override": "#clip_ratio",
+        "binding_condition": "always"
+      }
+    ]
+  },
+  "brewing_stand_screen@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": true,
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "brewing_stand_ui.brewing_stand_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "brewing_stand_pocket.brewing_stand_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      }
+    ]
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "namespace": "cartography_ui",
+  "compass_image": {
+    "type": "image",
+    "texture": "textures/ui/containers/animations/compass",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [26, 26],
+    "offset": [3, 2],
+    "layer": 2
+  },
+  "map_image": {
+    "type": "image",
+    "texture": "textures/ui/containers/animations/map",
+    "anchor_to": "bottom_middle",
+    "anchor_from": "bottom_middle",
+    "size": [17, 15],
+    "offset": [-22.5, 17.5],
+    "layer": 2
+  },
+  "compass_image_templates@cartography_ui.compass_image": {
+    "uv": "@common_ui.animation",
+    "uv_size": [26, 26],
+    "$frame_count": 8,
+    "$fps": 1
+  },
+  "map_image_templates@cartography_ui.map_image": {
+    "uv": "@common_ui.animation",
+    "uv_size": [17, 15],
+    "$frame_count": 15,
+    "$fps": 10
+  },
+  "cartography_item_slot": {
+    "type": "panel",
+    "size": ["100%c", "100%c"],
+    "controls": [
+      {
+        "container_item@common_ui.container_item_blank": {
+          "anchor_to": "center",
+          "anchor_from": "center"
+        }
+      }
+    ]
+  },
+  "input_slots": {
+    "type": "stack_panel",
+    "size": [18, "default"],
+    "offset": [7, 12],
+    "controls": [
+      {
+        "input_item_slot@cartography_ui.cartography_item_slot": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "$item_collection_name": "cartography_input_items",
+          "$focus_id_binding_type": "none",
+          "$focus_id": "cartography_input",
+          "$focus_override_down_binding_type": "none",
+          "$focus_override_down": "cartography_additional",
+          "$focus_override_right_binding_type": "none",
+          "$focus_override_right": "cartography_result"
+        }
+      },
+      {
+        "padding1": {
+          "type": "panel",
+          "size": ["100%", 19]
+        }
+      },
+      {
+        "additional_item_slot@cartography_ui.cartography_item_slot": {
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "$item_collection_name": "cartography_additional_items",
+          "$focus_id_binding_type": "none",
+          "$focus_id": "cartography_additional",
+          "$focus_override_up_binding_type": "none",
+          "$focus_override_up": "cartography_input",
+          "$focus_override_right_binding_type": "none",
+          "$focus_override_right": "cartography_result"
+        }
+      }
+    ]
+  },
+  "map_image_panel": {
+    "type": "panel",
+    "size": [48, 48],
+    "controls": [
+      {
+        "none_map@cartography.map_image": {
+          "$map_texture": "textures/ui/Black",
+          "$map_binding_name": "#is_none_mode"
+        }
+      },
+      {
+        "copy_map@cartography.map_image": {
+          "$map_texture": "textures/ui/cartography_table_copy",
+          "$map_binding_name": "#is_clone_mode"
+        }
+      },
+      {
+        "rename_map@cartography.map_image": {
+          "$map_texture": "textures/ui/cartography_table_map",
+          "$map_binding_name": "#is_rename_mode"
+        }
+      },
+      {
+        "map@cartography.map_image": {
+          "$map_texture": "textures/ui/cartography_table_map",
+          "$map_binding_name": "#is_basic_map_mode"
+        }
+      },
+      {
+        "locator_map@cartography.map_image": {
+          "$map_texture": "textures/ui/cartography_table_map",
+          "$map_binding_name": "#is_locator_map_mode"
+        }
+      },
+      {
+        "zoom_map@cartography.map_image": {
+          "$map_texture": "textures/ui/cartography_table_zoom",
+          "$map_binding_name": "#is_extend_mode"
+        }
+      },
+      {
+        "lock_map@cartography.map_image": {
+          "$map_texture": "textures/ui/cartography_table_glass",
+          "$map_binding_name": "#is_locked_mode"
+        }
+      }
+    ]
+  },
+  "main_panel": {
+    "type": "panel",
+    "size": [162, "100%cm"],
+    "controls": [
+      {
+        "input_slots@cartography_ui.input_slots": {
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle"
+        }
+      },
+      {
+        "map_image_panel@cartography_ui.map_image_panel": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "offset": [10, 12]
+        }
+      },
+      {
+        "result_item_slot@cartography_ui.cartography_item_slot": {
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "$item_collection_name": "cartography_result_items",
+          "$button_ref": "cartography.cartography_output_slot_button",
+          "size": [18, 18],
+          "$cell_image_size": [18, 18],
+          "offset": [-7, 17],
+          "$focus_id_binding_type": "none",
+          "$focus_id": "cartography_result",
+          "$focus_override_left_binding_type": "none",
+          "$focus_override_left": "cartography_additional"
+        }
+      },
+      {
+        "compass_panel@cartography_ui.compass_image_templates": {}
+      },
+      {
+        "map_image@cartography_ui.map_image_templates": {}
+      }
+    ]
+  },
+  "text_edit_control@common.text_edit_box": {
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": ["default", 20],
+    "max_length": 3000,
+    "$place_holder_text": "Tap here to rename...",
+    "$text_edit_box_placeholder_content_binding_name": "#text_box_placeholder_name",
+    "$text_background_default": "common.anvil_edit_box_indent",
+    "$text_background_hover": "common.anvil_edit_box_indent_hover",
+    "$text_edit_box_label_size": ["default", 10]
+  },
+  "text_box_panel": {
+    "type": "stack_panel",
+    "controls": [
+      {
+        "text_edit_control@cartography_ui.text_edit_control": {}
+      }
+    ]
+  },
+  "top_half_panel": {
+    "type": "stack_panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "size": ["100% - 12px", "100% - 90px"],
+    "offset": [0, -20],
+    "controls": [
+      {
+        "text_box_panel@cartography_ui.text_box_panel": {}
+      },
+      {
+        "padding1": {
+          "type": "panel",
+          "size": ["100%", 4]
+        }
+      },
+      {
+        "main_panel_wrap": {
+          "type": "panel",
+          "size": ["100%", "100%c"],
+          "controls": [
+            {
+              "main_panel@cartography_ui.main_panel": {}
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "cartography_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "container_gamepad_helpers@common.container_gamepad_helpers": {}
+      },
+      {
+        "selected_item_details_factory@common.selected_item_details_factory": {}
+      },
+      {
+        "item_lock_notification_factory@common.item_lock_notification_factory": {}
+      },
+      {
+        "nic_hover@common.nic_hover": {}
+      },
+      {
+        "root_panel@common.root_panel": {
+          "layer": 1,
+          "controls": [
+            {
+              "common_panel@common_ui.cartography_panel": {}
+            },
+            {
+              "cartography_screen_inventory": {
+                "type": "panel",
+                "layer": 2,
+                "controls": [
+                  {
+                    "top_half_panel@cartography_ui.top_half_panel": {}
+                  },
+                  {
+                    "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {}
+                  },
+                  {
+                    "hotbar_grid@common.hotbar_grid_template": {}
+                  },
+                  {
+                    "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {}
+                  }
+                ]
+              }
+            },
+            {
+              "inventory_selected_icon_button@common.inventory_selected_icon_button": {}
+            },
+            {
+              "gamepad_cursor@common.gamepad_cursor_button": {}
+            }
+          ]
+        }
+      },
+      {
+        "flying_item_renderer@common.flying_item_renderer": {
+          "layer": 15
+        }
+      },
+      {
+        "status_bar@status.status": {}
+      }
+    ]
+  }
+}

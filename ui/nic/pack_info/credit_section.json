@@ -1,0 +1,157 @@
+{
+  "namespace": "credit_section",
+  "credit_section": {
+    "type": "stack_panel",
+    "size": ["100%", "100%c"],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [0, 4]
+        }
+      },
+      {
+        "credit_title@common.gold_label": {
+          "type": "label",
+          "text": "credit.title",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 2,
+          "shadow": true
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [0, 6]
+        }
+      },
+      {
+        "credits_1@common.red_label": {
+          "type": "label",
+          "text": "credit.author1",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 1.4
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [0, 2]
+        }
+      },
+      {
+        "credits_11_info@common.white_label": {
+          "type": "label",
+          "text": "credit.content11",
+          "font_scale_factor": 1
+        }
+      },
+      {
+        "credits_12_info@common.white_label": {
+          "type": "label",
+          "text": "credit.content12",
+          "font_scale_factor": 1
+        }
+      },
+      {
+        "padding_3": {
+          "type": "panel",
+          "size": [0, 4]
+        }
+      },
+      {
+        "credits_2@common.red_label": {
+          "type": "label",
+          "text": "credit.author2",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 1.4
+        }
+      },
+      {
+        "padding_4": {
+          "type": "panel",
+          "size": [0, 2]
+        }
+      },
+      {
+        "credits_21_info@common.white_label": {
+          "type": "label",
+          "text": "credit.content21",
+          "font_scale_factor": 1
+        }
+      },
+      {
+        "credits_22_info@common.white_label": {
+          "type": "label",
+          "text": "credit.content22",
+          "font_scale_factor": 1
+        }
+      },
+      {
+        "padding_5": {
+          "type": "panel",
+          "size": [0, 8]
+        }
+      },
+      {
+        "translators_title@common.aqua_label": {
+          "type": "label",
+          "text": "credit.translators",
+          "font_type": "MinecraftTen",
+          "font_scale_factor": 2,
+          "shadow": true
+        }
+      },
+      {
+        "padding_6": {
+          "type": "panel",
+          "size": [0, 4]
+        }
+      },
+      {
+        "translators_1_info@common.red_label": {
+          "type": "label",
+          "text": "credit.translators1",
+          "font_scale_factor": 1
+        }
+      },
+      {
+        "translators_2_info@common.red_label": {
+          "type": "label",
+          "text": "credit.translators2",
+          "font_scale_factor": 1
+        }
+      },
+      {
+        "translators_3_info@common.red_label": {
+          "type": "label",
+          "text": "credit.translators3",
+          "font_scale_factor": 1
+        }
+      },
+      {
+        "translators_4_info@common.red_label": {
+          "type": "label",
+          "text": "credit.translators4",
+          "font_scale_factor": 1
+        }
+      },
+      {
+        "translators_padding_info@common.red_label": {
+          "type": "label",
+          "text": "",
+          "font_scale_factor": 0.5
+        }
+      },
+      {
+        "thanks@common.white_label": {
+          "type": "label",
+          "text": "credit.thanks",
+          "font_scale_factor": 1
+        }
+      }
+    ]
+  }
+}

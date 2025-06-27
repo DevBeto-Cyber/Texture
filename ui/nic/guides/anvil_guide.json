@@ -1,0 +1,1380 @@
+{
+  "namespace": "anvil_guide",
+  "color_content": {
+    "type": "image",
+    "texture": "textures/ui/settings_graphics",
+    "size": [16, 16]
+  },
+  "special_content": {
+    "type": "image",
+    "texture": "textures/ui/special_code",
+    "size": [16, 16]
+  },
+  "armor_stand_content": {
+    "type": "image",
+    "texture": "textures/ui/containers/buttons/armor_stand",
+    "size": [16, 16]
+  },
+  "enchantment_guide_content": {
+    "type": "image",
+    "texture": "textures/ui/pickaxe",
+    "size": [16, 16]
+  },
+  "paste_button_content": {
+    "type": "label",
+    "text": "$button_label",
+    "color": "$color",
+    "$color|default": "$f_color_format",
+    "layer": 9
+  },
+  "paste_button@common.button": {
+    "$button_label|default": "",
+    "$paste_code|default": "",
+    "$button_name": "paste_button",
+    "$pressed_button_name": "",
+    "$default_button_texture": "textures/ui/paste_button_hover",
+    "$hover_button_texture": "textures/ui/paste_button",
+    "$pressed_button_texture": "textures/ui/paste_button_pressed",
+    "size": ["100%", 16],
+    "controls": [
+      {
+        "paste_button_content@paste_button_content": {}
+      },
+      {
+        "default": {
+          "type": "image",
+          "texture": "$default_button_texture"
+        }
+      },
+      {
+        "hover": {
+          "type": "image",
+          "texture": "$hover_button_texture"
+        }
+      },
+      {
+        "pressed": {
+          "type": "image",
+          "texture": "$pressed_button_texture"
+        }
+      },
+      {
+        "text_edit_box": {
+          "type": "edit_box",
+          "text_box_name": "#text_box_name",
+          "max_length": 2147483647,
+          "can_be_deselected": true,
+          "text_control": "text_control",
+          "always_listening": true,
+          "focus_enabled": true,
+          "size": ["100%sm", "100%sm"],
+          "offset": [2, 0],
+          "layer": 3,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "button_mappings": [
+            {
+              "from_button_id": "button.menu_select",
+              "to_button_id": "button.keyboard_toggle",
+              "handle_select": true,
+              "handle_deselect": false,
+              "mapping_type": "pressed"
+            },
+            {
+              "from_button_id": "button.menu_select",
+              "to_button_id": "button.keyboard_toggle",
+              "handle_select": false,
+              "handle_deselect": true,
+              "mapping_type": "global",
+              "consume_event": false
+            },
+            {
+              "from_button_id": "button.menu_cancel",
+              "to_button_id": "button.menu_select",
+              "handle_select": false,
+              "handle_deselect": true,
+              "mapping_type": "global"
+            }
+          ],
+          "controls": [
+            {
+              "text_control": {
+                "type": "label",
+                "layer": 9,
+                "text": "#item_name",
+                "visible": false,
+                "property_bag": {
+                  "#property_field": "#item_name"
+                },
+                "localize": false,
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "display_text",
+                    "source_property_name": "#item_name",
+                    "target_property_name": "#current_input_text"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(#current_input_text + $paste_code)",
+                    "target_property_name": "#item_name"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "name_tag_toggle_base@common_toggles.light_content_toggle": {
+    "$toggle_name": "name_tag_guide_toggle",
+    "$default_texture|default": "textures/ui/button_borderless_light",
+    "$hover_texture|default": "textures/ui/button_borderless_lightpressednohover",
+    "$pressed_texture|default": "textures/ui/button_borderless_lighthover",
+    "$pressed_no_hover_texture|default": "textures/ui/button_borderless_lightpressed",
+    "$locked_texture|default": "textures/ui/disabledButtonNoBorder",
+    "$button_content": "common.padding",
+    "$toggle_group_default_selected": 0,
+    "$radio_toggle_group": true,
+    "$default_border_visible": false,
+    "$hover_border_visible": false,
+    "size": [24, 24]
+  },
+  "color_codes_toggle@anvil_guide.name_tag_toggle_base": {
+    "$toggle_view_binding_name": "color_toggle",
+    "$button_content": "anvil_guide.color_content",
+    "$toggle_group_forced_index": 0,
+    "$toggle_default_state": true
+  },
+  "special_codes_toggle@anvil_guide.name_tag_toggle_base": {
+    "$toggle_view_binding_name": "special_toggle",
+    "$button_content": "anvil_guide.special_content",
+    "$toggle_group_forced_index": 1
+  },
+  "armor_stand_codes_toggle@anvil_guide.name_tag_toggle_base": {
+    "$toggle_view_binding_name": "armor_stand_toggle",
+    "$button_content": "anvil_guide.armor_stand_content",
+    "$toggle_group_forced_index": 2
+  },
+  "enchantment_guide_toggle@anvil_guide.name_tag_toggle_base": {
+    "$toggle_view_binding_name": "enchantment_toggle",
+    "$button_content": "anvil_guide.enchantment_guide_content",
+    "$toggle_group_forced_index": 3
+  },
+  "stack_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": ["100%", "100%"],
+    "offset": [-120, -32],
+    "controls": [
+      {
+        "color_codes_toggle@anvil_guide.color_codes_toggle": {}
+      },
+      {
+        "special_codes_toggle@anvil_guide.special_codes_toggle": {}
+      },
+      {
+        "armor_stand_codes_toggle@anvil_guide.armor_stand_codes_toggle": {}
+      },
+      {
+        "enchantment_guide_toggle@anvil_guide.enchantment_guide_toggle": {}
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "armor_stand_panel_open",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "anvil_guide_panel": {
+    "type": "panel",
+    "size": [128, 500],
+    "offset": [-160, 43],
+    "layer": 4,
+    "controls": [
+      {
+        "background@mob_effect.effect_background": {
+          "size": ["100% + 14px", "100% - 332px"],
+          "layer": 2
+        }
+      },
+      {
+        "color_code_scroll@anvil_guide.color_code_scroll": {}
+      },
+      {
+        "special_code_scroll@anvil_guide.special_code_scroll": {}
+      },
+      {
+        "armor_stand_code_scroll@anvil_guide.armor_stand_code_scroll": {}
+      },
+      {
+        "enchantment_guide_scroll@anvil_guide.enchantment_guide_scroll": {}
+      }
+    ]
+  },
+  "color_code_scroll@common.scrolling_panel": {
+    "size": ["100% + 2px", "100% - 340px"],
+    "$show_background": false,
+    "$scrolling_content": "anvil_guide.color_codes_panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "color_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "color_codes_panel": {
+    "type": "panel",
+    "size": [126, 470],
+    "controls": [
+      {
+        "color_panel": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "size": ["100%-8px", "100%"],
+          "controls": [
+            {
+              "spacer_top": {
+                "type": "panel",
+                "size": [0, 3]
+              }
+            },
+            {
+              "color_code_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 10px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§lColor Codes",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_0": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "button_panel": {
+                "type": "stack_panel",
+                "orientation": "vertical",
+                "size": ["100%", "100%"],
+                "controls": [
+                  {
+                    "red@anvil_guide.paste_button": {
+                      "$button_label": "§cRed",
+                      "$paste_code": "§c"
+                    }
+                  },
+                  { "padding_0": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "crimson@anvil_guide.paste_button": {
+                      "$button_label": "§mCrimson",
+                      "$paste_code": "§m"
+                    }
+                  },
+                  { "padding_1": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "dark_red@anvil_guide.paste_button": {
+                      "$button_label": "§4Dark Red",
+                      "$paste_code": "§4"
+                    }
+                  },
+                  { "padding_2": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "orange@anvil_guide.paste_button": {
+                      "$button_label": "§vOrange",
+                      "$paste_code": "§v"
+                    }
+                  },
+                  { "padding_3": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "marigold@anvil_guide.paste_button": {
+                      "$button_label": "§pMarigold",
+                      "$paste_code": "§p"
+                    }
+                  },
+                  { "padding_4": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "lemon@anvil_guide.paste_button": {
+                      "$button_label": "§gLemon",
+                      "$paste_code": "§g"
+                    }
+                  },
+                  { "padding_5": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "yellow@anvil_guide.paste_button": {
+                      "$button_label": "§eYellow",
+                      "$paste_code": "§e"
+                    }
+                  },
+                  { "padding_6": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "gold@anvil_guide.paste_button": {
+                      "$button_label": "§6Gold",
+                      "$paste_code": "§6"
+                    }
+                  },
+                  { "padding_7": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "copper@anvil_guide.paste_button": {
+                      "$button_label": "§nCopper",
+                      "$paste_code": "§n"
+                    }
+                  },
+                  { "padding_8": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "green@anvil_guide.paste_button": {
+                      "$button_label": "§aGreen",
+                      "$paste_code": "§a"
+                    }
+                  },
+                  { "padding_9": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "meadow_green@anvil_guide.paste_button": {
+                      "$button_label": "§qMeadow Green",
+                      "$paste_code": "§q"
+                    }
+                  },
+                  { "padding_10": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "Green@anvil_guide.paste_button": {
+                      "$button_label": "§2Dark Green",
+                      "$paste_code": "§2"
+                    }
+                  },
+                  { "padding_11": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "aqua@anvil_guide.paste_button": {
+                      "$button_label": "§bAqua",
+                      "$paste_code": "§b"
+                    }
+                  },
+                  { "padding_12": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "turquoise@anvil_guide.paste_button": {
+                      "$button_label": "§sTurquoise",
+                      "$paste_code": "§s"
+                    }
+                  },
+                  { "padding_13": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "ultramarine@anvil_guide.paste_button": {
+                      "$button_label": "§tUltramarine",
+                      "$paste_code": "§t"
+                    }
+                  },
+                  { "padding_14": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "blue@anvil_guide.paste_button": {
+                      "$button_label": "§9Blue",
+                      "$paste_code": "§9"
+                    }
+                  },
+                  { "padding_15": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "deep_blue@anvil_guide.paste_button": {
+                      "$button_label": "§1Deep Blue",
+                      "$paste_code": "§1"
+                    }
+                  },
+                  { "padding_16": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "dark_aqua@anvil_guide.paste_button": {
+                      "$button_label": "§3Dark Aqua",
+                      "$paste_code": "§3"
+                    }
+                  },
+                  { "padding_17": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "dark_purple@anvil_guide.paste_button": {
+                      "$button_label": "§5Dark Purple",
+                      "$paste_code": "§5"
+                    }
+                  },
+                  { "padding_18": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "amethyst@anvil_guide.paste_button": {
+                      "$button_label": "§uAmethyst",
+                      "$paste_code": "§u"
+                    }
+                  },
+                  { "padding_19": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "netherite@anvil_guide.paste_button": {
+                      "$button_label": "§jNetherite",
+                      "$paste_code": "§j"
+                    }
+                  },
+                  { "padding_20": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "black@anvil_guide.paste_button": {
+                      "$button_label": "§0Black",
+                      "$paste_code": "§0"
+                    }
+                  },
+                  { "padding_21": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "dark_gray@anvil_guide.paste_button": {
+                      "$button_label": "Dark Gray",
+                      "$color": [0.2, 0.2, 0.2],
+                      "$paste_code": "§8"
+                    }
+                  },
+                  { "padding_22": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "grey@anvil_guide.paste_button": {
+                      "$button_label": "§7Gray",
+                      "$paste_code": "§7"
+                    }
+                  },
+                  { "padding_23": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "white@anvil_guide.paste_button": {
+                      "$button_label": "§fWhite",
+                      "$paste_code": "§f"
+                    }
+                  },
+                  { "padding_24": { "type": "panel", "size": [0, 1] } },
+
+                  {
+                    "cream@anvil_guide.paste_button": {
+                      "$button_label": "§hCream",
+                      "$paste_code": "§h"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "special_code_scroll@common.scrolling_panel": {
+    "size": ["100% + 2px", "100% - 340px"],
+    "$show_background": false,
+    "$scrolling_content": "anvil_guide.special_codes_panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "special_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "special_codes_panel": {
+    "type": "panel",
+    "size": [126, 164],
+    "controls": [
+      {
+        "special_panel": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "size": ["100%-8px", "100%"],
+          "controls": [
+            {
+              "spacer_top": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "special_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 10px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§gSpecial Codes",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_0": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "button_panel": {
+                "type": "stack_panel",
+                "orientation": "vertical",
+                "size": ["100%", "100%"],
+                "controls": [
+                  {
+                    "animated@anvil_guide.paste_button": {
+                      "$button_label": "§kii§rAnimated§kii§r",
+                      "$paste_code": "§k"
+                    }
+                  },
+                  {
+                    "padding_0": {
+                      "type": "panel",
+                      "size": [0, 1]
+                    }
+                  },
+                  {
+                    "bold@anvil_guide.paste_button": {
+                      "$button_label": "§lBold",
+                      "$paste_code": "§l"
+                    }
+                  },
+                  {
+                    "padding_1": {
+                      "type": "panel",
+                      "size": [0, 1]
+                    }
+                  },
+                  {
+                    "italic@anvil_guide.paste_button": {
+                      "$button_label": "§oItalic",
+                      "$paste_code": "§0"
+                    }
+                  },
+                  {
+                    "padding_2": {
+                      "type": "panel",
+                      "size": [0, 1]
+                    }
+                  },
+                  {
+                    "reset@anvil_guide.paste_button": {
+                      "$button_label": "Reset",
+                      "$paste_code": "§r"
+                    }
+                  },
+                  {
+                    "padding_3": {
+                      "type": "panel",
+                      "size": [0, 1]
+                    }
+                  },
+                  {
+                    "dinnerbone@anvil_guide.paste_button": {
+                      "$button_label": "Dinnerbone",
+                      "$paste_code": "Dinnerbone"
+                    }
+                  },
+                  {
+                    "padding_4": {
+                      "type": "panel",
+                      "size": [0, 1]
+                    }
+                  },
+                  {
+                    "grumm@anvil_guide.paste_button": {
+                      "$button_label": "Grumm",
+                      "$paste_code": "Grumm"
+                    }
+                  },
+                  {
+                    "padding_5": {
+                      "type": "panel",
+                      "size": [0, 1]
+                    }
+                  },
+                  {
+                    "jeb_@anvil_guide.paste_button": {
+                      "$button_label": "jeb_",
+                      "$paste_code": "jeb_"
+                    }
+                  },
+                  {
+                    "padding_6": {
+                      "type": "panel",
+                      "size": [0, 1]
+                    }
+                  },
+                  {
+                    "Toast@anvil_guide.paste_button": {
+                      "$button_label": "Toast",
+                      "$paste_code": "Toast"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "armor_stand_code_scroll@common.scrolling_panel": {
+    "size": ["100% + 2px", "100% - 340px"],
+    "$show_background": false,
+    "$scrolling_content": "anvil_guide.armor_stand_codes_panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "armor_stand_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "name_template": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "$name_1|default": "custom_1",
+    "$name_2|default": "custom_2",
+    "size": ["100%", 16],
+    "controls": [
+      {
+        "1@anvil_guide.paste_button": {
+          "$button_label": "$name_1",
+          "$paste_code": "$name_1",
+          "size": ["50%", 16]
+        }
+      },
+      {
+        "2@anvil_guide.paste_button": {
+          "$button_label": "$name_2",
+          "$paste_code": "$name_2",
+          "size": ["50%", 16]
+        }
+      }
+    ]
+  },
+  "armor_stand_codes_panel": {
+    "type": "panel",
+    "size": [126, 776],
+    "controls": [
+      {
+        "armor_stand_names_panel": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "size": ["100%-8px", "100%"],
+          "controls": [
+            {
+              "spacer_0": {
+                "type": "panel",
+                "size": [0, 3]
+              }
+            },
+            {
+              "armor_stand_code_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 10px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§lArmor Stand Codes",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_1": {
+                "type": "panel",
+                "size": [0, 3]
+              }
+            },
+            {
+              "Plushie_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 8px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§bPlushie§r",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_2": {
+                "type": "panel",
+                "size": [0, 1]
+              }
+            },
+            {
+              "p0@anvil_guide.name_template": {
+                "$name_1": "Camel",
+                "$name_2": "Creeper"
+              }
+            },
+            {
+              "p1@anvil_guide.name_template": {
+                "$name_1": "Drowned",
+                "$name_2": "Enderman"
+              }
+            },
+            {
+              "p2@anvil_guide.name_template": {
+                "$name_1": "Farmer",
+                "$name_2": "Pillager"
+              }
+            },
+            {
+              "p3@anvil_guide.name_template": {
+                "$name_1": "Fox",
+                "$name_2": "Nic plushie"
+              }
+            },
+            {
+              "p4@anvil_guide.name_template": {
+                "$name_1": "Ghast",
+                "$name_2": "Iron golem"
+              }
+            },
+            {
+              "p5@anvil_guide.name_template": {
+                "$name_1": "Dragon",
+                "$name_2": "Snow fox"
+              }
+            },
+            {
+              "p6@anvil_guide.name_template": {
+                "$name_1": "Snow golem",
+                "$name_2": "Villager"
+              }
+            },
+            {
+              "p7@anvil_guide.name_template": {
+                "$name_1": "Witch",
+                "$name_2": "Zombie"
+              }
+            },
+            {
+              "spacer_3": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "character_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 8px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§aCharacter§r",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_4": {
+                "type": "panel",
+                "size": [0, 1]
+              }
+            },
+            {
+              "c0@anvil_guide.name_template": {
+                "$name_1": "Alex",
+                "$name_2": "Old alex"
+              }
+            },
+            {
+              "c1@anvil_guide.name_template": {
+                "$name_1": "Herobrine",
+                "$name_2": "Notch"
+              }
+            },
+            {
+              "c2@anvil_guide.name_template": {
+                "$name_1": "Steve",
+                "$name_2": "Old steve"
+              }
+            },
+            {
+              "spacer_5": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "youtuber_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 8px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§cYoutuber§r",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_6": {
+                "type": "panel",
+                "size": [0, 1]
+              }
+            },
+            {
+              "y0@anvil_guide.name_template": {
+                "$name_1": "Dream",
+                "$name_2": "Technoblade"
+              }
+            },
+            {
+              "y1@anvil_guide.name_template": {
+                "$name_1": "Clownpierce",
+                "$name_2": "Mr Beast"
+              }
+            },
+            {
+              "spacer_7": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "anime_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 8px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§gAnime§r",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_8": {
+                "type": "panel",
+                "size": [0, 1]
+              }
+            },
+            {
+              "a0@anvil_guide.name_template": {
+                "$name_1": "Tanjiro",
+                "$name_2": "Gojo"
+              }
+            },
+            {
+              "a1@anvil_guide.name_template": {
+                "$name_1": "Luffy",
+                "$name_2": "Goku"
+              }
+            },
+            {
+              "a2@anvil_guide.name_template": {
+                "$name_1": "Madara",
+                "$name_2": "Sukuna"
+              }
+            },
+            {
+              "a3@anvil_guide.name_template": {
+                "$name_1": "Yuji",
+                "$name_2": "Naruto"
+              }
+            },
+            {
+              "spacer_9": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "special_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 8px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§dSpecial§r",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_10": {
+                "type": "panel",
+                "size": [0, 1]
+              }
+            },
+            {
+              "s0@anvil_guide.name_template": {
+                "$name_1": "Alexxander",
+                "$name_2": "Dark"
+              }
+            },
+            {
+              "s1@anvil_guide.name_template": {
+                "$name_1": "Amr9445",
+                "$name_2": "Keshew"
+              }
+            },
+            {
+              "s2@anvil_guide.name_template": {
+                "$name_1": "Legend",
+                "$name_2": "Lostliano"
+              }
+            },
+            {
+              "s3@anvil_guide.name_template": {
+                "$name_1": "Nic",
+                "$name_2": "SuperMario"
+              }
+            },
+            {
+              "s4@anvil_guide.name_template": {
+                "$name_1": "Saif",
+                "$name_2": "Nx703"
+              }
+            },
+            {
+              "s5@anvil_guide.name_template": {
+                "$name_1": "Sed",
+                "$name_2": "New vietnam"
+              }
+            },
+            {
+              "spacer_11": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "extra_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 8px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§3Extra§r",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_12": {
+                "type": "panel",
+                "size": [0, 1]
+              }
+            },
+            {
+              "e0@anvil_guide.name_template": {
+                "$name_1": "Dummy",
+                "$name_2": "Chad"
+              }
+            },
+            {
+              "e1@anvil_guide.name_template": {
+                "$name_1": "Invis",
+                "$name_2": "Halloween"
+              }
+            },
+            {
+              "spacer_13": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "wood_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 8px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§vWood§r",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_14": {
+                "type": "panel",
+                "size": [0, 1]
+              }
+            },
+            {
+              "w0@anvil_guide.name_template": {
+                "$name_1": "Acacia",
+                "$name_2": "Bamboo"
+              }
+            },
+            {
+              "w1@anvil_guide.name_template": {
+                "$name_1": "Birch",
+                "$name_2": "Cherry"
+              }
+            },
+            {
+              "w2@anvil_guide.name_template": {
+                "$name_1": "Crimson",
+                "$name_2": "Dark oak"
+              }
+            },
+            {
+              "w3@anvil_guide.name_template": {
+                "$name_1": "Jungle",
+                "$name_2": "Mangrove"
+              }
+            },
+            {
+              "w4@anvil_guide.name_template": {
+                "$name_1": "Oak",
+                "$name_2": "Pale oak"
+              }
+            },
+            {
+              "w5@anvil_guide.name_template": {
+                "$name_1": "Spruce",
+                "$name_2": "Warped"
+              }
+            },
+            {
+              "spacer_15": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "custom_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 8px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§uCustom§r",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_16": {
+                "type": "panel",
+                "size": [0, 1]
+              }
+            },
+            {
+              "c0@anvil_guide.name_template": {
+                "$name_1": "Custom 1",
+                "$name_2": "Slim 1"
+              }
+            },
+            {
+              "c1@anvil_guide.name_template": {
+                "$name_1": "Custom 2",
+                "$name_2": "Slim 2"
+              }
+            },
+            {
+              "c2@anvil_guide.name_template": {
+                "$name_1": "Custom 3",
+                "$name_2": "Slim 3"
+              }
+            },
+            {
+              "c3@anvil_guide.name_template": {
+                "$name_1": "Custom 4",
+                "$name_2": "Slim 4"
+              }
+            },
+            {
+              "c4@anvil_guide.name_template": {
+                "$name_1": "Custom 5",
+                "$name_2": "Slim 5"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "enchantment_guide_scroll@common.scrolling_panel": {
+    "size": ["100% + 2px", "100% - 340px"],
+    "$show_background": false,
+    "$scrolling_content": "anvil_guide.enchantment_guide_panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "enchantment_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "item_panel_1": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": ["100%", 18],
+    "controls": [
+      {
+        "helmet@nic_enchanting_icons.helmet": {
+          "size": ["25%", 18]
+        }
+      },
+      {
+        "chestplate@nic_enchanting_icons.chestplate": {
+          "size": ["25%", 18]
+        }
+      },
+      {
+        "leggings@nic_enchanting_icons.leggings": {
+          "size": ["25%", 18]
+        }
+      },
+      {
+        "boots@nic_enchanting_icons.boots": {
+          "size": ["25%", 18]
+        }
+      }
+    ]
+  },
+  "item_panel_2": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": ["100%", 18],
+    "controls": [
+      {
+        "sword@nic_enchanting_icons.sword": {
+          "size": ["25%", 18]
+        }
+      },
+      {
+        "axe@nic_enchanting_icons.axe": {
+          "size": ["25%", 18]
+        }
+      },
+      {
+        "pickaxe@nic_enchanting_icons.pickaxe": {
+          "size": ["25%", 18]
+        }
+      },
+      {
+        "shovel@nic_enchanting_icons.shovel": {
+          "size": ["25%", 18]
+        }
+      }
+    ]
+  },
+  "item_panel_3": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": ["100%", 18],
+    "controls": [
+      {
+        "mace@nic_enchanting_icons.mace": {
+          "size": ["25%", 18]
+        }
+      },
+      {
+        "trident@nic_enchanting_icons.trident": {
+          "size": ["25%", 18]
+        }
+      },
+      {
+        "hoe@nic_enchanting_icons.hoe": {
+          "size": ["25%", 18]
+        }
+      },
+      {
+        "bow@nic_enchanting_icons.bow": {
+          "size": ["25%", 18]
+        }
+      }
+    ]
+  },
+  "item_panel_4": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": ["100%", 18],
+    "controls": [
+      {
+        "crossbow@nic_enchanting_icons.crossbow": {
+          "size": ["33.33%", 18]
+        }
+      },
+      {
+        "fishing_rod@nic_enchanting_icons.fishing_rod": {
+          "size": ["33.33%", 18]
+        }
+      },
+      {
+        "book@nic_enchanting_icons.book": {
+          "size": ["33.33%", 18]
+        }
+      }
+    ]
+  },
+  "enchantment_guide_panel": {
+    "type": "panel",
+    "size": [126, 160],
+    "controls": [
+      {
+        "color_panel": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "size": ["100%-8px", "100%"],
+          "controls": [
+            {
+              "spacer_top": {
+                "type": "panel",
+                "size": [0, 3]
+              }
+            },
+            {
+              "color_code_label": {
+                "type": "image",
+                "texture": "textures/ui/paste_button",
+                "size": [118, "100%c + 10px"],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "text": "§dBest Enchantments",
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer_0": {
+                "type": "panel",
+                "size": [0, 3]
+              }
+            },
+            {
+              "item_panel_1@anvil_guide.item_panel_1": {}
+            },
+            {
+              "spacer_1": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "item_panel_2@anvil_guide.item_panel_2": {}
+            },
+            {
+              "spacer_2": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "item_panel_3@anvil_guide.item_panel_3": {}
+            },
+            {
+              "spacer_3": {
+                "type": "panel",
+                "size": [0, 2]
+              }
+            },
+            {
+              "item_panel_4@anvil_guide.item_panel_4": {}
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

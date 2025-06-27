@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.glowing_armor_default": {
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [
+        "variable.has_trim ? variable.trim_path : Texture.default",
+        "Texture.default"
+      ]
+    },
+    "controller.render.glowing_armor_enchanted": {
+      "geometry": "Geometry.default",
+      "materials": [
+        { "*": "variable.is_enchanted ? Material.enchanted : Material.default" }
+      ],
+      "textures": [
+        "variable.has_trim ? variable.trim_path : Texture.default",
+        "Texture.enchanted"
+      ]
+    }
+  }
+}
